@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://zilong708090-star.github.io/energy-export-site/sitemap.xml
