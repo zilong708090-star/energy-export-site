@@ -385,6 +385,10 @@ button { color: inherit; }
   .applications__layout, .review-layout { gap: 6vw; }
 }
 
+@media (min-width: 761px) and (max-width: 1400px) {
+  .hero__content { padding-left: 64px; padding-right: 64px; }
+}
+
 @media (max-width: 760px) {
   :root { --shell: calc(100vw - 32px); }
   .topline { height: 26px; line-height: 26px; }
