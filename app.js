@@ -254,19 +254,6 @@ qa("[data-solution]").forEach(tab => {
   });
 });
 
-qa(".product-select").forEach(button => {
-  button.addEventListener("click", () => {
-    const product = button.closest("[data-product]").dataset.product;
-    const interest = q("#interest");
-    const brief = q("#brief");
-    if (!interest || !brief) return;
-    interest.value = product;
-    button.classList.add("is-added");
-    button.textContent = "Added to project brief";
-    brief.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-});
-
 qa(".application-select").forEach(button => {
   button.addEventListener("click", () => {
     const interest = q("#interest");
