@@ -241,6 +241,15 @@ if ("IntersectionObserver" in window) {
   qa(".reveal").forEach(el => el.classList.add("is-visible"));
 }
 
+const productSection = q("#products");
+const whatsappFloat = q(".whatsapp-float");
+if (productSection && whatsappFloat && "IntersectionObserver" in window) {
+  const productFloatObserver = new IntersectionObserver(([entry]) => {
+    whatsappFloat.classList.toggle("is-over-products", entry.isIntersecting);
+  }, { rootMargin: "-72px 0px -72px", threshold: .02 });
+  productFloatObserver.observe(productSection);
+}
+
 qa("[data-solution]").forEach(tab => {
   tab.addEventListener("click", () => {
     const item = solutions[tab.dataset.solution];

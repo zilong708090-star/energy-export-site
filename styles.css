@@ -60,7 +60,7 @@ button { color: inherit; }
 .text-link--dark { border-color: var(--line); }
 
 .hero { --hero-index: 0; position: relative; min-height: 900px; height: min(980px, 100svh); color: #fff; background: var(--ink); overflow: hidden; touch-action: pan-y; }
-.hero::after { content: ""; position: absolute; inset: 0; z-index: 2; background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px); background-size: 80px 80px; mask-image: linear-gradient(to bottom, transparent 0, #000 16%, #000 72%, transparent 100%); pointer-events: none; }
+.hero::after { content: ""; position: absolute; inset: 0; z-index: 2; background-image: linear-gradient(rgba(255,255,255,.05) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.05) 1px, transparent 1px); background-size: 80px 80px; -webkit-mask-image: linear-gradient(to bottom, transparent 0, #000 16%, #000 72%, transparent 100%); mask-image: linear-gradient(to bottom, transparent 0, #000 16%, #000 72%, transparent 100%); pointer-events: none; }
 .hero__track { display: flex; width: 100%; height: 100%; transform: translate3d(calc(var(--hero-index) * -100%), 0, 0); transition: transform .78s cubic-bezier(.77, 0, .18, 1); will-change: transform; }
 .hero__track.is-jumping { transition: none; }
 .hero__slide { position: relative; flex: 0 0 100%; width: 100%; height: 100%; min-height: inherit; overflow: hidden; }
@@ -120,7 +120,7 @@ button { color: inherit; }
 .section-copy--light { color: rgba(255,255,255,.62); }
 
 .statement { position: relative; isolation: isolate; overflow: hidden; background: #0a1727; color: #fff; }
-.statement::before { content: ""; position: absolute; inset: 0; z-index: -2; background-image: linear-gradient(rgba(255,255,255,.038) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.038) 1px, transparent 1px); background-size: 88px 88px; mask-image: linear-gradient(to bottom, transparent, #000 16%, #000 88%, transparent); }
+.statement::before { content: ""; position: absolute; inset: 0; z-index: -2; background-image: linear-gradient(rgba(255,255,255,.038) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.038) 1px, transparent 1px); background-size: 88px 88px; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 16%, #000 88%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 16%, #000 88%, transparent); }
 .statement::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(circle at 8% 30%, rgba(186,255,74,.12), transparent 24%), radial-gradient(circle at 92% 74%, rgba(78,215,232,.1), transparent 25%); pointer-events: none; }
 .statement .shell { position: relative; width: min(1760px, calc(100vw - 64px)); }
 .statement .statement__head { grid-template-columns: 1fr; margin-bottom: clamp(44px, 5vw, 72px); }
@@ -245,8 +245,9 @@ button { color: inherit; }
 .footer h2 { margin: 17px 0 0; font-size: clamp(40px, 5vw, 70px); line-height: .98; letter-spacing: -.045em; font-weight: 600; }
 .footer__bottom { min-height: 105px; display: grid; grid-template-columns: 1fr auto auto; align-items: end; gap: 35px; color: rgba(255,255,255,.48); font-size: 11px; }
 .brand--footer { color: #fff; }
-.whatsapp-float { position: fixed; z-index: 35; right: 22px; bottom: 22px; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: var(--bright); color: var(--ink); box-shadow: 0 16px 34px rgba(7,17,31,.28); transition: transform .25s var(--ease); }
+.whatsapp-float { position: fixed; z-index: 35; right: 22px; bottom: 22px; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: var(--bright); color: var(--ink); box-shadow: 0 16px 34px rgba(7,17,31,.28); transition: opacity .25s ease, visibility .25s ease, transform .25s var(--ease); }
 .whatsapp-float:hover { transform: translateY(-4px) scale(1.03); }
+.whatsapp-float.is-over-products { visibility: hidden; opacity: 0; pointer-events: none; transform: scale(.8); }
 .whatsapp-float svg { width: 25px; fill: currentColor; }
 
 /* Product platform pages */
