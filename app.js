@@ -222,6 +222,7 @@ if (navToggle && nav) {
 
   qa(".site-nav a").forEach(link => link.addEventListener("click", () => {
     navToggle.setAttribute("aria-expanded", "false");
+    navToggle.setAttribute("aria-label", "Open navigation");
     nav.classList.remove("is-open");
     document.body.classList.remove("nav-open");
   }));
