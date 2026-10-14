@@ -1,4 +1,4 @@
-# Energy export website — Release 19
+# Shandong Lantian Energy Technology Co., Ltd. — Release 20
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
 
@@ -20,7 +20,7 @@ The homepage includes the existing automatic/manual carousel, four product categ
 
 Each product page includes a dedicated product/installation hero, application information, four-image detail gallery, technical buying questions and direct WhatsApp contact. The resource pages provide linked contents, practical procurement information and a downloadable project brief.
 
-Company name and logo remain unassigned. All contact buttons use WhatsApp +86 152 2422 0207. The project form prepares a WhatsApp message locally; it does not collect information in a website database. The visitor confirms sending in WhatsApp.
+The company name is displayed in English as Shandong Lantian Energy Technology Co., Ltd. across page headers, footers and browser titles. No graphical logo has been added. All contact buttons use WhatsApp +86 152 2422 0207. The project form prepares a WhatsApp message locally; it does not collect information in a website database. The visitor confirms sending in WhatsApp.
 
 ## Maintaining the website
 
