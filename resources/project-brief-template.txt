@@ -1,0 +1,65 @@
+ENERGY PROJECT BRIEF
+Complete the fields you know. Mark unknown items for review.
+WhatsApp: +86 152 2422 0207
+
+1. PROJECT
+Project name:
+Contact name / role:
+Company / organisation:
+Installation country / city:
+Application: commercial / industrial / agriculture / telecom / community / other
+New installation, expansion or replacement:
+Primary operating goal:
+Target schedule:
+
+2. POWER SUPPLY AND LOADS
+Grid voltage / frequency / phases:
+Grid connection capacity:
+Typical outages or supply issues:
+Daily energy use and available bills or meter data:
+Maximum measured demand:
+Operating hours:
+Essential loads (equipment, running power, hours):
+Motor, pump or compressor starting loads:
+Required backup period:
+Permitted interruption for essential equipment:
+
+3. GENERATION AND EXISTING EQUIPMENT
+Available roof or land area:
+Shading / mounting / access considerations:
+Existing solar equipment and model numbers:
+Existing inverter and battery models:
+Existing generator rating and control details:
+Wind resource information, where applicable:
+Electrical drawings and site photos available:
+
+4. SITE CONDITIONS
+Indoor or outdoor installation:
+Temperature, dust, rain or coastal exposure:
+Available equipment space:
+Access route, unloading and handling facilities:
+Local installer / engineer contact:
+Applicable utility and local approval requirements:
+
+5. EQUIPMENT AND DELIVERY SCOPE
+Requested product categories and quantities:
+Monitoring and control requirements:
+Future expansion plans:
+Preferred delivery point / port:
+Requested delivery term and named place:
+Import and customs contact:
+Installation and commissioning responsibility:
+Required manuals, drawings and model-specific documents:
+Warranty, spare parts and support expectations:
+
+6. QUESTIONS FOR THE PROPOSAL
+Selected models and confirmed compatibility:
+Included accessories, protection and controls:
+Assumptions and exclusions:
+Lead time and payment milestones:
+Packing dimensions, weights and handling instructions:
+Applicable transport documents:
+Commissioning and acceptance plan:
+After-sales contact and escalation process:
+
+Attachments: bills, load list, drawings, site photos and existing model labels.

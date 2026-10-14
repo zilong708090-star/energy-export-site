@@ -301,3 +301,47 @@ if (projectForm) {
     window.open(`https://wa.me/8615224220207?text=${encodeURIComponent(lines.join("\n"))}`, "_blank", "noopener");
   });
 }
+
+const photoDialog = q("#photo-dialog");
+if (photoDialog && typeof photoDialog.showModal === "function") {
+  const collection = qa(".reference-shot");
+  let photoIndex = 0;
+  const showPhoto = index => {
+    photoIndex = (index + collection.length) % collection.length;
+    const figure = collection[photoIndex];
+    const original = q("img", figure);
+    const enlarged = q(".photo-dialog__stage img", photoDialog);
+    enlarged.src = original.currentSrc || original.src;
+    enlarged.alt = original.alt;
+    q("#photo-dialog-title", photoDialog).textContent = q("figcaption strong", figure)?.textContent || original.alt;
+    q("[data-photo-count]", photoDialog).textContent = `${photoIndex + 1} / ${collection.length}`;
+  };
+  collection.forEach((figure, index) => {
+    const button = document.createElement("button");
+    button.className = "photo-open";
+    button.type = "button";
+    button.textContent = "View image ↗";
+    button.setAttribute("aria-label", `View larger image: ${q("img", figure).alt}`);
+    button.addEventListener("click", () => {
+      showPhoto(index);
+      photoDialog.showModal();
+      document.body.classList.add("photo-is-open");
+    });
+    figure.append(button);
+  });
+  q(".photo-dialog__close", photoDialog).addEventListener("click", () => photoDialog.close());
+  q(".photo-dialog__previous", photoDialog).addEventListener("click", () => showPhoto(photoIndex - 1));
+  q(".photo-dialog__next", photoDialog).addEventListener("click", () => showPhoto(photoIndex + 1));
+  photoDialog.addEventListener("keydown", event => {
+    if (event.key === "ArrowRight" || event.key === "ArrowLeft") {
+      event.preventDefault();
+      showPhoto(photoIndex + (event.key === "ArrowRight" ? 1 : -1));
+    }
+  });
+  photoDialog.addEventListener("click", event => {
+    if (event.target !== photoDialog) return;
+    const bounds = photoDialog.getBoundingClientRect();
+    if (event.clientX < bounds.left || event.clientX > bounds.right || event.clientY < bounds.top || event.clientY > bounds.bottom) photoDialog.close();
+  });
+  photoDialog.addEventListener("close", () => document.body.classList.remove("photo-is-open"));
+}
