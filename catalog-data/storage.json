@@ -1,0 +1,246 @@
+{
+  "category": "storage",
+  "items": [
+    {
+      "id": "storage-wall-5kwh",
+      "category": "storage",
+      "subcategory": "residential",
+      "subcategoryLabel": "Residential batteries",
+      "name": "5.12 kWh Wall-Mounted LFP Battery",
+      "headlineSpecs": [
+        {"label": "Battery energy", "value": "5.12 kWh"},
+        {"label": "Nominal voltage", "value": "51.2 V"},
+        {"label": "Capacity", "value": "100 Ah"},
+        {"label": "Mounting", "value": "Wall-mounted"}
+      ],
+      "specs": [
+        {"label": "Nominal battery energy", "value": "5.12 kWh per unit"},
+        {"label": "Battery chemistry", "value": "Lithium iron phosphate (LFP)"},
+        {"label": "Rated capacity", "value": "100 Ah"},
+        {"label": "Nominal battery voltage", "value": "51.2 V"},
+        {"label": "Battery voltage range", "value": "40–58.4 V"},
+        {"label": "Cell rating", "value": "3.2 V / 100 Ah prismatic cells"},
+        {"label": "Standard charge / discharge rate", "value": "0.5C"},
+        {"label": "Maximum pulse charge / discharge rate", "value": "1C"},
+        {"label": "Parallel connection", "value": "1–8 units"},
+        {"label": "Cooling", "value": "Air cooling"},
+        {"label": "Communication", "value": "CAN / RS485"},
+        {"label": "Weight", "value": "41 kg per unit"},
+        {"label": "Charging temperature", "value": "0 to +55 °C"},
+        {"label": "Discharging temperature", "value": "−20 to +60 °C"}
+      ],
+      "summary": "A compact low-voltage battery format for residential solar storage and selected backup loads. Wall mounting saves floor space, while parallel connection allows a compatible system to expand around changing energy needs.",
+      "features": ["Wall-mounted enclosure", "CAN and RS485 communication", "Up to eight batteries in parallel"],
+      "applications": ["Home solar storage", "Small office backup", "Selected household loads"],
+      "image": {"src": "assets/catalog-storage-wall-5kwh-clean.jpg", "alt": "Supplier wall-mounted LFP battery units with orange status displays; branding removed"},
+      "source": {
+        "title": "Pinergy PNG-E51100-LV supplier specification — Made-in-China",
+        "url": "https://pnsolar.en.made-in-china.com/product/bQVUNWJCbBrz/China-Wall-Mounted-Lithium-Battery-51-2V-100ah-5kwh-LiFePO4-Power-Wall-Energy-Storage-Battery.html",
+        "model": "PNG-E51100-LV",
+        "checked": "2026-10-15"
+      },
+      "notes": "Supplier-reference configuration; confirm inverter compatibility before ordering. The listing gives conflicting enclosure IP ratings and dimension ordering, so those fields are not reproduced. Photo is a supplier family image edited only to remove branding and overlays; enclosure appearance must be confirmed for the ordered variant. No warranty or certification claim is made."
+    },
+    {
+      "id": "storage-rack-5kwh",
+      "category": "storage",
+      "subcategory": "residential",
+      "subcategoryLabel": "Residential batteries",
+      "name": "5.12 kWh Rack-Mounted LFP Battery",
+      "headlineSpecs": [
+        {"label": "Battery energy", "value": "5.12 kWh"},
+        {"label": "Nominal voltage", "value": "51.2 V"},
+        {"label": "Rack height", "value": "4U"},
+        {"label": "Capacity", "value": "100 Ah"}
+      ],
+      "specs": [
+        {"label": "Rated battery energy", "value": "5.12 kWh"},
+        {"label": "Rated capacity (5HR)", "value": "100 Ah"},
+        {"label": "Nominal voltage", "value": "51.2 V"},
+        {"label": "Discharge cut-off voltage", "value": "43.2 V"},
+        {"label": "Maximum charge voltage", "value": "57.6 V"},
+        {"label": "Maximum charge / discharge current", "value": "100 A"},
+        {"label": "Rack height", "value": "4U"},
+        {"label": "Dimensions (W × D × H)", "value": "442 × 431 × 177 mm"},
+        {"label": "Weight", "value": "Approximately 43 kg"},
+        {"label": "Ingress protection", "value": "IP31"},
+        {"label": "Communication", "value": "RS485 / RS232 / CAN"},
+        {"label": "Parallel connection", "value": "Up to 15 units"},
+        {"label": "Charging temperature", "value": "0 to +45 °C"},
+        {"label": "Discharging temperature", "value": "−10 to +55 °C"},
+        {"label": "Cycle-life test condition", "value": ">6,000 cycles at 80% DOD, as stated in the supplier datasheet"}
+      ],
+      "summary": "A standard rack-format module for organized indoor battery installations. The 4U enclosure brings together a local display, battery management and communication interfaces for compatible residential and off-grid solar storage systems.",
+      "features": ["Standard 19-inch rack format", "Built-in BMS and local display", "Up to 15 parallel units"],
+      "applications": ["Residential solar storage", "PV off-grid backup", "Island power systems"],
+      "image": {"src": "assets/catalog-storage-rack-5kwh-clean.jpg", "alt": "4U rack-mounted 51.2 V 100 Ah battery with terminal connectors, handles and status display; branding removed"},
+      "source": {
+        "title": "LEOCH LR51.2-100 4U datasheet V1.7, February 2026",
+        "url": "https://www.leochlithium.com/pdf/lithium/HomeStorage/Rack-mounted/LR51.2-100%284U%29.pdf",
+        "model": "LR51.2-100 (4U), LFELI-48100HR-A-EN-V1.7-202602",
+        "checked": "2026-10-15"
+      },
+      "notes": "This entry uses the 4U variant only; a separate 3U product has different dimensions. Parallel quantity follows the February 2026 datasheet rather than older 40-unit literature. Supplier photo obtained from https://www.leoch.com/products/lithium/residential-rack-mounted-battery and edited only to remove the brand mark. Cycle life is a stated test condition, not a site-life guarantee."
+    },
+    {
+      "id": "storage-all-in-one-10kwh",
+      "category": "storage",
+      "subcategory": "all-in-one",
+      "subcategoryLabel": "All-in-one systems",
+      "name": "5 kW / 10.24 kWh All-in-One Solar Storage",
+      "headlineSpecs": [
+        {"label": "Rated output", "value": "5 kW"},
+        {"label": "Battery energy", "value": "10.24 kWh"},
+        {"label": "Battery voltage", "value": "51.2 V"},
+        {"label": "MPPT range", "value": "120–450 V DC"}
+      ],
+      "specs": [
+        {"label": "Rated inverter output", "value": "5 kW"},
+        {"label": "Peak inverter output", "value": "10,000 VA"},
+        {"label": "Nominal battery energy", "value": "10.24 kWh"},
+        {"label": "Battery chemistry", "value": "Lithium iron phosphate (LFP)"},
+        {"label": "Nominal battery capacity", "value": "200 Ah"},
+        {"label": "Nominal battery voltage", "value": "51.2 V"},
+        {"label": "Battery operating voltage", "value": "44.8–57.6 V"},
+        {"label": "Battery cell configuration", "value": "1P16S"},
+        {"label": "Recommended charge / discharge current", "value": "100 A"},
+        {"label": "Maximum charge / discharge current", "value": "200 A"},
+        {"label": "PV array power limit", "value": "5,500 W"},
+        {"label": "MPPT voltage range", "value": "120–450 V DC"},
+        {"label": "Maximum PV charge current", "value": "80 A"},
+        {"label": "Weight", "value": "95 kg"}
+      ],
+      "summary": "A combined battery and solar inverter format for smaller energy projects. The integrated enclosure reduces separate equipment requirements, with a 10.24 kWh battery and MPPT input for a compatible PV array.",
+      "features": ["Battery and inverter integrated in one enclosure", "Built-in battery management", "PV input with MPPT charging"],
+      "applications": ["Home solar storage", "Small commercial loads", "Solar-plus-battery projects"],
+      "image": {"src": "assets/catalog-storage-all-in-one-10kwh-clean.jpg", "alt": "White all-in-one solar battery and inverter enclosure with central display and black horizontal band; branding removed"},
+      "source": {
+        "title": "Enjoy Solar ES-ESS-BP51200 supplier specification — Made-in-China",
+        "url": "https://enjoysolar.en.made-in-china.com/product/rFEaYPHgJstX/China-All-in-One-5kwh-10kwh-LiFePO4-Lithium-Ion-Cell-Lithium-Battery-Pack-with-5kw-Hybrid-Solar-Inverter-for-Residential-Solar-Battery-Storage-System.html",
+        "model": "ES-ESS-BP51200",
+        "checked": "2026-10-15"
+      },
+      "notes": "Specifications follow the BP51200 column, not the smaller BP51100. The listing disagrees on output voltage, enclosure thickness and cooling wording; those values are omitted pending the selected variant's final datasheet. Photo is the supplier product-family image with branding removed. No transfer-time, grid-compliance or warranty guarantee is inferred."
+    },
+    {
+      "id": "storage-air-215kwh",
+      "category": "storage",
+      "subcategory": "commercial",
+      "subcategoryLabel": "Commercial cabinets",
+      "name": "100 kW / 215 kWh Air-Cooled Storage Cabinet",
+      "headlineSpecs": [
+        {"label": "Rated output", "value": "100 kW"},
+        {"label": "Battery energy", "value": "215 kWh"},
+        {"label": "Cooling", "value": "Air-cooled"},
+        {"label": "Protection", "value": "IP54"}
+      ],
+      "specs": [
+        {"label": "Rated output power", "value": "100 kW"},
+        {"label": "Battery energy", "value": "215 kWh"},
+        {"label": "Cell rating", "value": "3.2 V / 280 Ah"},
+        {"label": "Battery configuration", "value": "1P240S"},
+        {"label": "Rated DC voltage", "value": "768 V DC"},
+        {"label": "Rated grid voltage", "value": "230 / 400 V AC"},
+        {"label": "Grid connection", "value": "3P + N + PE"},
+        {"label": "Maximum charge / discharge current", "value": "176 A"},
+        {"label": "Cooling", "value": "Air cooling"},
+        {"label": "Ingress protection", "value": "IP54"},
+        {"label": "Dimensions (W × D × H)", "value": "1,450 × 1,380 × 2,260 mm"},
+        {"label": "Weight", "value": "2,500 kg"}
+      ],
+      "summary": "An air-cooled cabinet format for commercial and industrial energy storage. Its integrated battery enclosure supports larger energy requirements, with cloud monitoring described by the supplier for operational visibility and remote parameter management.",
+      "features": ["Air-cooled thermal management", "Integrated cabinet format", "Supplier-described cloud monitoring"],
+      "applications": ["Industrial parks", "Commercial facilities", "Grid-connected energy management"],
+      "image": {"src": "assets/catalog-storage-air-215kwh.jpg", "alt": "Air-cooled storage cabinet with external cooling unit, front indicator lights and emergency stop button"},
+      "source": {
+        "title": "Run Strategy 100 kW × 215 kWh air-cooled cabinet specification",
+        "url": "https://www.run-strategy.com/High-Power-Air-Cooled-Energy-Storage-Cabinet-pd562369348.html",
+        "model": "100 KW × 215 KWh Air-cooled Energy Storage Cabinet (supplier product family; no SKU published)",
+        "checked": "2026-10-15"
+      },
+      "notes": "No separate manufacturer SKU is published on the source page. Photo is the actual unbranded image from that product page, without generative changes. Backup operation requires confirmation of the PCS, transfer equipment and supported loads; this catalog does not claim seamless backup or a guaranteed runtime."
+    },
+    {
+      "id": "storage-liquid-215kwh",
+      "category": "storage",
+      "subcategory": "commercial",
+      "subcategoryLabel": "Commercial cabinets",
+      "name": "100 kW / 215 kWh Liquid-Cooled Storage Cabinet",
+      "headlineSpecs": [
+        {"label": "Rated AC power", "value": "100 kW"},
+        {"label": "Battery energy", "value": "215 kWh"},
+        {"label": "Cooling", "value": "Liquid-cooled"},
+        {"label": "Protection", "value": "IP54"}
+      ],
+      "specs": [
+        {"label": "Rated battery energy (@BOL)", "value": "215 kWh at 25 °C / 100 kW"},
+        {"label": "Battery chemistry / cell capacity", "value": "LFP / 280 Ah"},
+        {"label": "Rated AC power", "value": "100 kW"},
+        {"label": "Rated AC current", "value": "150 A"},
+        {"label": "Rated grid voltage", "value": "400 V AC"},
+        {"label": "Grid connection", "value": "Three-phase, four-wire"},
+        {"label": "Rated grid frequency", "value": "50 / 60 Hz"},
+        {"label": "Rated DC voltage", "value": "768 V DC"},
+        {"label": "DC voltage range", "value": "600–876 V"},
+        {"label": "Maximum DC current", "value": "160 A"},
+        {"label": "Rated charge / discharge rate", "value": "0.5C"},
+        {"label": "Depth of discharge", "value": "≤90% DOD"},
+        {"label": "Thermal management", "value": "Liquid cooling and heating"},
+        {"label": "Ingress protection", "value": "IP54"},
+        {"label": "Operating temperature", "value": "−20 to +50 °C"},
+        {"label": "Dimensions (W × H × D)", "value": "1,350 × 2,200 × 1,300 mm"},
+        {"label": "Weight", "value": "Approximately 2,500 kg"}
+      ],
+      "summary": "An integrated commercial cabinet with liquid thermal management. The supplier configuration combines battery, power conversion and energy controls for site-level storage, with optional architecture changes required for islanded operation or multi-cabinet installations.",
+      "features": ["Battery, BMS, PCS and EMS integration", "Liquid cooling and heating", "Modular battery maintenance"],
+      "applications": ["Commercial energy management", "Industrial solar storage", "Configured microgrids"],
+      "image": {"src": "assets/catalog-storage-liquid-215kwh-clean.jpg", "alt": "Liquid-cooled commercial battery cabinet with doors, indicator lights, emergency stop and lower vents; branding removed"},
+      "source": {
+        "title": "HCESS1-100-215 supplier specification — Made-in-China",
+        "url": "https://hcdf-electric.en.made-in-china.com/product/ftgUsqGuOMhP/China-Efficient-215kwh-Controlled-Energy-Storage-Cabinet-for-Resale.html",
+        "model": "HCESS1-100-215",
+        "checked": "2026-10-15"
+      },
+      "notes": "Supplier-reference model, not a claim of Lantian manufacture. The source states grid-connected operation as basic; off-grid and parallel operation require extra accessories and software. Photo is the original supplier cabinet image edited to remove branding, watermark lettering and certification overlays. Market-specific compliance, delivery scope and the ordered enclosure must be confirmed."
+    },
+    {
+      "id": "storage-container-3700kwh",
+      "category": "storage",
+      "subcategory": "containerized",
+      "subcategoryLabel": "Containerized storage",
+      "name": "3.73 MWh Liquid-Cooled Battery Container",
+      "headlineSpecs": [
+        {"label": "Battery energy", "value": "3.73 MWh"},
+        {"label": "Container format", "value": "20 ft"},
+        {"label": "Cooling", "value": "Liquid-cooled"},
+        {"label": "Protection", "value": "IP55"}
+      ],
+      "specs": [
+        {"label": "Nominal battery energy", "value": "3,727.36 kWh"},
+        {"label": "Battery chemistry", "value": "Lithium iron phosphate (LFP)"},
+        {"label": "Rated battery voltage", "value": "1,331.2 V"},
+        {"label": "Battery voltage range", "value": "1,164.8–1,500 V"},
+        {"label": "Container format", "value": "20 ft"},
+        {"label": "Battery cooling", "value": "Liquid cooling"},
+        {"label": "Ingress protection", "value": "IP55"},
+        {"label": "Dimensions (W × D × H)", "value": "6,058 × 2,438 × 2,896 mm"},
+        {"label": "Weight", "value": "37 t"},
+        {"label": "Communication interfaces", "value": "Ethernet / RS485 / CAN"},
+        {"label": "Communication protocols", "value": "Modbus TCP / Modbus RTU / CAN 2.0"},
+        {"label": "Operating humidity", "value": "0–95% RH"},
+        {"label": "Maximum operating altitude", "value": "2,000 m"}
+      ],
+      "summary": "A high-voltage battery container for larger energy infrastructure. Liquid cooling and containerized packaging provide a scalable battery block, with the external PCS, transformer and project protection design determined by the selected system architecture.",
+      "features": ["Containerized high-voltage battery block", "Liquid-cooled battery thermal management", "Modbus and CAN communication"],
+      "applications": ["Industrial energy storage", "Renewable energy integration", "Large microgrid projects"],
+      "image": {"src": "assets/catalog-storage-container-3700kwh-clean.jpg", "alt": "20-foot liquid-cooled battery container with side service doors and front cooling assembly; branding removed"},
+      "source": {
+        "title": "Corey-L3.7-1500 supplier specification — Made-in-China",
+        "url": "https://szcorey.en.made-in-china.com/product/AUirMSchbtks/China-3-7MW-European-Stock-Corey-Solar-Compact-System-Lithium-Battery-Efficient-Energy-Storage-Container.html",
+        "model": "Corey-L3.7-1500",
+        "checked": "2026-10-15"
+      },
+      "notes": "This is a DC battery-container reference, not a guaranteed complete AC system. The marketplace title incorrectly uses MW and a table labels a kWh value as power; only the separately stated nominal energy is reproduced, and no AC output power is inferred. The listing disagrees on fire-suppression detail, so that field is omitted. Exact supplier photo edited only to remove brand logos; final configuration and enclosure details require confirmation."
+    }
+  ]
+}

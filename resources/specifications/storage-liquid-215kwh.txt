@@ -1,0 +1,34 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+100 kW / 215 kWh Liquid-Cooled Storage Cabinet
+Technical reference: HCESS1-100-215
+Reviewed: 2026-10-15
+
+Rated battery energy (@BOL): 215 kWh at 25 °C / 100 kW
+Battery chemistry / cell capacity: LFP / 280 Ah
+Rated AC power: 100 kW
+Rated AC current: 150 A
+Rated grid voltage: 400 V AC
+Grid connection: Three-phase, four-wire
+Rated grid frequency: 50 / 60 Hz
+Rated DC voltage: 768 V DC
+DC voltage range: 600–876 V
+Maximum DC current: 160 A
+Rated charge / discharge rate: 0.5C
+Depth of discharge: ≤90% DOD
+Thermal management: Liquid cooling and heating
+Ingress protection: IP54
+Operating temperature: −20 to +50 °C
+Dimensions (W × H × D): 1,350 × 2,200 × 1,300 mm
+Weight: Approximately 2,500 kg
+
+Technical source: https://hcdf-electric.en.made-in-china.com/product/ftgUsqGuOMhP/China-Efficient-215kwh-Controlled-Energy-Storage-Cabinet-for-Resale.html
+
+Model-specific notes: Supplier-reference model, not a claim of Lantian manufacture. The source states grid-connected operation as basic; off-grid and parallel operation require extra accessories and software. Photo is the original supplier cabinet image edited to remove branding, watermark lettering and certification overlays. Market-specific compliance, delivery scope and the ordered enclosure must be confirmed.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

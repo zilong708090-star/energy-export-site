@@ -1,0 +1,33 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+50 kW High-Voltage Hybrid Inverter
+Technical reference: SUN-50K-SG01HP3-EU-BM4
+Reviewed: 2026-10-15
+
+Rated AC input / output: 50,000 W
+Nominal AC voltage: 220 / 380 V or 230 / 400 V
+Grid frequency: 50 / 60 Hz
+Battery voltage range: 160–800 V
+Max. charge / discharge current: 50 + 50 A
+Battery inputs: 2
+Max. PV input power: 80,000 W
+Max. PV input voltage: 1,000 V
+MPPT voltage range: 150–850 V
+MPPT / strings per tracker: 4 / 2+2+2+2
+Max. continuous AC passthrough: 200 A
+Max. conversion efficiency: 97.6%
+Ingress protection: IP65
+Dimensions (W × H × D): 527 × 894 × 294 mm
+Weight: 80 kg
+Cooling: Intelligent air cooling
+
+Technical source: https://www.deyeinverter.com/product/three-phase-high-voltage-hybrid-inverter/sun29-9-30-35-40-50ksg01hp3eubm3-4-29-950kw-three-phase-2-3-4-mppt-hybrid-inverter-hv-battery-supported-339.html
+
+Model-specific notes: Battery compatibility, transfer architecture and local grid acceptance require project-specific confirmation.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

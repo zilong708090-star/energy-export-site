@@ -1,0 +1,32 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+450 W Full-Black N-Type Module
+Technical reference: TSM-450NEG9R.25
+Reviewed: 2026-10-15
+
+Maximum power at STC: 450 Wp
+Maximum power voltage (Vmp): 44.6 V
+Maximum power current (Imp): 10.09 A
+Open-circuit voltage (Voc): 52.9 V
+Short-circuit current (Isc): 10.74 A
+Module efficiency at STC: 22.5%
+Power tolerance: 0 / +5 W
+Cells: 144
+Dimensions: 1,762 × 1,134 × 30 mm
+Weight: 21.0 kg
+Front / rear glass: 1.6 / 1.6 mm
+Maximum system voltage: 1,500 V DC (IEC)
+Max. series fuse: 25 A
+Junction box rating: IP68
+Pmax temperature coefficient: −0.29% / °C
+
+Technical source: https://vertexsplus.trinasolar.com/wp-content/uploads/2024/04/Datasheet_Vertex-S_NEG9R.25_EN_2024_PA_web-1.pdf
+
+Model-specific notes: Electrical values are STC. Manufacturer family rendering; installed output varies with site conditions.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

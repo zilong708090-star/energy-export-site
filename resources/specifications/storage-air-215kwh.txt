@@ -1,0 +1,29 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+100 kW / 215 kWh Air-Cooled Storage Cabinet
+Technical reference: 100 KW × 215 KWh Air-cooled Energy Storage Cabinet (supplier product family; no SKU published)
+Reviewed: 2026-10-15
+
+Rated output power: 100 kW
+Battery energy: 215 kWh
+Cell rating: 3.2 V / 280 Ah
+Battery configuration: 1P240S
+Rated DC voltage: 768 V DC
+Rated grid voltage: 230 / 400 V AC
+Grid connection: 3P + N + PE
+Maximum charge / discharge current: 176 A
+Cooling: Air cooling
+Ingress protection: IP54
+Dimensions (W × D × H): 1,450 × 1,380 × 2,260 mm
+Weight: 2,500 kg
+
+Technical source: https://www.run-strategy.com/High-Power-Air-Cooled-Energy-Storage-Cabinet-pd562369348.html
+
+Model-specific notes: No separate manufacturer SKU is published on the source page. Photo is the actual unbranded image from that product page, without generative changes. Backup operation requires confirmation of the PCS, transfer equipment and supported loads; this catalog does not claim seamless backup or a guaranteed runtime.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

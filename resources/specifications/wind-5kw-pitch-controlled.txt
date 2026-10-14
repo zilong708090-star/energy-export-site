@@ -1,0 +1,32 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+5 kW Pitch-Controlled Wind Turbine
+Technical reference: AH-5000W
+Reviewed: 2026-10-15
+
+Rated power: 5,000 W
+Maximum power: 6,500 W
+Rotor diameter: 5.6 m
+Blades: Reinforced fibreglass / 3
+Rated wind speed: 11 m/s
+Rated rotation: 240 rpm
+Working wind range: 3–30 m/s
+Start-up wind speed: 3 m/s
+Survival wind speed: 60 m/s
+DC system options: 120 / 240 V
+Speed regulation: Pitch control
+Stop method: Manual brake + pitch control
+Generator: Three-phase permanent magnet
+Turbine weight: 400 kg
+Listed tower height: 8 m
+
+Technical source: https://chinawindenergy.en.made-in-china.com/product/eouxjWcCldpI/China-Anhua-5kw-Wind-Turbine-Generator-for-Home-Use-with-CE-Certificate.html
+
+Model-specific notes: Detailed AH-5000W table used. Start-up speed differs from the page's general prose; confirm final variant. Tower, controller and inverter are separately configured.
+Image reference: Supplier installation reference from the AH-5000W listing.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

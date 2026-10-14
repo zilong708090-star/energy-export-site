@@ -1,0 +1,31 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+5.12 kWh Wall-Mounted LFP Battery
+Technical reference: PNG-E51100-LV
+Reviewed: 2026-10-15
+
+Nominal battery energy: 5.12 kWh per unit
+Battery chemistry: Lithium iron phosphate (LFP)
+Rated capacity: 100 Ah
+Nominal battery voltage: 51.2 V
+Battery voltage range: 40–58.4 V
+Cell rating: 3.2 V / 100 Ah prismatic cells
+Standard charge / discharge rate: 0.5C
+Maximum pulse charge / discharge rate: 1C
+Parallel connection: 1–8 units
+Cooling: Air cooling
+Communication: CAN / RS485
+Weight: 41 kg per unit
+Charging temperature: 0 to +55 °C
+Discharging temperature: −20 to +60 °C
+
+Technical source: https://pnsolar.en.made-in-china.com/product/bQVUNWJCbBrz/China-Wall-Mounted-Lithium-Battery-51-2V-100ah-5kwh-LiFePO4-Power-Wall-Energy-Storage-Battery.html
+
+Model-specific notes: Supplier-reference configuration; confirm inverter compatibility before ordering. The listing gives conflicting enclosure IP ratings and dimension ordering, so those fields are not reproduced. Photo is a supplier family image edited only to remove branding and overlays; enclosure appearance must be confirmed for the ordered variant. No warranty or certification claim is made.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

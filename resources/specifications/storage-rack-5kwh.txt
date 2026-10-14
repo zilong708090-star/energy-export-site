@@ -1,0 +1,32 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+5.12 kWh Rack-Mounted LFP Battery
+Technical reference: LR51.2-100 (4U), LFELI-48100HR-A-EN-V1.7-202602
+Reviewed: 2026-10-15
+
+Rated battery energy: 5.12 kWh
+Rated capacity (5HR): 100 Ah
+Nominal voltage: 51.2 V
+Discharge cut-off voltage: 43.2 V
+Maximum charge voltage: 57.6 V
+Maximum charge / discharge current: 100 A
+Rack height: 4U
+Dimensions (W × D × H): 442 × 431 × 177 mm
+Weight: Approximately 43 kg
+Ingress protection: IP31
+Communication: RS485 / RS232 / CAN
+Parallel connection: Up to 15 units
+Charging temperature: 0 to +45 °C
+Discharging temperature: −10 to +55 °C
+Cycle-life test condition: >6,000 cycles at 80% DOD, as stated in the supplier datasheet
+
+Technical source: https://www.leochlithium.com/pdf/lithium/HomeStorage/Rack-mounted/LR51.2-100%284U%29.pdf
+
+Model-specific notes: This entry uses the 4U variant only; a separate 3U product has different dimensions. Parallel quantity follows the February 2026 datasheet rather than older 40-unit literature. Supplier photo obtained from https://www.leoch.com/products/lithium/residential-rack-mounted-battery and edited only to remove the brand mark. Cycle life is a stated test condition, not a site-life guarantee.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

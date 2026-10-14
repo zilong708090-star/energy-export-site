@@ -1,0 +1,30 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+3.73 MWh Liquid-Cooled Battery Container
+Technical reference: Corey-L3.7-1500
+Reviewed: 2026-10-15
+
+Nominal battery energy: 3,727.36 kWh
+Battery chemistry: Lithium iron phosphate (LFP)
+Rated battery voltage: 1,331.2 V
+Battery voltage range: 1,164.8–1,500 V
+Container format: 20 ft
+Battery cooling: Liquid cooling
+Ingress protection: IP55
+Dimensions (W × D × H): 6,058 × 2,438 × 2,896 mm
+Weight: 37 t
+Communication interfaces: Ethernet / RS485 / CAN
+Communication protocols: Modbus TCP / Modbus RTU / CAN 2.0
+Operating humidity: 0–95% RH
+Maximum operating altitude: 2,000 m
+
+Technical source: https://szcorey.en.made-in-china.com/product/AUirMSchbtks/China-3-7MW-European-Stock-Corey-Solar-Compact-System-Lithium-Battery-Efficient-Energy-Storage-Container.html
+
+Model-specific notes: This is a DC battery-container reference, not a guaranteed complete AC system. The marketplace title incorrectly uses MW and a table labels a kWh value as power; only the separately stated nominal energy is reproduced, and no AC output power is inferred. The listing disagrees on fire-suppression detail, so that field is omitted. Exact supplier photo edited only to remove brand logos; final configuration and enclosure details require confirmation.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

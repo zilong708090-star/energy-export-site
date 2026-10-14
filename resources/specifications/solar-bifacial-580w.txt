@@ -1,0 +1,33 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+580 W Bifacial N-Type Module
+Technical reference: JKM580N-72HL4-BDV
+Reviewed: 2026-10-15
+
+Front-side maximum power at STC: 580 Wp
+Maximum power voltage (Vmp): 42.59 V
+Maximum power current (Imp): 13.62 A
+Open-circuit voltage (Voc): 51.47 V
+Short-circuit current (Isc): 14.37 A
+Front-side module efficiency at STC: 22.45%
+Power tolerance: 0 / +3%
+Cells: 144 (2 × 72)
+Dimensions: 2,278 × 1,134 × 30 mm
+Weight: 32 kg
+Front / rear glass: 2.0 / 2.0 mm
+Maximum system voltage: 1,500 V DC (IEC)
+Max. series fuse: 30 A
+Junction box rating: IP68
+Pmax temperature coefficient: −0.29% / °C
+Power bifaciality: 80 ± 5%
+
+Technical source: https://www.jinkosolar.com/uploads/JKM560-580N-72HL4-BDV-F5-EN.pdf
+
+Model-specific notes: Uses F5 revision values; later revisions differ. Family image is from the matching supplier listing; rear-side gain is not guaranteed.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

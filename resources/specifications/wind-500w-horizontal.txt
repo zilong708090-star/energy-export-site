@@ -1,0 +1,28 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+500 W Compact Wind Turbine
+Technical reference: FD1.7-500
+Reviewed: 2026-10-15
+
+Rated power: 500 W
+Rated voltage: 24 V
+Rotor diameter: 1.7 m
+Start-up wind speed: 2.5 m/s
+Rated wind speed: 12 m/s
+Blade options: 3 or 5
+Blade material: Nylon composite
+Housing: Die-cast aluminium
+Generator: Three-phase permanent magnet
+Package weight: 19.5 kg
+Packing: Carton with foam
+
+Technical source: https://chinaoulu.en.made-in-china.com/product/zwrfEZRPgoWu/China-Wholesale-Windmill-500W-Horizontal-Wind-Turbine-24V.html
+
+Model-specific notes: Supplier FD1.7-500 table used. Blade count is an option. Rated output requires 12 m/s wind; tower, controller and battery are specified separately.
+Image reference: Supplier FD-series configuration; blade options vary.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

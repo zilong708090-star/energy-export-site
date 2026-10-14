@@ -1,0 +1,32 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+6 kW Single-Phase Hybrid Inverter
+Technical reference: SUN-6K-SG04LP1-EU
+Reviewed: 2026-10-15
+
+Rated AC input / output: 6,000 W
+Nominal AC voltage: 220 / 230 V, L+N+PE
+Grid frequency: 50 / 60 Hz
+Battery voltage range: 40–60 V
+Max. charge / discharge current: 135 A
+Max. PV input power: 9,600 W
+Max. PV input voltage: 500 V
+MPPT voltage range: 150–425 V
+MPPT / strings per tracker: 2 / 1+1
+Max. conversion efficiency: 97.6%
+Ingress protection: IP65
+Communication: Wi-Fi, RS485, CAN
+Dimensions (W × H × D): 330 × 433 × 228 mm
+Weight: 17 kg
+Operating temperature: −40 to +60 °C; derating above +45 °C
+
+Technical source: https://www.deyeinverter.com/product/single-phase-low-voltage-hybrid-inverter/sun3-3-6-5-6ksg04lp1-3-6kw-single-phase.html
+
+Model-specific notes: Dimensions exclude connectors and brackets. Regional configuration must be confirmed.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

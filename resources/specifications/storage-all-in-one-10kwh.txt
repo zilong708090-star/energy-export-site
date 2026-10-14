@@ -1,0 +1,31 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+5 kW / 10.24 kWh All-in-One Solar Storage
+Technical reference: ES-ESS-BP51200
+Reviewed: 2026-10-15
+
+Rated inverter output: 5 kW
+Peak inverter output: 10,000 VA
+Nominal battery energy: 10.24 kWh
+Battery chemistry: Lithium iron phosphate (LFP)
+Nominal battery capacity: 200 Ah
+Nominal battery voltage: 51.2 V
+Battery operating voltage: 44.8–57.6 V
+Battery cell configuration: 1P16S
+Recommended charge / discharge current: 100 A
+Maximum charge / discharge current: 200 A
+PV array power limit: 5,500 W
+MPPT voltage range: 120–450 V DC
+Maximum PV charge current: 80 A
+Weight: 95 kg
+
+Technical source: https://enjoysolar.en.made-in-china.com/product/rFEaYPHgJstX/China-All-in-One-5kwh-10kwh-LiFePO4-Lithium-Ion-Cell-Lithium-Battery-Pack-with-5kw-Hybrid-Solar-Inverter-for-Residential-Solar-Battery-Storage-System.html
+
+Model-specific notes: Specifications follow the BP51200 column, not the smaller BP51100. The listing disagrees on output voltage, enclosure thickness and cooling wording; those values are omitted pending the selected variant's final datasheet. Photo is the supplier product-family image with branding removed. No transfer-time, grid-compliance or warranty guarantee is inferred.
+Image reference: Supplier model-family image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

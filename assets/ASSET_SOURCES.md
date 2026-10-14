@@ -1,5 +1,11 @@
 # External image sources
 
+## Product catalogue / Release 23
+
+The 22 catalogue records in `catalog-data/storage.json`, `inverters.json`, `solar.json` and `wind.json` provide the technical source URL, model/revision, check date and product-photo reference for each configuration. The public register is `resources/catalog-reference.html`. The catalogue does not copy marketplace stock, pricing or seller-specific commercial guarantees into Lantian claims.
+
+Built-in imagegen logo/advertising cleanup and final asset paths are recorded in `assets/CATALOG_EDIT_NOTES.md`. Numerical fields are taken from supplier technical references, not inferred from generated or edited imagery. Product-family captions and conflicting-source notes are preserved in detail pages and specification downloads.
+
 The images below are used as representative stock imagery, not as claims of completed customer projects. They were sourced from Pexels under the Pexels license and checked before use for visible watermarks and prominent company branding.
 
 - `telecom-solar.jpg` — https://www.pexels.com/photo/remote-station-with-solar-and-antenna-in-spain-34145864/

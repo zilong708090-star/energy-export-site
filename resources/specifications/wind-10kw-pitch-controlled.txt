@@ -1,0 +1,31 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+10 kW Wind-Solar Hybrid Turbine
+Technical reference: AH-10KW
+Reviewed: 2026-10-15
+
+Rated power: 10,000 W
+Maximum power: 12,000 W
+Rotor diameter: 7.78 m
+Blades: Reinforced fibreglass / 3
+Rated wind speed: 11 m/s
+Rated rotation: 180 rpm
+Working wind range: 3–30 m/s
+Start-up wind speed: 2.5 m/s
+Survival wind speed: 60 m/s
+Working DC voltage: 240 / 500 V
+Speed regulation: Pitch control
+Stop options: Manual / automatic electrical brake
+Generator: Three-phase permanent magnet
+Turbine weight: 450 kg
+
+Technical source: https://chinawindenergy.en.made-in-china.com/product/IXrQWaoDblVs/China-10kw-Wind-Turbine-Generator-for-Home-or-Farm-Use.html
+
+Model-specific notes: AH-10KW model table used. Survival wind speed is a supplier design claim, not continuous operating wind. Tower engineering and electrical interfaces require project verification.
+Image reference: Supplier hybrid-site reference from the AH-10KW listing.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

@@ -1,0 +1,584 @@
+{
+  "category": "inverters",
+  "items": [
+    {
+      "id": "inverter-off-grid-5kw",
+      "category": "inverters",
+      "subcategory": "off-grid",
+      "subcategoryLabel": "Off-grid inverters",
+      "name": "5 kW Off-Grid Solar Inverter",
+      "headlineSpecs": [
+        {
+          "label": "AC output",
+          "value": "5 kW"
+        },
+        {
+          "label": "Battery",
+          "value": "40–60 V"
+        },
+        {
+          "label": "MPPT trackers",
+          "value": "2"
+        },
+        {
+          "label": "Protection",
+          "value": "IP65"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Rated AC output",
+          "value": "5,000 W"
+        },
+        {
+          "label": "Output voltage",
+          "value": "230 V, L+N+PE"
+        },
+        {
+          "label": "Output frequency",
+          "value": "50 / 60 Hz"
+        },
+        {
+          "label": "Battery voltage range",
+          "value": "40–60 V"
+        },
+        {
+          "label": "Max. charge / discharge current",
+          "value": "120 A"
+        },
+        {
+          "label": "Max. PV input power",
+          "value": "8,000 W"
+        },
+        {
+          "label": "Max. PV input voltage",
+          "value": "500 V"
+        },
+        {
+          "label": "MPPT voltage range",
+          "value": "150–425 V"
+        },
+        {
+          "label": "MPPT / strings per tracker",
+          "value": "2 / 1+1"
+        },
+        {
+          "label": "Peak output",
+          "value": "2 × rated power for 10 s"
+        },
+        {
+          "label": "Max. conversion efficiency",
+          "value": "97.6%"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP65"
+        },
+        {
+          "label": "Dimensions (W × H × D)",
+          "value": "323 × 424 × 176 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "8.6 kg"
+        },
+        {
+          "label": "Operating temperature",
+          "value": "−40 to +60 °C; derating above +45 °C"
+        }
+      ],
+      "summary": "A compact conversion platform for battery-backed solar supply where grid connection is limited. Plan selected loads, battery capacity and PV string voltage together before defining the final installation.",
+      "features": [
+        "Dedicated grid and generator inputs",
+        "Lithium-ion or lead-acid battery support",
+        "Wi-Fi / Bluetooth, RS485 and CAN interfaces"
+      ],
+      "applications": [
+        "Remote homes",
+        "Farm buildings",
+        "Selected-load backup"
+      ],
+      "image": {
+        "src": "assets/catalog-inverter-off-grid.jpg",
+        "alt": "5 kW Off-Grid Solar Inverter product-family view",
+        "sourceUrl": "https://www.deyeinverter.com/deyeinverter/2026/08/21/8U1gV-cC4e.png"
+      },
+      "gallery": [
+        {
+          "src": "assets/catalog-inverter-off-grid-original.png",
+          "alt": "Off-grid inverter family side view"
+        }
+      ],
+      "source": {
+        "title": "Deye — official off-grid inverter specifications",
+        "url": "https://www.deyeinverter.com/product/offgrid-inverter/SUN3-3-6-5-6KOG02LP1EUAM1.html",
+        "model": "SUN-5K-OG03LP1-EU-AM2",
+        "checked": "2026-10-15"
+      },
+      "notes": "Specifications refer to the exact listed model; photograph shows its manufacturer product family."
+    },
+    {
+      "id": "inverter-single-hybrid-6kw",
+      "category": "inverters",
+      "subcategory": "single-phase-hybrid",
+      "subcategoryLabel": "Single-phase hybrid",
+      "name": "6 kW Single-Phase Hybrid Inverter",
+      "headlineSpecs": [
+        {
+          "label": "AC output",
+          "value": "6 kW"
+        },
+        {
+          "label": "Battery",
+          "value": "40–60 V"
+        },
+        {
+          "label": "MPPT trackers",
+          "value": "2"
+        },
+        {
+          "label": "Protection",
+          "value": "IP65"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Rated AC input / output",
+          "value": "6,000 W"
+        },
+        {
+          "label": "Nominal AC voltage",
+          "value": "220 / 230 V, L+N+PE"
+        },
+        {
+          "label": "Grid frequency",
+          "value": "50 / 60 Hz"
+        },
+        {
+          "label": "Battery voltage range",
+          "value": "40–60 V"
+        },
+        {
+          "label": "Max. charge / discharge current",
+          "value": "135 A"
+        },
+        {
+          "label": "Max. PV input power",
+          "value": "9,600 W"
+        },
+        {
+          "label": "Max. PV input voltage",
+          "value": "500 V"
+        },
+        {
+          "label": "MPPT voltage range",
+          "value": "150–425 V"
+        },
+        {
+          "label": "MPPT / strings per tracker",
+          "value": "2 / 1+1"
+        },
+        {
+          "label": "Max. conversion efficiency",
+          "value": "97.6%"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP65"
+        },
+        {
+          "label": "Communication",
+          "value": "Wi-Fi, RS485, CAN"
+        },
+        {
+          "label": "Dimensions (W × H × D)",
+          "value": "330 × 433 × 228 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "17 kg"
+        },
+        {
+          "label": "Operating temperature",
+          "value": "−40 to +60 °C; derating above +45 °C"
+        }
+      ],
+      "summary": "Combine rooftop generation, a low-voltage battery and single-phase site loads in one hybrid platform. A practical starting point for homes and smaller commercial sites seeking flexible energy use.",
+      "features": [
+        "AC coupling for existing solar systems",
+        "Six scheduled battery charging / discharging periods",
+        "Supports energy storage from a diesel generator"
+      ],
+      "applications": [
+        "Residential rooftops",
+        "Small retail premises",
+        "Single-phase backup systems"
+      ],
+      "image": {
+        "src": "assets/catalog-inverter-single-phase.jpg",
+        "alt": "6 kW Single-Phase Hybrid Inverter product-family view",
+        "sourceUrl": "https://www.deyeinverter.com/deyeinverter/2025/05/29/3-1.png"
+      },
+      "gallery": [
+        {
+          "src": "assets/catalog-inverter-single-phase-original.png",
+          "alt": "Single-phase inverter family underside connections"
+        }
+      ],
+      "source": {
+        "title": "Deye — official single-phase hybrid specifications",
+        "url": "https://www.deyeinverter.com/product/single-phase-low-voltage-hybrid-inverter/sun3-3-6-5-6ksg04lp1-3-6kw-single-phase.html",
+        "model": "SUN-6K-SG04LP1-EU",
+        "checked": "2026-10-15"
+      },
+      "notes": "Dimensions exclude connectors and brackets. Regional configuration must be confirmed."
+    },
+    {
+      "id": "inverter-three-hybrid-12kw",
+      "category": "inverters",
+      "subcategory": "three-phase-hybrid",
+      "subcategoryLabel": "Three-phase hybrid",
+      "name": "12 kW Three-Phase Hybrid Inverter",
+      "headlineSpecs": [
+        {
+          "label": "AC output",
+          "value": "12 kW"
+        },
+        {
+          "label": "Battery",
+          "value": "40–60 V"
+        },
+        {
+          "label": "MPPT trackers",
+          "value": "2"
+        },
+        {
+          "label": "Phase",
+          "value": "Three-phase"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Rated AC input / output",
+          "value": "12,000 W"
+        },
+        {
+          "label": "Nominal AC voltage",
+          "value": "220 / 380 V or 230 / 400 V"
+        },
+        {
+          "label": "Grid frequency",
+          "value": "50 / 60 Hz"
+        },
+        {
+          "label": "Battery voltage range",
+          "value": "40–60 V"
+        },
+        {
+          "label": "Max. charge / discharge current",
+          "value": "240 A"
+        },
+        {
+          "label": "Max. PV input power",
+          "value": "19,200 W"
+        },
+        {
+          "label": "Max. PV input voltage",
+          "value": "800 V"
+        },
+        {
+          "label": "MPPT voltage range",
+          "value": "200–650 V"
+        },
+        {
+          "label": "MPPT / strings per tracker",
+          "value": "2 / 2+2"
+        },
+        {
+          "label": "Max. conversion efficiency",
+          "value": "97.6%"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP65"
+        },
+        {
+          "label": "Communication",
+          "value": "Wi-Fi, RS485, CAN"
+        },
+        {
+          "label": "Dimensions (W × H × D)",
+          "value": "386 × 660 × 250 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "35.2 kg"
+        },
+        {
+          "label": "Cooling",
+          "value": "Intelligent air cooling"
+        }
+      ],
+      "summary": "A low-voltage battery hybrid platform for three-phase properties. Coordinate solar production, battery scheduling and the distribution of site loads to build an installation around real operating requirements and priorities.",
+      "features": [
+        "Three-phase unbalanced output support",
+        "AC coupling for solar retrofit projects",
+        "Six scheduled battery charging / discharging periods"
+      ],
+      "applications": [
+        "Commercial premises",
+        "Three-phase homes",
+        "Agricultural facilities"
+      ],
+      "image": {
+        "src": "assets/catalog-inverter-three-phase.jpg",
+        "alt": "12 kW Three-Phase Hybrid Inverter product-family view",
+        "sourceUrl": "https://www.deyeinverter.com/deyeinverter/2025/10/14/12.png"
+      },
+      "gallery": [
+        {
+          "src": "assets/catalog-inverter-three-phase-original.png",
+          "alt": "Three-phase hybrid inverter family side view"
+        }
+      ],
+      "source": {
+        "title": "Deye — official three-phase LV hybrid specifications",
+        "url": "https://www.deyeinverter.com/product/three-phase-hybrid-inverter-1/sun3-4-5-6-8-10-12ksg05lp3eusm2-312kw-three-phase-2-mppt-hybrid-inverter-lv-battery-supported.html",
+        "model": "SUN-12K-SG05LP3-EU-SM2",
+        "checked": "2026-10-15"
+      },
+      "notes": "Dimensions exclude connectors and brackets; output distribution limits require project review."
+    },
+    {
+      "id": "inverter-commercial-hybrid-50kw",
+      "category": "inverters",
+      "subcategory": "commercial-hybrid",
+      "subcategoryLabel": "Commercial hybrid",
+      "name": "50 kW High-Voltage Hybrid Inverter",
+      "headlineSpecs": [
+        {
+          "label": "AC output",
+          "value": "50 kW"
+        },
+        {
+          "label": "Battery",
+          "value": "160–800 V"
+        },
+        {
+          "label": "MPPT trackers",
+          "value": "4"
+        },
+        {
+          "label": "Phase",
+          "value": "Three-phase"
+        }
+      ],
+      "specs": [
+        {
+          "label": "Rated AC input / output",
+          "value": "50,000 W"
+        },
+        {
+          "label": "Nominal AC voltage",
+          "value": "220 / 380 V or 230 / 400 V"
+        },
+        {
+          "label": "Grid frequency",
+          "value": "50 / 60 Hz"
+        },
+        {
+          "label": "Battery voltage range",
+          "value": "160–800 V"
+        },
+        {
+          "label": "Max. charge / discharge current",
+          "value": "50 + 50 A"
+        },
+        {
+          "label": "Battery inputs",
+          "value": "2"
+        },
+        {
+          "label": "Max. PV input power",
+          "value": "80,000 W"
+        },
+        {
+          "label": "Max. PV input voltage",
+          "value": "1,000 V"
+        },
+        {
+          "label": "MPPT voltage range",
+          "value": "150–850 V"
+        },
+        {
+          "label": "MPPT / strings per tracker",
+          "value": "4 / 2+2+2+2"
+        },
+        {
+          "label": "Max. continuous AC passthrough",
+          "value": "200 A"
+        },
+        {
+          "label": "Max. conversion efficiency",
+          "value": "97.6%"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP65"
+        },
+        {
+          "label": "Dimensions (W × H × D)",
+          "value": "527 × 894 × 294 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "80 kg"
+        },
+        {
+          "label": "Cooling",
+          "value": "Intelligent air cooling"
+        }
+      ],
+      "summary": "A three-phase hybrid platform for larger sites using high-voltage batteries. Bring solar conversion and storage control together while checking the complete electrical architecture, protection design and backup strategy for each project.",
+      "features": [
+        "Two high-voltage battery inputs",
+        "AC coupling for solar retrofit projects",
+        "Six scheduled battery charging / discharging periods"
+      ],
+      "applications": [
+        "Industrial facilities",
+        "Commercial buildings",
+        "Solar-storage projects"
+      ],
+      "image": {
+        "src": "assets/catalog-inverter-commercial-hybrid.jpg",
+        "alt": "50 kW High-Voltage Hybrid Inverter product-family view",
+        "sourceUrl": "https://www.deyeinverter.com/deyeinverter/2025/05/30/15.png"
+      },
+      "gallery": [],
+      "source": {
+        "title": "Deye — official high-voltage hybrid specifications",
+        "url": "https://www.deyeinverter.com/product/three-phase-high-voltage-hybrid-inverter/sun29-9-30-35-40-50ksg01hp3eubm3-4-29-950kw-three-phase-2-3-4-mppt-hybrid-inverter-hv-battery-supported-339.html",
+        "model": "SUN-50K-SG01HP3-EU-BM4",
+        "checked": "2026-10-15"
+      },
+      "notes": "Battery compatibility, transfer architecture and local grid acceptance require project-specific confirmation."
+    },
+    {
+      "id": "inverter-grid-string-50kw",
+      "category": "inverters",
+      "subcategory": "grid-tied",
+      "subcategoryLabel": "Grid-tied string inverters",
+      "name": "50 kW Commercial String Inverter",
+      "headlineSpecs": [
+        {
+          "label": "AC output",
+          "value": "50 kW"
+        },
+        {
+          "label": "Max. PV input",
+          "value": "65 kW"
+        },
+        {
+          "label": "MPPT trackers",
+          "value": "4"
+        },
+        {
+          "label": "Efficiency",
+          "value": "98.7% max."
+        }
+      ],
+      "specs": [
+        {
+          "label": "Rated AC output",
+          "value": "50 kW"
+        },
+        {
+          "label": "Max. AC apparent power",
+          "value": "55 kVA"
+        },
+        {
+          "label": "Nominal AC voltage",
+          "value": "220 / 380 V or 230 / 400 V"
+        },
+        {
+          "label": "Grid frequency",
+          "value": "50 / 60 Hz"
+        },
+        {
+          "label": "Max. PV input power",
+          "value": "65 kW"
+        },
+        {
+          "label": "Max. PV input voltage",
+          "value": "1,100 V"
+        },
+        {
+          "label": "MPPT voltage range",
+          "value": "200–1,000 V"
+        },
+        {
+          "label": "MPPT / strings per tracker",
+          "value": "4 / 3+3+3+3"
+        },
+        {
+          "label": "Max. conversion efficiency",
+          "value": "98.7%"
+        },
+        {
+          "label": "Euro efficiency",
+          "value": "98.1%"
+        },
+        {
+          "label": "Ingress protection",
+          "value": "IP65"
+        },
+        {
+          "label": "Communication",
+          "value": "RS485 / RS232"
+        },
+        {
+          "label": "Dimensions (W × H × D)",
+          "value": "434 × 570 × 243 mm"
+        },
+        {
+          "label": "Weight",
+          "value": "39 kg"
+        },
+        {
+          "label": "Cooling",
+          "value": "Intelligent air cooling"
+        }
+      ],
+      "summary": "Convert larger rooftop or ground-mounted solar arrays into grid-connected three-phase power. Multiple trackers support different array sections; this string inverter is not a standalone battery-backup system for grid outages.",
+      "features": [
+        "Four independent MPPT trackers",
+        "Integrated anti-islanding protection",
+        "Optional string monitoring and anti-PID functions"
+      ],
+      "applications": [
+        "Commercial rooftops",
+        "Factory rooftops",
+        "Ground-mounted PV arrays"
+      ],
+      "image": {
+        "src": "assets/catalog-inverter-grid.jpg",
+        "alt": "50 kW Commercial String Inverter product-family view",
+        "sourceUrl": "https://www.deyeinverter.com/deyeinverter/2025/05/30/8-1.png"
+      },
+      "gallery": [
+        {
+          "src": "assets/catalog-inverter-grid-original.png",
+          "alt": "String inverter family underside connections"
+        }
+      ],
+      "source": {
+        "title": "Deye — official commercial string inverter specifications",
+        "url": "https://www.deyeinverter.com/product/three-phase-string-inverter/sun40-45-50kg04-4050kw-three-phase-4-mppt.html",
+        "model": "SUN-50K-G04",
+        "checked": "2026-10-15"
+      },
+      "notes": "Grid-connected inverter; it does not independently supply outage backup. Optional functions must be ordered."
+    }
+  ]
+}

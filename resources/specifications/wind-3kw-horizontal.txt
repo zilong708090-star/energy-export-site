@@ -1,0 +1,30 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+3 kW Distributed Wind Turbine
+Technical reference: GH-3KW
+Reviewed: 2026-10-15
+
+Rated power: 3,000 W
+Start wind speed: 3 m/s
+Rated wind speed: 9 m/s
+Working wind range: 4–25 m/s
+Safety wind speed: 50 m/s
+Rotor diameter: 4.6 m
+Blades: Reinforced fibreglass
+Turbine weight: 130 kg
+Tower options: 8 / 12 m
+Generator: Direct-drive, three-phase permanent magnet
+Rated rotation: 240 rpm
+Voltage options: 48–380 V DC
+Protection grade: IP54
+
+Technical source: https://www.greef-energy.com/china-suppliers-greef-1kw-30kw-horizontal-axis-wind-turbine-factory-for-efficient-clean-energy-solutions-product/
+
+Model-specific notes: GH-3KW column used. The page's general prose differs from its model table; fibreglass, wind range and voltage follow that table. Confirm the current drawing and power curve.
+Image reference: GH-series supplier rendering; not a scale drawing of GH-3KW.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

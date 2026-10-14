@@ -1,0 +1,31 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+1.5 kW Farm & Remote-Site Turbine
+Technical reference: NE-1500 M8
+Reviewed: 2026-10-15
+
+Rated power: 1,500 W
+Peak power: 1,700 W
+Rotor diameter: 2.3 m
+Start-up wind speed: 2 m/s
+Survival wind speed: 30 m/s
+Rated speed: 333 rpm
+Blade material / number: Reinforced fibreglass / 3
+Blade length: 1,080 mm
+Housing: Cast aluminium alloy
+Generator: Three-phase AC permanent magnet
+Protection: Electromagnetic brake
+Voltage options: 24 / 48 V
+Weight: 32 kg
+Suggested tower: 6 m guyed tower
+
+Technical source: https://wxnaiermic.en.made-in-china.com/product/idDtocyvywVU/China-1500W-Small-Wind-Generator-Manufacturer.html
+
+Model-specific notes: The source gives inconsistent working-wind ranges (3–15 and 4–15 m/s); confirm the power curve. Rated wind speed is not stated. Voltage follows the detailed table.
+Image reference: Supplier installation reference for the NE-1500 M8 listing.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

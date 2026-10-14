@@ -1,0 +1,29 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+2.5 kW H-Type Vertical Wind Turbine
+Technical reference: NE-2500H
+Reviewed: 2026-10-15
+
+Rated power: 2,500 W
+Maximum power: 2,700 W
+Rated voltage: 48 / 96 V
+Start-up wind speed: 2 m/s
+Rated wind speed: 12 m/s
+Survival wind speed: 35 m/s
+Rotor diameter: 1.8 m
+Rotor height: 3.6 m
+Blade material: Aluminium alloy
+Blade count: 5
+Generator: Three-phase permanent magnet AC
+Control: Electromagnetic
+
+Technical source: https://bessent.en.made-in-china.com/product/KxnrBDFbrhkZ/China-2-5kw-Three-Phase-Vertical-Axis-Wind-Turbine-Generator.html
+
+Model-specific notes: NE-2500H table column used. Starting rotation at 2 m/s does not mean rated generation. Request an independently verified power curve before final selection.
+Image reference: NE-H-series supplier configuration; confirm NE-2500H dimensions against the drawing.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

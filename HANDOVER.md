@@ -1,10 +1,11 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 22
+# Shandong Lantian Energy Technology Co., Ltd. — Release 23
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
 
 ## Delivered pages
 
 - Homepage: `index.html`
+- Complete product catalogue: `products/index.html`
 - Battery storage: `products/energy-storage.html`
 - Inverters: `products/inverters.html`
 - Solar PV modules: `products/solar-modules.html`
@@ -13,6 +14,19 @@ Public website: https://zilong708090-star.github.io/energy-export-site/
 - Hybrid power guide: `resources/hybrid-power.html`
 - Export project checklist: `resources/project-checklist.html`
 - Downloadable project brief: `resources/project-brief-template.txt`
+- Twenty-two individual product configurations: `products/details/*.html`
+- Twenty-two downloadable technical selection summaries: `resources/specifications/*.txt`
+- Technical source register: `resources/catalog-reference.html`
+
+## Product catalogue delivery
+
+The website now has 32 static HTML pages. The four homepage product families lead to category directories, with subcategory filters, unit/model search and a three-product comparison tool. Each configuration has local product photography, 8+ source-verified technical fields, a specification download, application starting points, source/model notes and a direct WhatsApp quotation link. The directory includes 6 storage, 5 inverter, 5 solar and 6 wind configurations (22 total). Homepage hero/carousel and the company section remain unchanged.
+
+The previous four generic product marketing pages have been replaced by these category directories while preserving their public URLs. A new complete-catalogue link is available beside the four-family homepage display and in the footer. The source register and model-specific caveats distinguish reviewed supplier data from any claim of Lantian manufacture, current inventory, pricing, warranty or certified compatibility.
+
+Catalogue data is maintained in `catalog-data/{storage,inverters,solar,wind}.json`. Generated HTML, TXT downloads and sitemap can be rebuilt with `node scripts/build-catalog.mjs`. Run `node scripts/check-catalog.mjs` for schema, static specification, image-caption, download-note, internal-link and sitemap checks. Category search/comparison and product image enlargement are in `catalog.js`; catalogue-only styling is in `catalog.css`. No package installation or server backend is required.
+
+Image-edit provenance and final asset paths are documented in `assets/CATALOG_EDIT_NOTES.md`. Original/rejected source images are retained outside the publishable checkout; only reviewed clean versions are referenced by the website.
 
 ## Visitor experience
 
