@@ -1,4 +1,4 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 20
+# Shandong Lantian Energy Technology Co., Ltd. — Release 21
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
 
@@ -16,17 +16,19 @@ Public website: https://zilong708090-star.github.io/energy-export-site/
 
 ## Visitor experience
 
-The homepage includes the existing automatic/manual carousel, four product categories, system architecture selector, six application scenarios, a six-photo image viewer, engineering, production, inventory, verification, export packing, quotation process, project support, buyer resources, WhatsApp project briefing and FAQ.
+The homepage includes the existing automatic/manual carousel, a company overview before the product section, an undated business-development direction, four product categories, system architecture selector, six application scenarios, a six-photo image viewer, engineering, production, inventory, verification, export packing, quotation process, project support, buyer resources, a prominent direct WhatsApp contact panel and FAQ.
+
+The company introduction uses the approved name and product scope. The development section is explicitly labelled as development direction rather than historical milestones. Founding dates and dated company milestones are still awaiting owner-provided information; none have been invented.
 
 Each product page includes a dedicated product/installation hero, application information, four-image detail gallery, technical buying questions and direct WhatsApp contact. The resource pages provide linked contents, practical procurement information and a downloadable project brief.
 
-The company name is displayed in English as Shandong Lantian Energy Technology Co., Ltd. across page headers, footers and browser titles. No graphical logo has been added. All contact buttons use WhatsApp +86 152 2422 0207. The project form prepares a WhatsApp message locally; it does not collect information in a website database. The visitor confirms sending in WhatsApp.
+The company name is displayed in English as Shandong Lantian Energy Technology Co., Ltd. across page headers, footers and browser titles. No graphical logo has been added. All contact buttons use WhatsApp +86 152 2422 0207. The homepage information form has been removed entirely. Application links now open WhatsApp directly with a short, context-specific inquiry, and the labelled floating WhatsApp button remains available over the product section. It hides only while the large WhatsApp contact card is in view, to avoid covering that card on phones. No website form or database collects visitor information; visitors choose whether to send the prepared message within WhatsApp.
 
 ## Maintaining the website
 
 - Edit homepage content in `index.html`.
 - Edit page layouts and responsive appearance in `styles.css`.
-- Edit carousel, image viewer and form behaviour in `app.js`.
+- Edit carousel, image viewer and navigation behaviour in `app.js`.
 - Images are local in `assets/`; image provenance is recorded in `assets/ASSET_SOURCES.md`.
 - When adding or renaming a page, update `sitemap.xml` and relevant navigation links.
 - Bump the CSS/JS `?v=` values across all pages when changing those shared files.

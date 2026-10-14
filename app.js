@@ -242,13 +242,13 @@ if ("IntersectionObserver" in window) {
   qa(".reveal").forEach(el => el.classList.add("is-visible"));
 }
 
-const productSection = q("#products");
+const whatsappContact = q(".whatsapp-contact");
 const whatsappFloat = q(".whatsapp-float");
-if (productSection && whatsappFloat && "IntersectionObserver" in window) {
-  const productFloatObserver = new IntersectionObserver(([entry]) => {
-    whatsappFloat.classList.toggle("is-over-products", entry.isIntersecting);
-  }, { rootMargin: "-72px 0px -72px", threshold: .02 });
-  productFloatObserver.observe(productSection);
+if (whatsappContact && whatsappFloat && "IntersectionObserver" in window) {
+  const contactObserver = new IntersectionObserver(([entry]) => {
+    whatsappFloat.classList.toggle("is-at-contact", entry.isIntersecting && entry.intersectionRatio >= .15);
+  }, { threshold: [0, .15] });
+  contactObserver.observe(whatsappContact);
 }
 
 qa("[data-solution]").forEach(tab => {
@@ -263,44 +263,6 @@ qa("[data-solution]").forEach(tab => {
     q("#solution-benefits").innerHTML = item.benefits.map(value => `<li>${value}</li>`).join("");
   });
 });
-
-qa(".application-select").forEach(button => {
-  button.addEventListener("click", () => {
-    const interest = q("#interest");
-    const application = q("#application");
-    const brief = q("#brief");
-    if (!interest || !application || !brief) return;
-    interest.value = button.dataset.interestChoice || "Integrated Hybrid System";
-    application.value = button.dataset.applicationChoice || "";
-    brief.scrollIntoView({ behavior: "smooth", block: "start" });
-  });
-});
-
-const projectForm = q("#project-form");
-if (projectForm) {
-  projectForm.addEventListener("submit", event => {
-    event.preventDefault();
-    const data = new FormData(event.currentTarget);
-    const interest = data.get("interest");
-    const application = data.get("application");
-    if (!interest || !application) {
-      event.currentTarget.reportValidity();
-      return;
-    }
-    const lines = [
-      "Hello, I'd like to discuss an energy project.",
-      "",
-      `Product: ${interest}`,
-      `Application: ${application}`,
-      `Country / market: ${data.get("market") || "To be confirmed"}`,
-      `Target size: ${data.get("scale") || "To be confirmed"}`,
-      `Grid mode: ${data.get("grid-mode") || "To be confirmed"}`,
-      `Installation environment: ${data.get("environment") || "To be confirmed"}`,
-      `Notes: ${data.get("details") || "No additional notes yet"}`
-    ];
-    window.open(`https://wa.me/8615224220207?text=${encodeURIComponent(lines.join("\n"))}`, "_blank", "noopener");
-  });
-}
 
 const photoDialog = q("#photo-dialog");
 if (photoDialog && typeof photoDialog.showModal === "function") {
