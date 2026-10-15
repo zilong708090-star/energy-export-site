@@ -158,7 +158,8 @@ button { color: inherit; }
 .statement { position: relative; isolation: isolate; overflow: hidden; background: #0a1727; color: #fff; }
 .statement::before { content: ""; position: absolute; inset: 0; z-index: -2; background-image: linear-gradient(rgba(255,255,255,.038) 1px, transparent 1px), linear-gradient(90deg, rgba(255,255,255,.038) 1px, transparent 1px); background-size: 88px 88px; -webkit-mask-image: linear-gradient(to bottom, transparent, #000 16%, #000 88%, transparent); mask-image: linear-gradient(to bottom, transparent, #000 16%, #000 88%, transparent); }
 .statement::after { content: ""; position: absolute; inset: 0; z-index: -1; background: radial-gradient(circle at 8% 30%, rgba(186,255,74,.12), transparent 24%), radial-gradient(circle at 92% 74%, rgba(78,215,232,.1), transparent 25%); pointer-events: none; }
-.statement .shell { position: relative; width: min(1760px, calc(100vw - 64px)); }
+/* Align the product range with the same reading width as every section below the hero. */
+.statement .shell { position: relative; }
 .statement .statement__head { grid-template-columns: 1fr; gap: 26px; margin-bottom: clamp(34px, 4vw, 48px); }
 .statement .statement__head > .text-link { justify-self: start; }
 .statement .display { max-width: 980px; }
@@ -524,9 +525,9 @@ button { color: inherit; }
 .product-card--cutout.product-card--full-turbine { background: #e9f2fa; }
 .product-card--cutout.product-card--full-turbine img { height: 78%; object-fit: contain; object-position: center; padding: 0 10px; filter: none; }
 .product-card--cutout.product-card--full-turbine::before, .product-card--cutout.product-card--full-turbine:hover::before { background: linear-gradient(180deg,transparent 69%,rgba(7,17,31,.1) 75%,#07111f 83%); }
-@media (min-width:1051px) and (max-width:1400px) {
+@media (min-width:1181px) {
   .product-card__name { left: 22px; right: 22px; gap: 12px; }
-  .product-card__name strong { font-size: 25px; }
+  .product-card__name strong { font-size: clamp(24px, 1.55vw, 28px); }
   .product-card__name i { flex-basis: 40px; width: 40px; height: 40px; }
 }
 .production-detail { display: grid; grid-template-columns: .85fr 1.15fr; margin-top: 16px; border: 1px solid var(--line); background: #fff; }
@@ -705,7 +706,6 @@ button { color: inherit; }
 }
 
 @media (max-width: 1180px) {
-  .statement .shell { width: min(1120px, calc(100vw - 48px)); }
   .product-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
   .product-card { min-height: 410px; }
   .product-card__name strong { font-size: clamp(31px, 4vw, 44px); }
@@ -834,7 +834,6 @@ button { color: inherit; }
   .whatsapp-contact__number { font-size: 25px; }
   .whatsapp-float--labelled { padding: 12px 15px; min-height: 50px; right: 16px; gap: 8px; }
   .whatsapp-float__label { font-size: 12px; }
-  .statement .shell { width: calc(100vw - 32px); }
   .statement .statement__head { margin-bottom: 38px; }
   .product-grid { grid-template-columns: 1fr; }
   .product-card { min-height: 340px; }
