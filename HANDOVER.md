@@ -1,12 +1,12 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 26
+# Shandong Lantian Energy Technology Co., Ltd. — Release 27
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
 
-## Release 26 — consistent homepage content width
+## Release 27 — larger homepage side margins
 
-The homepage hero/carousel, navigation, slide copy and media positioning remain unchanged. All content below the hero now uses the same centered `.shell` as the hospital/supermarket application section. The product range no longer overrides that container with an extra-wide 1760px layout or separate tablet/mobile widths. On a 1800px viewport, all 17 below-hero/footer containers are 1280px wide with equal 260px margins; full-width section backgrounds are intentionally retained. Four-column product titles and arrows are scaled to fit the narrower cards without changing category names, images or links. Tablet and phone layouts retain two and one product columns respectively.
+The homepage hero/carousel, navigation, slide copy and media positioning remain unchanged. All 17 content containers below the hero, including the footer, now use a narrower homepage-only frame: `clamp(940px, 72vw, 1120px)` above 1050px. On a 1440px viewport this yields a 1036.8px content area with approximately 201.6px / 14% margins on each side, instead of the previous 80px / 5.6%. On a 1800px viewport the content is capped at 1120px with 340px margins. Full-width section backgrounds are retained. The `.home-page` scope leaves product/resource pages and the hero/header unaffected. Below-hero display headings and four-column product labels/arrows are adapted to the narrower frame; category names, images and links are unchanged. At 1051–1350px, product cards remain two columns and engineering uses a stacked layout. The 940px lower bound avoids a width jump at the existing 1050px tablet breakpoint; phones keep their existing 16px gutters.
 
-Desktop, laptop, tablet and phone browser checks confirm aligned section edges and no horizontal page or product-name overflow. The hero's width, height, content width, heading size and top padding match the previous release at the same viewport. Shared asset cache tags are now `26.1`.
+Browser checks at 1800, 1440, 1351, 1350, 1181, 1051, 1050 and 390px confirm aligned section edges and no horizontal page or text overflow. Hero markup is unchanged; on the 1440px test its 1440px width, 980px height and 1280px content frame remain intact. Shared asset cache tags are now `27.1`.
 
 ## Delivered pages
 
