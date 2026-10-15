@@ -22,7 +22,7 @@
 .catalog-hero__visual--equipment::after { background: linear-gradient(0deg,#0a1727 0%,rgba(10,23,39,.94) 12%,transparent 43%); }
 .catalog-hero__visual--equipment figcaption { bottom: 22px; }
 .catalog-hero__visual--equipment figcaption strong { font-size: 25px; }
-.catalog-hero__visual--full-turbine { background: #e9f2fa; }
+.catalog-hero__visual--full-turbine { background: #fff; }
 .catalog-hero__visual--full-turbine > img { height: 100%; padding: 12px 12px 100px; object-fit: contain; object-position: center; }
 .catalog-hero__visual--full-turbine::after { background: linear-gradient(0deg,#0a1727 0%,rgba(10,23,39,.95) 16%,transparent 27%); }
 .catalog-storage-nav { background: #15283a; color: #fff; border-top: 1px solid rgba(255,255,255,.14); }

@@ -5,8 +5,9 @@ import { fileURLToPath } from 'node:url';
 // The JSON records are the reviewed source of truth. Generated pages are static,
 // searchable without JavaScript and reproducible with this one command.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const version = '27.1';
+const version = '28.1';
 const reviewed = '2026-10-15';
+const updated = '2026-10-16';
 const origin = 'https://zilong708090-star.github.io/energy-export-site/';
 const categories = [
   {id:'storage',file:'energy-storage.html',label:'Energy storage',title:'Energy storage.<br><em>Choose your scale.</em>',description:'From compact battery storage to integrated commercial cabinets. Explore energy capacity, electrical interfaces and equipment format before choosing a configuration.',image:'assets/supplier-storage-internals.webp',imageAlt:'Open battery cabinets showing the internal storage equipment',guide:'resources/storage-planning.html',questions:['Nominal versus usable energy','Charge and discharge power','Battery voltage and inverter compatibility','Indoor or outdoor installation']},
@@ -159,7 +160,7 @@ outputs.set('products/small-wind.html',redirectPage('products/small-wind.html','
 const register=`<section class="catalog-hub catalog-register-hero"><div class="shell">${crumbs('../')}<p class="eyebrow">TECHNICAL REFERENCE REGISTER</p><h1>Know the source.<br><em>Confirm the scope.</em></h1><p>Reference documents behind the product catalogue. Equipment selection remains subject to final model, compatibility, documentation and quotation review.</p></div></section><section class="section catalog-register"><div class="shell"><table class="catalog-spec-table"><caption>Reviewed product references — ${reviewed}</caption><thead><tr><th scope="col">Product</th><th scope="col">Technical model reference</th><th scope="col">Original source</th></tr></thead><tbody>${all.map(item=>`<tr><th scope="row"><a href="../${detailFile(item)}">${esc(clean(item.name))} ↗</a></th><td>${esc(model(item))}</td><td><a href="${esc(item.source.url)}" target="_blank" rel="noopener">${esc(item.source.title || 'Supplier reference')} ↗</a></td></tr>`).join('')}</tbody></table></div></section>`;
 outputs.set('resources/catalog-reference.html',page('resources/catalog-reference.html','Product technical reference register','Technical sources for the energy equipment selection catalogue.',register,'../'));
 const urls=['','products/index.html',...directories.map(category=>'products/'+category.file),...all.map(detailFile),'resources/storage-planning.html','resources/hybrid-power.html','resources/project-checklist.html','resources/catalog-reference.html'];
-outputs.set('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(url=>`  <url><loc>${origin+url}</loc><lastmod>${reviewed}</lastmod></url>`).join('\n')+'\n</urlset>\n');
+outputs.set('sitemap.xml','<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'+urls.map(url=>`  <url><loc>${origin+url}</loc><lastmod>${updated}</lastmod></url>`).join('\n')+'\n</urlset>\n');
 if (process.argv.includes('--patch')) {
   let patch='*** Begin Patch\n';
   for (const [relative,content] of outputs) {

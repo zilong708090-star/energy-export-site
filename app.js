@@ -273,7 +273,8 @@ qa("[data-solution]").forEach(tab => {
 
 const photoDialog = q("#photo-dialog");
 if (photoDialog && typeof photoDialog.showModal === "function") {
-  const collection = qa(".reference-shot");
+  const galleryFigures = qa(".reference-shot, [data-photo-group]");
+  let collection = [];
   let photoIndex = 0;
   const showPhoto = index => {
     photoIndex = (index + collection.length) % collection.length;
@@ -285,17 +286,25 @@ if (photoDialog && typeof photoDialog.showModal === "function") {
     q("#photo-dialog-title", photoDialog).textContent = q("figcaption strong", figure)?.textContent || original.alt;
     q("[data-photo-count]", photoDialog).textContent = `${photoIndex + 1} / ${collection.length}`;
   };
-  collection.forEach((figure, index) => {
+  galleryFigures.forEach(figure => {
     const button = document.createElement("button");
     button.className = "photo-open";
     button.type = "button";
     button.textContent = "View image ↗";
     button.setAttribute("aria-label", `View larger image: ${q("img", figure).alt}`);
-    button.addEventListener("click", () => {
-      showPhoto(index);
+    const openPhoto = () => {
+      const group = figure.dataset.photoGroup || "field";
+      collection = galleryFigures.filter(item => (item.dataset.photoGroup || "field") === group);
+      showPhoto(collection.indexOf(figure));
       photoDialog.showModal();
       document.body.classList.add("photo-is-open");
-    });
+    };
+    button.addEventListener("click", openPhoto);
+    if (figure.hasAttribute("data-photo-group")) {
+      figure.addEventListener("click", event => {
+        if (!event.target.closest("button, a")) openPhoto();
+      });
+    }
     figure.append(button);
   });
   q(".photo-dialog__close", photoDialog).addEventListener("click", () => photoDialog.close());

@@ -1,5 +1,9 @@
 # External image sources
 
+## Homepage media / Release 28
+
+The wind category now uses the existing naturally clean white-background Oulu FD-series product image, correctly linked to its own catalogue record. Two new verification photos and two new packing/loading photos form separate three-photo compositions with the original lead images. Image sources, original backups, precise brand-removal prompts and final paths are indexed in `assets/HOMEPAGE_MEDIA_R28.md`; these are representative supplier/process photographs, not claims of Lantian-owned premises or completed deliveries. No technical specifications were inferred from the image edits.
+
 ## Product catalogue / Release 25
 
 The active catalogue contains 50 configurations. Cabinet systems, battery-only modules and DC battery containers now have separate physical-equipment directories; two former residential inverter-plus-battery all-in-one entries are withdrawn from active presentation. See `assets/CATALOG_R25_AUDIT.md` and `assets/CATALOG_STORAGE_R25_AUDIT.md` for the routing and retention record.

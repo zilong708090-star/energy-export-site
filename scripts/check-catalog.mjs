@@ -110,4 +110,12 @@ const oldWind=fs.readFileSync(path.join(root,'products/small-wind.html'),'utf8')
 assert.ok(oldWind.includes('http-equiv="refresh"')&&oldWind.includes('wind-turbines.html'),'Old wind URL forwards to the precise category name');
 const windHome=homepage.match(/data-product-category="wind"[\s\S]*?<\/a>/)[0];
 assert.ok(windHome.includes('Wind<br>Turbines')&&!windHome.includes('catalog-wind-3kw-family'),'Wind homepage uses complete equipment imagery and exact wording');
+assert.ok(windHome.includes('catalog-wind-500w-alt.webp'),'Wind category uses the reviewed white-background complete turbine');
+for(const group of ['quality','dispatch']){
+  const figures=[...homepage.matchAll(new RegExp('<figure[^>]+data-photo-group="'+group+'"[\\s\\S]*?<\\/figure>','g'))].map(match=>match[0]);
+  assert.equal(figures.length,3,'Three-photo evidence collection: '+group);
+  const images=figures.map(figure=>figure.match(/<img[^>]+src="([^"]+)"/)[1]);
+  assert.equal(new Set(images).size,3,'Distinct photographs in '+group+' collection');
+  assert.ok(figures.every(figure=>figure.includes('<figcaption>')&&figure.includes('loading="lazy"')),'Captioned lazy-loaded evidence photographs');
+}
 console.log(JSON.stringify({passed:true,categories:categories.length,products:products.length,htmlPages:files.length,specificationDownloads:products.length}));

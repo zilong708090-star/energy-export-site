@@ -22,7 +22,7 @@
   },
   {
     "id": "wind",
-    "coverProduct": "wind-10kw-pitch-controlled",
+    "coverProduct": "wind-500w-horizontal",
     "homeLabel": "Wind<br>Turbines",
     "function": "Generates electricity from the wind resource.",
     "selectionBasis": "Select the complete generating equipment around the wind resource, rotor, generator and control architecture. Tower, controller, braking, foundation and electrical supply scope must be confirmed for the selected configuration."
