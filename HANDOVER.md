@@ -1,4 +1,4 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 24
+# Shandong Lantian Energy Technology Co., Ltd. — Release 25
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
 
@@ -6,31 +6,33 @@ Public website: https://zilong708090-star.github.io/energy-export-site/
 
 - Homepage: `index.html`
 - Complete product catalogue: `products/index.html`
-- Battery storage: `products/energy-storage.html`
+- Energy storage cabinets only: `products/energy-storage.html`
+- Battery-only modules: `products/battery-modules.html`
+- Containerized battery storage: `products/containerized-storage.html`
 - Inverters: `products/inverters.html`
 - Solar PV modules: `products/solar-modules.html`
-- Small wind: `products/small-wind.html`
+- Wind Turbines: `products/wind-turbines.html` (the old `small-wind.html` address redirects here)
 - Storage planning guide: `resources/storage-planning.html`
 - Hybrid power guide: `resources/hybrid-power.html`
 - Export project checklist: `resources/project-checklist.html`
 - Downloadable project brief: `resources/project-brief-template.txt`
-- Fifty-two individual product configurations: `products/details/*.html`
-- Fifty-two downloadable technical selection summaries: `resources/specifications/*.txt`
+- Fifty active individual product configurations: `products/details/*.html`
+- Fifty active downloadable technical selection summaries: `resources/specifications/*.txt`
 - Technical source register: `resources/catalog-reference.html`
 
 ## Product catalogue delivery
 
-The website now has 62 static HTML pages. The four homepage product families lead to category directories, with 22 equipment-format subgroups, counted filters, unit/model search and a three-product comparison tool. The directory includes 14 storage, 14 inverter, 12 solar and 12 wind configurations (52 total), 742 labelled technical fields, 45 distinct product/gallery images and 52 specification downloads. Each configuration includes source/model notes and a direct WhatsApp quotation link. Homepage hero/carousel and the company section remain unchanged.
+The website now has 65 static HTML pages, including three compatibility redirect pages. The four homepage product families lead to physical-equipment directories, with 21 equipment-format subgroups, counted filters, unit/model search and a three-product comparison tool. The active directory includes 12 storage, 14 inverter, 12 solar and 12 wind configurations (50 total), 714 labelled technical fields, 46 distinct product/gallery images and 50 specification downloads. Each configuration includes source/model notes and a direct WhatsApp quotation link. Homepage hero/carousel visuals and the company section remain unchanged.
 
-All four homepage covers have been replaced by reviewed catalogue equipment: a liquid-cooled battery storage cabinet, a wall-mounted three-phase hybrid inverter, PV front/rear module views and a small horizontal-axis wind turbine. `catalog-data/categories.json` ties each cover to a product ID in its own category. The builder updates the marked homepage grid from those records; regression checks reject mismatched category IDs, images and links. Previously ambiguous supplier pack covers are retained as historical assets but are no longer used as category covers.
+All four homepage covers use reviewed catalogue equipment: a liquid-cooled battery storage cabinet, a wall-mounted three-phase hybrid inverter, PV front/rear module views and a complete wind-turbine installation photograph showing rotor, nacelle, tower and base. `catalog-data/categories.json` ties each cover to a product ID in its own category. The builder updates the marked homepage grid from those records; regression checks reject mismatched category IDs, images and links. Previously ambiguous supplier pack covers are retained as historical assets but are no longer used as category covers.
 
-Category pages now explain the equipment's role and provide photo-led format navigation. Storage starts with commercial cabinets and then distinguishes containerized, wall, rack, high-voltage stacked and all-in-one systems. Inverters distinguish off-grid, single-phase and three-phase LV hybrid, commercial HV hybrid, microinverters and grid-tied string units. PV includes full-black, rooftop, clear bifacial, commercial, flexible, compact and utility configurations. Wind separates horizontal-axis, pitch-controlled and vertical-axis turbines. Filter links retain their type on reload. Exact model references and family-photo captions are visible on cards; captions are also retained in comparison, enlargement, details and downloads.
+Category pages explain the equipment's role and provide photo-led format navigation. Storage equipment is now separated into three actual directories: 3 commercial cabinets, 8 battery-only wall/rack/high-voltage stacked modules, and 1 DC battery container. The cabinet entry contains only cabinet products, including its related recommendations and detail-page return routes. The full catalogue filters these three physical formats separately. Two former residential inverter-plus-battery all-in-one records have been withdrawn from active presentation; their old detail URLs redirect to the current cabinet directory and their old TXT files show a withdrawal notice. Neither is in the sitemap or active source register. Their source records remain recoverable outside the published checkout. Inverters distinguish off-grid, single-phase and three-phase LV hybrid, commercial HV hybrid, microinverters and grid-tied string units. PV includes full-black, rooftop, clear bifacial, commercial, flexible, compact and utility configurations. Wind Turbines separates horizontal-axis, pitch-controlled and vertical-axis generators; it is not a replacement-blade category. Filter links retain their type on reload. Exact model references and family-photo captions are visible on cards; captions are also retained in comparison, enlargement, details and downloads.
 
 The previous four generic product marketing pages have been replaced by these category directories while preserving their public URLs. A new complete-catalogue link is available beside the four-family homepage display and in the footer. The source register and model-specific caveats distinguish reviewed supplier data from any claim of Lantian manufacture, current inventory, pricing, warranty or certified compatibility.
 
-Catalogue data is maintained in `catalog-data/{storage,inverters,solar,wind}.json`; reviewed category identity/cover links are in `catalog-data/categories.json`. Generated homepage grid, catalogue HTML, TXT downloads and sitemap can be rebuilt with `node scripts/build-catalog.mjs`. Run `node scripts/check-catalog.mjs` for schema, category-cover correspondence, static specification, image-caption, download-note, internal-link and sitemap checks. Category search/comparison and product image enlargement are in `catalog.js`; catalogue-only styling is in `catalog.css`. No package installation or server backend is required.
+Catalogue data is maintained in `catalog-data/{storage,inverters,solar,wind}.json`; reviewed category identity/cover links are in `catalog-data/categories.json`, and retired URL handling is in `catalog-data/retired-products.json`. Each storage record has an explicit `equipmentType`; do not move a battery module or integrated residential inverter into the cabinet directory. Generated homepage grid, catalogue HTML, TXT downloads and sitemap can be rebuilt with `node scripts/build-catalog.mjs`. Run `node scripts/check-catalog.mjs` for schema, physical-equipment membership, category-cover correspondence, return/related-product routing, retirement redirects, static specification, image-caption, download-note, internal-link and sitemap checks. Category search/comparison and product image enlargement are in `catalog.js`; catalogue-only styling is in `catalog.css`. No package installation or server backend is required.
 
-R24 image-edit provenance, source registers and final asset paths are indexed in `assets/CATALOG_R24_AUDIT.md`; R23 records remain in `assets/CATALOG_EDIT_NOTES.md`. Original/rejected source images and generated PNG masters are retained recoverably outside the publishable checkout; only reviewed delivery images are referenced by the website.
+R25 classification and clean complete-turbine photo provenance are indexed in `assets/CATALOG_R25_AUDIT.md`. R24 image-edit provenance and final asset paths remain in `assets/CATALOG_R24_AUDIT.md`; R23 records remain in `assets/CATALOG_EDIT_NOTES.md`. No numerical specifications were inferred from the new photographs. Original/rejected source images and generated PNG masters are retained recoverably outside the publishable checkout; only reviewed delivery images are referenced by the website.
 
 ## Visitor experience
 

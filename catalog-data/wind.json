@@ -503,16 +503,23 @@
         "Rural electrification"
       ],
       "image": {
-        "src": "assets/catalog-wind-3kw-family.jpg",
-        "alt": "Greef GH-series horizontal-axis wind turbine supplier rendering with three blades and a tail vane",
-        "caption": "GH-series supplier rendering; not a scale drawing of GH-3KW."
+        "src": "assets/catalog-wind-r25-gh-complete.jpg",
+        "alt": "Complete GH-series horizontal-axis wind turbine and monopole installed on a concrete base at a rural supplier reference site",
+        "caption": "GH-series supplier installation reference; the photograph does not identify the exact model or dimensions."
       },
+      "gallery": [
+        {
+          "src": "assets/catalog-wind-3kw-family.jpg",
+          "alt": "GH-series supplier rendering of the turbine head, rotor and tail vane",
+          "caption": "GH-series turbine-head detail only; not a complete installed turbine or a scale drawing of GH-3KW."
+        }
+      ],
       "source": {
         "title": "Greef official GH-series product table",
         "url": "https://www.greef-energy.com/china-suppliers-greef-1kw-30kw-horizontal-axis-wind-turbine-factory-for-efficient-clean-energy-solutions-product/",
         "model": "GH-3KW",
         "checked": "2026-10-15",
-        "imageUrl": "https://ecdn6-nc.globalso.com/upload/p/4282/image_other/2025-08/1kw-30-kw-horizontal-axis-wind-turbine1.jpg"
+        "imageUrl": "https://ecdn6-nc.globalso.com/upload/p/4282/image_other/2025-08/horizontal-axis-wind-turbine1-1.jpg"
       },
       "notes": "GH-3KW column used. The page's general prose differs from its model table; fibreglass, wind range and voltage follow that table. Confirm the current drawing and power curve."
     },
@@ -835,16 +842,17 @@
         "Remote commercial sites"
       ],
       "image": {
-        "src": "assets/catalog-wind-10kw-product.webp",
-        "alt": "Wind turbine and solar array from the supplier AH-10KW listing",
-        "caption": "Supplier hybrid-site reference from the AH-10KW listing."
+        "src": "assets/catalog-wind-r25-complete-10kw.webp",
+        "alt": "Complete horizontal-axis wind turbines with three-blade rotors, nacelles, tail vanes and full towers at a supplier installation site",
+        "caption": "Complete wind-turbine installation reference from the AH-10KW supplier listing; ordered tower and electrical scope are confirmed for each project."
       },
+      "gallery": [{"src":"assets/catalog-wind-10kw-product.webp","alt":"Wind turbine and solar array from the AH-10KW supplier listing","caption":"Additional hybrid-site reference from the same AH-10KW supplier listing."}],
       "source": {
         "title": "Anhua AH-10KW supplier listing on Made-in-China",
         "url": "https://chinawindenergy.en.made-in-china.com/product/IXrQWaoDblVs/China-10kw-Wind-Turbine-Generator-for-Home-or-Farm-Use.html",
         "model": "AH-10KW",
         "checked": "2026-10-15",
-        "imageUrl": "https://image.made-in-china.com/2f0j00dAlhIEuPAVgJ/10kw-Wind-Turbine-Generator-for-Home-or-Farm-Use.webp"
+        "imageUrl": "https://image.made-in-china.com/2f0j00nJWhDOgELlrw/10kw-Wind-Turbine-Generator-for-Home-or-Farm-Use.webp"
       },
       "notes": "AH-10KW model table used. Survival wind speed is a supplier design claim, not continuous operating wind. Tower engineering and electrical interfaces require project verification."
     },

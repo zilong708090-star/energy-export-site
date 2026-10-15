@@ -23,7 +23,7 @@ Turbine weight: 450 kg
 Technical source: https://chinawindenergy.en.made-in-china.com/product/IXrQWaoDblVs/China-10kw-Wind-Turbine-Generator-for-Home-or-Farm-Use.html
 
 Model-specific notes: AH-10KW model table used. Survival wind speed is a supplier design claim, not continuous operating wind. Tower engineering and electrical interfaces require project verification.
-Image reference: Supplier hybrid-site reference from the AH-10KW listing.
+Image reference: Complete wind-turbine installation reference from the AH-10KW supplier listing; ordered tower and electrical scope are confirmed for each project.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

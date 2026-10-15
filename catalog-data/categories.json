@@ -22,9 +22,9 @@
   },
   {
     "id": "wind",
-    "coverProduct": "wind-3kw-horizontal",
-    "homeLabel": "Small wind<br>turbine systems",
+    "coverProduct": "wind-10kw-pitch-controlled",
+    "homeLabel": "Wind<br>Turbines",
     "function": "Generates electricity from the wind resource.",
-    "selectionBasis": "Choose the turbine around measured wind conditions, rotor size and tower requirements. Controllers, brakes, foundations and compatible inverters must be confirmed as part of the system."
+    "selectionBasis": "Select the complete generating equipment around the wind resource, rotor, generator and control architecture. Tower, controller, braking, foundation and electrical supply scope must be confirmed for the selected configuration."
   }
 ]

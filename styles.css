@@ -521,6 +521,9 @@ button { color: inherit; }
 .product-card--cutout:hover img { filter: none; }
 .product-card--cutout:nth-child(3) img { padding: 18px 34px 0; }
 .product-card--cutout:nth-child(4) img { padding: 15px 8px 0; }
+.product-card--cutout.product-card--full-turbine { background: #e9f2fa; }
+.product-card--cutout.product-card--full-turbine img { height: 78%; object-fit: contain; object-position: center; padding: 0 10px; filter: none; }
+.product-card--cutout.product-card--full-turbine::before, .product-card--cutout.product-card--full-turbine:hover::before { background: linear-gradient(180deg,transparent 69%,rgba(7,17,31,.1) 75%,#07111f 83%); }
 @media (min-width:1051px) and (max-width:1400px) {
   .product-card__name { left: 22px; right: 22px; gap: 12px; }
   .product-card__name strong { font-size: 25px; }

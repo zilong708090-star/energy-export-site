@@ -22,7 +22,7 @@ Protection grade: IP54
 Technical source: https://www.greef-energy.com/china-suppliers-greef-1kw-30kw-horizontal-axis-wind-turbine-factory-for-efficient-clean-energy-solutions-product/
 
 Model-specific notes: GH-3KW column used. The page's general prose differs from its model table; fibreglass, wind range and voltage follow that table. Confirm the current drawing and power curve.
-Image reference: GH-series supplier rendering; not a scale drawing of GH-3KW.
+Image reference: GH-series supplier installation reference; the photograph does not identify the exact model or dimensions.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

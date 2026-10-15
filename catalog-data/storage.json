@@ -97,7 +97,8 @@
         "model": "100 KW × 215 KWh Air-cooled Energy Storage Cabinet (supplier product family; no SKU published)",
         "checked": "2026-10-15"
       },
-      "notes": "No separate manufacturer SKU is published on the source page. Photo is the actual unbranded image from that product page, without generative changes. Backup operation requires confirmation of the PCS, transfer equipment and supported loads; this catalog does not claim seamless backup or a guaranteed runtime."
+      "notes": "No separate manufacturer SKU is published on the source page. Photo is the actual unbranded image from that product page, without generative changes. Backup operation requires confirmation of the PCS, transfer equipment and supported loads; this catalog does not claim seamless backup or a guaranteed runtime.",
+      "equipmentType": "battery-cabinet"
     },
     {
       "id": "storage-liquid-215kwh",
@@ -215,7 +216,8 @@
         "model": "HCESS1-100-215",
         "checked": "2026-10-15"
       },
-      "notes": "Supplier-reference model, not a claim of Lantian manufacture. The source states grid-connected operation as basic; off-grid and parallel operation require extra accessories and software. Photo is the original supplier cabinet image edited to remove branding, watermark lettering and certification overlays. Market-specific compliance, delivery scope and the ordered enclosure must be confirmed."
+      "notes": "Supplier-reference model, not a claim of Lantian manufacture. The source states grid-connected operation as basic; off-grid and parallel operation require extra accessories and software. Photo is the original supplier cabinet image edited to remove branding, watermark lettering and certification overlays. Market-specific compliance, delivery scope and the ordered enclosure must be confirmed.",
+      "equipmentType": "battery-cabinet"
     },
     {
       "id": "storage-liquid-261kwh",
@@ -329,7 +331,8 @@
         "model": "HESS-261-2h; global datasheet V202504",
         "checked": "2026-10-15"
       },
-      "notes": "Values follow the official V202504 datasheet linked by the manufacturer. Newer regional revisions may differ, particularly fire protection and compliance; these fields are not promised here. Rated output is 125 kW at 50 °C, not a blanket output guarantee at every temperature. Backup requires the engineered transfer and protection arrangement. Official product render edited to remove branding only."
+      "notes": "Values follow the official V202504 datasheet linked by the manufacturer. Newer regional revisions may differ, particularly fire protection and compliance; these fields are not promised here. Rated output is 125 kW at 50 °C, not a blanket output guarantee at every temperature. Backup requires the engineered transfer and protection arrangement. Official product render edited to remove branding only.",
+      "equipmentType": "battery-cabinet"
     },
     {
       "id": "storage-container-3700kwh",
@@ -431,7 +434,8 @@
         "model": "Corey-L3.7-1500",
         "checked": "2026-10-15"
       },
-      "notes": "This is a DC battery-container reference, not a guaranteed complete AC system. The marketplace title incorrectly uses MW and a table labels a kWh value as power; only the separately stated nominal energy is reproduced, and no AC output power is inferred. The listing disagrees on fire-suppression detail, so that field is omitted. Exact supplier photo edited only to remove brand logos; final configuration and enclosure details require confirmation."
+      "notes": "This is a DC battery-container reference, not a guaranteed complete AC system. The marketplace title incorrectly uses MW and a table labels a kWh value as power; only the separately stated nominal energy is reproduced, and no AC output power is inferred. The listing disagrees on fire-suppression detail, so that field is omitted. Exact supplier photo edited only to remove brand logos; final configuration and enclosure details require confirmation.",
+      "equipmentType": "battery-container"
     },
     {
       "id": "storage-wall-5kwh",
@@ -537,7 +541,8 @@
         "model": "PNG-E51100-LV",
         "checked": "2026-10-15"
       },
-      "notes": "Supplier-reference configuration; confirm inverter compatibility before ordering. The listing gives conflicting enclosure IP ratings and dimension ordering, so those fields are not reproduced. Photo is a supplier family image edited only to remove branding and overlays; enclosure appearance must be confirmed for the ordered variant. No warranty or certification claim is made."
+      "notes": "Supplier-reference configuration; confirm inverter compatibility before ordering. The listing gives conflicting enclosure IP ratings and dimension ordering, so those fields are not reproduced. Photo is a supplier family image edited only to remove branding and overlays; enclosure appearance must be confirmed for the ordered variant. No warranty or certification claim is made.",
+      "equipmentType": "battery-module"
     },
     {
       "id": "storage-rack-25v-100",
@@ -647,7 +652,8 @@
         "model": "LR24-100; LFELI-24100HR-B-EN-V1.7-202602",
         "checked": "2026-10-15"
       },
-      "notes": "Use this model's individual datasheet edition (LFELI-24100HR-B-EN-V1.7-202602), not another LR rack variant. This is a battery module without an AC inverter; inverter voltage, charging current and communication compatibility require confirmation. The supplier render carries the correct model label, but display readings are illustrative. Brand mark removed without adding battery hardware. No runtime, warranty or certification guarantee is inferred."
+      "notes": "Use this model's individual datasheet edition (LFELI-24100HR-B-EN-V1.7-202602), not another LR rack variant. This is a battery module without an AC inverter; inverter voltage, charging current and communication compatibility require confirmation. The supplier render carries the correct model label, but display readings are illustrative. Brand mark removed without adding battery hardware. No runtime, warranty or certification guarantee is inferred.",
+      "equipmentType": "battery-module"
     },
     {
       "id": "storage-rack-25v-200",
@@ -757,7 +763,8 @@
         "model": "LR24-200; LFELI-24200HR-D-EN-V1.7-202602",
         "checked": "2026-10-15"
       },
-      "notes": "Use this model's individual datasheet edition (LFELI-24200HR-D-EN-V1.7-202602), not another LR rack variant. This is a battery module without an AC inverter; inverter voltage, charging current and communication compatibility require confirmation. The supplier render carries the correct model label, but display readings are illustrative. Brand mark removed without adding battery hardware. No runtime, warranty or certification guarantee is inferred."
+      "notes": "Use this model's individual datasheet edition (LFELI-24200HR-D-EN-V1.7-202602), not another LR rack variant. This is a battery module without an AC inverter; inverter voltage, charging current and communication compatibility require confirmation. The supplier render carries the correct model label, but display readings are illustrative. Brand mark removed without adding battery hardware. No runtime, warranty or certification guarantee is inferred.",
+      "equipmentType": "battery-module"
     },
     {
       "id": "storage-rack-5kwh",
@@ -867,7 +874,8 @@
         "model": "LR51.2-100 (4U), LFELI-48100HR-A-EN-V1.7-202602",
         "checked": "2026-10-15"
       },
-      "notes": "This entry uses the 4U variant only; a separate 3U product has different dimensions. Parallel quantity follows the February 2026 datasheet rather than older 40-unit literature. Supplier photo obtained from https://www.leoch.com/products/lithium/residential-rack-mounted-battery and edited only to remove the brand mark. Cycle life is a stated test condition, not a site-life guarantee."
+      "notes": "This entry uses the 4U variant only; a separate 3U product has different dimensions. Parallel quantity follows the February 2026 datasheet rather than older 40-unit literature. Supplier photo obtained from https://www.leoch.com/products/lithium/residential-rack-mounted-battery and edited only to remove the brand mark. Cycle life is a stated test condition, not a site-life guarantee.",
+      "equipmentType": "battery-module"
     },
     {
       "id": "storage-rack-51v-200",
@@ -977,7 +985,8 @@
         "model": "LR51.2-200; LFELI-48200H-D-EN-V1.6-202512",
         "checked": "2026-10-15"
       },
-      "notes": "Use this model's individual datasheet edition (LFELI-48200H-D-EN-V1.6-202512), not another LR rack variant. This is a battery module without an AC inverter; inverter voltage, charging current and communication compatibility require confirmation. The supplier render carries the correct model label, but display readings are illustrative. Brand mark removed without adding battery hardware. No runtime, warranty or certification guarantee is inferred."
+      "notes": "Use this model's individual datasheet edition (LFELI-48200H-D-EN-V1.6-202512), not another LR rack variant. This is a battery module without an AC inverter; inverter voltage, charging current and communication compatibility require confirmation. The supplier render carries the correct model label, but display readings are illustrative. Brand mark removed without adding battery hardware. No runtime, warranty or certification guarantee is inferred.",
+      "equipmentType": "battery-module"
     },
     {
       "id": "storage-hv-stacked-20kwh",
@@ -1079,7 +1088,8 @@
         "model": "ES-20KHS",
         "checked": "2026-10-15"
       },
-      "notes": "Values follow only the ES-20KHS column of the supplier's configuration table. Header attributes on this marketplace listing mix capacities, so the model-specific table is the reference. Shared family render shows nominally 20/30/40 kWh stacks; actual tabulated energy is 20.48/30.72/40.96 kWh. The control unit is a battery HV controller, not an AC inverter. Confirm exact connector arrangement and inverter compatibility; no AC output power is inferred."
+      "notes": "Values follow only the ES-20KHS column of the supplier's configuration table. Header attributes on this marketplace listing mix capacities, so the model-specific table is the reference. Shared family render shows nominally 20/30/40 kWh stacks; actual tabulated energy is 20.48/30.72/40.96 kWh. The control unit is a battery HV controller, not an AC inverter. Confirm exact connector arrangement and inverter compatibility; no AC output power is inferred.",
+      "equipmentType": "battery-module"
     },
     {
       "id": "storage-hv-stacked-30kwh",
@@ -1181,7 +1191,8 @@
         "model": "ES-30KHS",
         "checked": "2026-10-15"
       },
-      "notes": "Values follow only the ES-30KHS column of the supplier's configuration table. Header attributes on this marketplace listing mix capacities, so the model-specific table is the reference. Shared family render shows nominally 20/30/40 kWh stacks; actual tabulated energy is 20.48/30.72/40.96 kWh. The control unit is a battery HV controller, not an AC inverter. Confirm exact connector arrangement and inverter compatibility; no AC output power is inferred."
+      "notes": "Values follow only the ES-30KHS column of the supplier's configuration table. Header attributes on this marketplace listing mix capacities, so the model-specific table is the reference. Shared family render shows nominally 20/30/40 kWh stacks; actual tabulated energy is 20.48/30.72/40.96 kWh. The control unit is a battery HV controller, not an AC inverter. Confirm exact connector arrangement and inverter compatibility; no AC output power is inferred.",
+      "equipmentType": "battery-module"
     },
     {
       "id": "storage-hv-stacked-40kwh",
@@ -1283,219 +1294,8 @@
         "model": "ES-40KHS",
         "checked": "2026-10-15"
       },
-      "notes": "Values follow only the ES-40KHS column of the supplier's configuration table. Header attributes on this marketplace listing mix capacities, so the model-specific table is the reference. Shared family render shows nominally 20/30/40 kWh stacks; actual tabulated energy is 20.48/30.72/40.96 kWh. The control unit is a battery HV controller, not an AC inverter. Confirm exact connector arrangement and inverter compatibility; no AC output power is inferred."
-    },
-    {
-      "id": "storage-all-in-one-5kwh",
-      "category": "storage",
-      "subcategory": "all-in-one",
-      "subcategoryLabel": "All-in-one systems",
-      "name": "5 kW / 5.12 kWh All-in-One Solar Storage",
-      "headlineSpecs": [
-        {
-          "label": "Rated inverter output",
-          "value": "5 kW"
-        },
-        {
-          "label": "Nominal battery energy",
-          "value": "5.12 kWh"
-        },
-        {
-          "label": "Battery voltage",
-          "value": "51.2 V"
-        },
-        {
-          "label": "Nominal capacity",
-          "value": "100 Ah"
-        }
-      ],
-      "specs": [
-        {
-          "label": "Rated inverter output",
-          "value": "5 kW"
-        },
-        {
-          "label": "Peak inverter output",
-          "value": "10,000 VA"
-        },
-        {
-          "label": "Nominal battery energy",
-          "value": "5.12 kWh"
-        },
-        {
-          "label": "Nominal battery capacity",
-          "value": "100 Ah"
-        },
-        {
-          "label": "Nominal battery voltage",
-          "value": "51.2 V"
-        },
-        {
-          "label": "Battery operating voltage",
-          "value": "44.8–57.6 V"
-        },
-        {
-          "label": "Battery chemistry",
-          "value": "Lithium iron phosphate (LFP)"
-        },
-        {
-          "label": "Battery cell configuration",
-          "value": "1P16S"
-        },
-        {
-          "label": "Recommended charge / discharge current",
-          "value": "50 A"
-        },
-        {
-          "label": "Maximum charge / discharge current",
-          "value": "100 A"
-        },
-        {
-          "label": "Maximum PV array power",
-          "value": "5,500 W"
-        },
-        {
-          "label": "MPPT voltage range",
-          "value": "120–450 V DC"
-        },
-        {
-          "label": "Maximum PV charge current",
-          "value": "80 A"
-        },
-        {
-          "label": "Weight",
-          "value": "55 kg"
-        }
-      ],
-      "summary": "A smaller-capacity all-in-one option pairing a 5 kW solar inverter with a 5.12 kWh battery. The integrated format suits selected residential loads when battery energy demand is lower than the larger 10.24 kWh configuration.",
-      "features": [
-        "Integrated inverter and battery",
-        "PV MPPT charging",
-        "Built-in battery management"
-      ],
-      "applications": [
-        "Home solar storage",
-        "Small commercial loads",
-        "Solar-plus-battery projects"
-      ],
-      "image": {
-        "src": "assets/catalog-storage-all-in-one-10kwh-clean.jpg",
-        "alt": "White all-in-one solar battery and inverter enclosure with central display and black horizontal band; branding removed",
-        "caption": "ES-ESS-BP51100/BP51200 all-in-one family render; enclosure size varies with battery capacity."
-      },
-      "source": {
-        "title": "Enjoy Solar ES-ESS-BP51100 supplier specification — Made-in-China",
-        "url": "https://enjoysolar.en.made-in-china.com/product/rFEaYPHgJstX/China-All-in-One-5kwh-10kwh-LiFePO4-Lithium-Ion-Cell-Lithium-Battery-Pack-with-5kw-Hybrid-Solar-Inverter-for-Residential-Solar-Battery-Storage-System.html",
-        "model": "ES-ESS-BP51100",
-        "checked": "2026-10-15"
-      },
-      "notes": "Specifications follow the ES-ESS-BP51100 column only. Shared BP51100/BP51200 family photo is not proof of the smaller unit's dimensions: supplier variants differ in height and battery mass. Listing output voltage and enclosure descriptions conflict, so those details are omitted pending final datasheet. No uninterrupted-transfer or grid-compliance claim is made."
-    },
-    {
-      "id": "storage-all-in-one-10kwh",
-      "category": "storage",
-      "subcategory": "all-in-one",
-      "subcategoryLabel": "All-in-one systems",
-      "name": "5 kW / 10.24 kWh All-in-One Solar Storage",
-      "headlineSpecs": [
-        {
-          "label": "Rated output",
-          "value": "5 kW"
-        },
-        {
-          "label": "Battery energy",
-          "value": "10.24 kWh"
-        },
-        {
-          "label": "Battery voltage",
-          "value": "51.2 V"
-        },
-        {
-          "label": "MPPT range",
-          "value": "120–450 V DC"
-        }
-      ],
-      "specs": [
-        {
-          "label": "Rated inverter output",
-          "value": "5 kW"
-        },
-        {
-          "label": "Peak inverter output",
-          "value": "10,000 VA"
-        },
-        {
-          "label": "Nominal battery energy",
-          "value": "10.24 kWh"
-        },
-        {
-          "label": "Battery chemistry",
-          "value": "Lithium iron phosphate (LFP)"
-        },
-        {
-          "label": "Nominal battery capacity",
-          "value": "200 Ah"
-        },
-        {
-          "label": "Nominal battery voltage",
-          "value": "51.2 V"
-        },
-        {
-          "label": "Battery operating voltage",
-          "value": "44.8–57.6 V"
-        },
-        {
-          "label": "Battery cell configuration",
-          "value": "1P16S"
-        },
-        {
-          "label": "Recommended charge / discharge current",
-          "value": "100 A"
-        },
-        {
-          "label": "Maximum charge / discharge current",
-          "value": "200 A"
-        },
-        {
-          "label": "PV array power limit",
-          "value": "5,500 W"
-        },
-        {
-          "label": "MPPT voltage range",
-          "value": "120–450 V DC"
-        },
-        {
-          "label": "Maximum PV charge current",
-          "value": "80 A"
-        },
-        {
-          "label": "Weight",
-          "value": "95 kg"
-        }
-      ],
-      "summary": "A combined battery and solar inverter format for smaller energy projects. The integrated enclosure reduces separate equipment requirements, with a 10.24 kWh battery and MPPT input for a compatible PV array.",
-      "features": [
-        "Battery and inverter integrated in one enclosure",
-        "Built-in battery management",
-        "PV input with MPPT charging"
-      ],
-      "applications": [
-        "Home solar storage",
-        "Small commercial loads",
-        "Solar-plus-battery projects"
-      ],
-      "image": {
-        "src": "assets/catalog-storage-all-in-one-10kwh-clean.jpg",
-        "alt": "White all-in-one solar battery and inverter enclosure with central display and black horizontal band; branding removed",
-        "caption": "ES-ESS-BP51100/BP51200 all-in-one family render; enclosure size varies with battery capacity."
-      },
-      "source": {
-        "title": "Enjoy Solar ES-ESS-BP51200 supplier specification — Made-in-China",
-        "url": "https://enjoysolar.en.made-in-china.com/product/rFEaYPHgJstX/China-All-in-One-5kwh-10kwh-LiFePO4-Lithium-Ion-Cell-Lithium-Battery-Pack-with-5kw-Hybrid-Solar-Inverter-for-Residential-Solar-Battery-Storage-System.html",
-        "model": "ES-ESS-BP51200",
-        "checked": "2026-10-15"
-      },
-      "notes": "Specifications follow the BP51200 column, not the smaller BP51100. The listing disagrees on output voltage, enclosure thickness and cooling wording; those values are omitted pending the selected variant's final datasheet. Photo is the supplier product-family image with branding removed. No transfer-time, grid-compliance or warranty guarantee is inferred."
+      "notes": "Values follow only the ES-40KHS column of the supplier's configuration table. Header attributes on this marketplace listing mix capacities, so the model-specific table is the reference. Shared family render shows nominally 20/30/40 kWh stacks; actual tabulated energy is 20.48/30.72/40.96 kWh. The control unit is a battery HV controller, not an AC inverter. Confirm exact connector arrangement and inverter compatibility; no AC output power is inferred.",
+      "equipmentType": "battery-module"
     }
   ]
 }

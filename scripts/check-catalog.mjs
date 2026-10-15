@@ -43,7 +43,7 @@ for(const product of products){
 }
 const homepage=fs.readFileSync(path.join(root,'index.html'),'utf8');
 const identity=JSON.parse(fs.readFileSync(path.join(root,'catalog-data/categories.json'),'utf8'));
-const pageFor={storage:'energy-storage',inverters:'inverters',solar:'solar-modules',wind:'small-wind'};
+const pageFor={storage:'energy-storage',inverters:'inverters',solar:'solar-modules',wind:'wind-turbines'};
 assert.equal(identity.length,4,'Four reviewed category identities');
 for(const category of identity){
   const cover=products.find(item=>item.id===category.coverProduct);
@@ -78,8 +78,36 @@ for(const file of files){
 }
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
 for(const product of products) assert.ok(sitemap.includes('/products/details/'+product.id+'.html'),'Product URL in sitemap');
-for(const category of ['energy-storage','inverters','solar-modules','small-wind']){
+for(const category of ['energy-storage','battery-modules','containerized-storage','inverters','solar-modules','wind-turbines']){
  const html=fs.readFileSync(path.join(root,'products',category+'.html'),'utf8');
  assert.ok(html.includes('id="catalog-data"')&&html.includes('data-catalog-card'),'Static category directory');
 }
+const parseDirectory=file=>{
+  const html=fs.readFileSync(path.join(root,'products',file+'.html'),'utf8');
+  return JSON.parse(html.match(/<script type="application\/json" id="catalog-data">([\s\S]*?)<\/script>/)[1]);
+};
+const storage=products.filter(item=>item.category==='storage');
+assert.ok(storage.every(item=>['battery-cabinet','battery-module','battery-container'].includes(item.equipmentType)),'Storage has explicit physical equipment types');
+for(const [file,type] of [['energy-storage','battery-cabinet'],['battery-modules','battery-module'],['containerized-storage','battery-container']]){
+  const directory=parseDirectory(file);
+  assert.deepEqual(directory.items.map(item=>item.id),storage.filter(item=>item.equipmentType===type).map(item=>item.id),'Strict physical equipment membership: '+file);
+  for(const item of directory.items){
+    const detail=fs.readFileSync(path.join(root,'products/details',item.id+'.html'),'utf8');
+    assert.ok(detail.includes('href="../../products/'+file+'.html#catalogue"'),'Correct equipment-type return link: '+item.id);
+    for(const match of detail.matchAll(/data-product-id="([^"]+)"/g)) assert.equal(storage.find(candidate=>candidate.id===match[1])?.equipmentType,type,'No cross-type storage recommendations: '+item.id);
+  }
+}
+const retired=JSON.parse(fs.readFileSync(path.join(root,'catalog-data/retired-products.json'),'utf8'));
+const complete=parseDirectory('index');
+assert.equal(complete.filterBy,'directory','Hub filters use exact equipment directories');
+for(const item of retired){
+  assert.ok(!products.some(active=>active.id===item.id),'Withdrawn inverter-plus-battery units are not active');
+  const html=fs.readFileSync(path.join(root,'products/details',item.id+'.html'),'utf8');
+  assert.ok(html.includes('http-equiv="refresh"')&&!html.includes('application/ld+json'),'Retired model URL is no longer a product page');
+  assert.ok(!sitemap.includes('/details/'+item.id+'.html'),'Retired model is not indexed in sitemap');
+}
+const oldWind=fs.readFileSync(path.join(root,'products/small-wind.html'),'utf8');
+assert.ok(oldWind.includes('http-equiv="refresh"')&&oldWind.includes('wind-turbines.html'),'Old wind URL forwards to the precise category name');
+const windHome=homepage.match(/data-product-category="wind"[\s\S]*?<\/a>/)[0];
+assert.ok(windHome.includes('Wind<br>Turbines')&&!windHome.includes('catalog-wind-3kw-family'),'Wind homepage uses complete equipment imagery and exact wording');
 console.log(JSON.stringify({passed:true,categories:categories.length,products:products.length,htmlPages:files.length,specificationDownloads:products.length}));

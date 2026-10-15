@@ -1,5 +1,11 @@
 # External image sources
 
+## Product catalogue / Release 25
+
+The active catalogue contains 50 configurations. Cabinet systems, battery-only modules and DC battery containers now have separate physical-equipment directories; two former residential inverter-plus-battery all-in-one entries are withdrawn from active presentation. See `assets/CATALOG_R25_AUDIT.md` and `assets/CATALOG_STORAGE_R25_AUDIT.md` for the routing and retention record.
+
+The fourth homepage category is **Wind Turbines**, using an unmodified clean supplier photograph of complete installed Anhua turbines, not a clipped turbine-head render. The GH-family internal record also uses a complete installation reference from the same official series page, explicitly qualified as a family image rather than a verified exact GH-3KW photograph. Original numerical specifications are unchanged. Both source-image URLs and full provenance are in `assets/CATALOG_WIND_R25_SOURCES.md`. No new generative cleanup was performed for R25.
+
 ## Product catalogue / Release 24
 
 The catalogue now contains 52 configurations. All four homepage covers use reviewed catalogue records; the former ambiguous supplier-pack storage/inverter covers are superseded. See `assets/CATALOG_R24_AUDIT.md` for the category-cover mapping and linked storage, inverter/PV and wind registers, exact image URLs, built-in image-edit prompt sets and final paths. Original/rejected supplier downloads remain recoverable outside this publishable checkout.
