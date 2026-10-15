@@ -245,6 +245,13 @@ if ("IntersectionObserver" in window) {
 const whatsappContact = q(".whatsapp-contact");
 const whatsappFloat = q(".whatsapp-float");
 const homepageProductGrid = q(".product-grid");
+const companySection = q(".home-page #company");
+if (companySection && whatsappFloat && "IntersectionObserver" in window) {
+  const companyObserver = new IntersectionObserver(([entry]) => {
+    whatsappFloat.classList.toggle("is-at-company", entry.isIntersecting);
+  });
+  companyObserver.observe(companySection);
+}
 if (homepageProductGrid && whatsappFloat && "IntersectionObserver" in window) {
   const productGridObserver = new IntersectionObserver(([entry]) => {
     whatsappFloat.classList.toggle("is-over-product-grid", entry.isIntersecting);

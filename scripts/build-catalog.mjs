@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 // The JSON records are the reviewed source of truth. Generated pages are static,
 // searchable without JavaScript and reproducible with this one command.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const version = '28.1';
+const version = '29.2';
 const reviewed = '2026-10-15';
 const updated = '2026-10-16';
 const origin = 'https://zilong708090-star.github.io/energy-export-site/';
@@ -65,11 +65,10 @@ if (new Set(all.map(item=>item.id)).size !== all.length) throw new Error('Duplic
 function header(base) {
   return `<a class="skip-link" href="#main">Skip to content</a>
   <div class="topline" aria-hidden="true"><div class="topline__track"><span>STORAGE · INVERTERS · SOLAR · WIND</span><i></i><span>ONE CONNECTED PRODUCT PORTFOLIO</span><i></i><span>BUILT AROUND YOUR PROJECT</span><i></i><span>STORAGE · INVERTERS · SOLAR · WIND</span><i></i></div></div>
-  <header class="site-header"><div class="shell nav-wrap">
+  <header class="site-header site-header--solutions"><div class="shell nav-wrap">
     <a class="brand" href="${base}index.html" aria-label="Home"><span class="brand__descriptor"><strong>Shandong Lantian</strong><small>Energy Technology Co., Ltd.</small></span></a>
-    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" aria-label="Open navigation"><span></span><span></span></button>
-    <nav class="site-nav" id="site-nav" aria-label="Primary navigation"><a href="${base}index.html#company">Company</a><a href="${base}products/index.html" aria-current="page">Products</a><a href="${base}index.html#solutions">Solutions</a><a href="${base}index.html#use-cases">Applications</a><a href="${base}index.html#resources">Resources</a></nav>
-    <a class="button button--small button--bright nav-cta" href="${wa('Hello Shandong Lantian, I would like to discuss products for an energy project.')}" target="_blank" rel="noopener">Talk to us</a>
+    <p class="header-solution-line">One-stop Energy Solutions</p>
+    <a class="button button--small button--bright nav-cta" href="${wa('Hello Shandong Lantian, I would like to discuss a one-stop energy solution for my project.')}" target="_blank" rel="noopener">Start a project</a>
   </div></header>`;
 }
 function footer(base) {
@@ -78,7 +77,7 @@ function footer(base) {
 }
 function page(file, title, description, body, base, structured) {
   return `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="${esc(description)}"><meta name="theme-color" content="#07111f"><title>${esc(title)} | Shandong Lantian</title><link rel="canonical" href="${origin+file}"><link rel="icon" href="data:,"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:url" content="${origin+file}"><link rel="stylesheet" href="${base}styles.css?v=${version}"><link rel="stylesheet" href="${base}catalog.css?v=${version}"><script src="${base}app.js?v=${version}" defer></script><script src="${base}catalog.js?v=${version}" defer></script>${structured?`<script type="application/ld+json">${json(structured)}</script>`:''}</head>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="description" content="${esc(description)}"><meta name="theme-color" content="#07111f"><title>${esc(title)} | Shandong Lantian</title><link rel="canonical" href="${origin+file}"><link rel="icon" href="data:,"><meta property="og:title" content="${esc(title)}"><meta property="og:description" content="${esc(description)}"><meta property="og:type" content="website"><meta property="og:url" content="${origin+file}"><link rel="stylesheet" href="${base}styles.css?v=${version}"><link rel="stylesheet" href="${base}catalog.css?v=${version}"><link rel="stylesheet" href="${base}header-solutions.css?v=${version}"><script src="${base}app.js?v=${version}" defer></script><script src="${base}catalog.js?v=${version}" defer></script>${structured?`<script type="application/ld+json">${json(structured)}</script>`:''}</head>
 <body class="product-page catalog-page${file.includes("products/details/") ? " catalog-detail-page" : ""}" id="top">${header(base)}<main id="main">${body}</main>${footer(base)}</body></html>\n`;
 }
 const crumbs = (base,category,item) => `<nav class="breadcrumb" aria-label="Breadcrumb"><a href="${base}index.html">Home</a><span>/</span><a href="${base}products/index.html">Product catalogue</a>${category?`<span>/</span>${item?`<a href="${base}products/${category.file}">${esc(category.label)}</a><span>/</span><span>${esc(item.name)}</span>`:`<span>${esc(category.label)}</span>`}`:''}</nav>`;
@@ -143,7 +142,7 @@ const homeFile=path.join(root,'index.html');
 const homeSource=fs.readFileSync(homeFile,'utf8');
 const homeGrid=`<!-- product-family-grid:start -->\n        <nav class="product-grid" aria-label="Product families">${records.map(category=>`\n          <a class="product-card product-card--cutout${category.id==='wind'?' product-card--full-turbine':''} reveal" href="products/${category.file}" data-product-category="${category.id}" data-cover-product="${category.cover.id}" aria-label="${esc(category.label)}"><img src="${category.image}" alt="${esc(category.imageAlt)}" width="1000" height="1000" loading="lazy" decoding="async"><span class="product-card__name"><strong>${category.homeLabel}</strong><i aria-hidden="true">↗</i></span></a>`).join('')}\n        </nav>\n        <!-- product-family-grid:end -->`;
 if (!homeSource.includes('<!-- product-family-grid:start -->') || !homeSource.includes('<!-- product-family-grid:end -->')) throw new Error('Homepage category grid markers are required');
-outputs.set('index.html',homeSource.replace(/<!-- product-family-grid:start -->[\s\S]*?<!-- product-family-grid:end -->/,homeGrid).replace(/((?:styles\.css|app\.js)\?v=)[\d.]+/g,'$1'+version));
+outputs.set('index.html',homeSource.replace(/<!-- product-family-grid:start -->[\s\S]*?<!-- product-family-grid:end -->/,homeGrid).replace(/((?:styles\.css|header-solutions\.css|app\.js)\?v=)[\d.]+/g,'$1'+version));
 outputs.set('products/index.html',catalogue(null));
 for (const category of directories) outputs.set('products/'+category.file,catalogue(category));
 for (const item of all) {

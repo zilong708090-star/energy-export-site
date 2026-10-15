@@ -1,6 +1,16 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 28
+# Shandong Lantian Energy Technology Co., Ltd. — Release 29
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
+
+## Release 29 — company profile and solution-led masthead
+
+The company section (`#company`) now contains the owner's complete English company profile in five editorial groups: integrated energy solutions, capabilities across products and projects, regional project experience, international presence and commitment. The founding year (2017), workforce (more than 3,000 employees), market regions and multi-country warehouses/branch offices are owner-supplied statements, not newly researched or inferred claims. No named project, client, country-specific office, certification or additional historical date has been invented. The old undated development-priority panel has been replaced by the supplied business narrative, with the `#company-development` anchor retained for the capabilities section.
+
+The residential rooftop image is replaced by a factory-entrance brand visualization bearing the requested Chinese company name. Its on-page caption and media register identify it as a visualization, not evidence of an actual company-owned facility. Final source, prompt and image paths are recorded in `assets/COMPANY_R29_MEDIA.md`.
+
+The six top navigation links and hamburger menu have been removed from the homepage, generated catalogue/detail pages and standalone buyer guides. A non-interactive English descriptor, “One-stop Energy Solutions”, takes their place on desktop; the company home link and direct WhatsApp “Start a project” remain. On phones the descriptor hides to preserve room for the contact button. This is a solution-led company website, not an online checkout: technology directories remain available within page content, without adding shopping-cart or payment behavior. Shared cache tags are `29.2`; masthead-specific styles are in `header-solutions.css`. The hero slides, product category identities and R27 reading width are preserved.
+
+The floating WhatsApp pill hides while the company section is in view so it cannot obscure the entrance sign, workforce figure or long-form profile. The sticky masthead's direct project contact remains visible, and the floating contact returns outside the section. Company and masthead layouts are checked at desktop, tablet and narrow phone widths.
 
 ## Release 28 — white product cover and richer photo collections
 
@@ -50,11 +60,11 @@ R25 classification and clean complete-turbine photo provenance are indexed in `a
 
 ## Visitor experience
 
-The homepage includes the existing automatic/manual carousel, a company overview before the product section, an undated business-development direction, four product categories, system architecture selector, six industry-specific outage use cases, six photo-led application scenarios, a grouped twelve-photo image viewer, engineering, production, inventory, three-image verification and export-packing collections, quotation process, project support, buyer resources, a prominent direct WhatsApp contact panel and FAQ.
+The homepage includes the existing automatic/manual carousel, a full company profile before the technology categories, company facts, manufacturing/engineering capabilities, regional experience and international operations, four technology categories, system architecture selector, six industry-specific outage use cases, six photo-led application scenarios, a grouped twelve-photo image viewer, engineering, production, inventory, three-image verification and export-packing collections, quotation process, project support, buyer resources, a prominent direct WhatsApp contact panel and FAQ.
 
 The former abstract operating-problem cards are now concrete application cards: large hospitals, supermarkets/cold chain, factories, hotels, farm irrigation and remote communities. Each pairs an outage risk with the selected-load power priority and a context-specific WhatsApp link. Hospital copy explicitly coordinates with the site's electrical team, UPS, generators and transfer design; refrigeration copy accounts for starting loads and backup duration. These are representative planning scenarios, not claimed company installations or guarantees of uninterrupted operation or food safety.
 
-The company introduction uses the approved name and product scope. The development section is explicitly labelled as development direction rather than historical milestones. Founding dates and dated company milestones are still awaiting owner-provided information; none have been invented.
+The company introduction uses the owner-provided English profile, including establishment in 2017 and more than 3,000 employees. Other dated company milestones have not been provided and none have been invented. The previous development-direction placeholder has been replaced by the supplied capabilities, project-experience, presence and commitment copy.
 
 Each product detail page includes a corresponding supplier product/family view, a labelled parameter table, applications, source/model notes, a download and direct WhatsApp contact. Additional gallery angles are provided only when reviewed matching images are available. The resource pages provide linked contents, practical procurement information and a downloadable project brief.
 
@@ -63,7 +73,7 @@ The company name is displayed in English as Shandong Lantian Energy Technology C
 ## Maintaining the website
 
 - Edit homepage content in `index.html`.
-- Edit page layouts and responsive appearance in `styles.css`.
+- Edit page layouts and responsive appearance in `styles.css`; solution-led masthead styling is in `header-solutions.css`.
 - Edit carousel, image viewer and navigation behaviour in `app.js`.
 - Images are local in `assets/`; image provenance is recorded in `assets/ASSET_SOURCES.md`.
 - When adding or renaming a page, update `sitemap.xml` and relevant navigation links.

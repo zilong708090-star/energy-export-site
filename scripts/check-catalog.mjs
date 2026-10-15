@@ -42,6 +42,12 @@ for(const product of products){
   assert.ok(!data.offers,'No invented price or availability');
 }
 const homepage=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const companyProfile=homepage.match(/<section class="company section"[\s\S]*?<\/section>/)?.[0];
+assert.ok(companyProfile,'Company profile stays in the requested homepage position');
+for(const heading of ['Integrated Energy Solutions.','Global Project Experience.','Capabilities Across','Products and Projects','Experience Across Markets','An International Presence,','Closer to Our Customers','Our Commitment']) assert.ok(companyProfile.includes(heading),'Owner-supplied profile heading: '+heading);
+assert.ok(companyProfile.includes('Founded in 2017')&&companyProfile.includes('more than 3,000 employees'),'Owner-provided founding year and employee scale');
+assert.ok(companyProfile.includes('company-factory-entrance-r29.jpg')&&companyProfile.includes('brand visualization'),'Company entrance is a labelled branding visualization');
+for(const market of ['China','Southeast Asia','Middle East','Central Asia','Africa']) assert.ok(companyProfile.includes(market),'Owner-provided market: '+market);
 const identity=JSON.parse(fs.readFileSync(path.join(root,'catalog-data/categories.json'),'utf8'));
 const pageFor={storage:'energy-storage',inverters:'inverters',solar:'solar-modules',wind:'wind-turbines'};
 assert.equal(identity.length,4,'Four reviewed category identities');
@@ -62,6 +68,13 @@ function htmlFiles(directory){
 const files=htmlFiles(root);
 for(const file of files){
   const html=fs.readFileSync(file,'utf8');
+  const header=html.match(/<header\b[\s\S]*?<\/header>/)?.[0];
+  if(header){
+    assert.ok(!header.includes('<nav')&&!header.includes('nav-toggle'),'No masthead navigation buttons: '+file);
+    assert.ok(header.includes('<p class="header-solution-line">One-stop Energy Solutions</p>'),'Non-linked one-stop energy positioning: '+file);
+    assert.equal((header.match(/<a\b/g)||[]).length,2,'Only brand home link and project contact remain in masthead: '+file);
+    assert.ok(header.includes('Start a project')&&header.includes('wa.me/8615224220207'),'Prominent project contact: '+file);
+  }
   const ids=[...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(ids).size,ids.length,'Duplicate ID: '+file);
   for(const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)){

@@ -1,5 +1,9 @@
 # External image sources
 
+## Company introduction / Release 29
+
+The company profile uses an edited factory-entrance brand visualization with the owner's requested Chinese name, 山东蓝天能源科技有限公司. It is labelled as a brand visualization on the page, rather than presented as an unaltered photograph of a company-owned facility. Source, retained original, built-in image-edit prompt and final file are recorded in `assets/COMPANY_R29_MEDIA.md`. The company facts and English narrative were supplied directly by the owner on 2026-10-16; the photograph does not establish workforce, project history or facility ownership.
+
 ## Homepage media / Release 28
 
 The wind category now uses the existing naturally clean white-background Oulu FD-series product image, correctly linked to its own catalogue record. Two new verification photos and two new packing/loading photos form separate three-photo compositions with the original lead images. Image sources, original backups, precise brand-removal prompts and final paths are indexed in `assets/HOMEPAGE_MEDIA_R28.md`; these are representative supplier/process photographs, not claims of Lantian-owned premises or completed deliveries. No technical specifications were inferred from the image edits.

@@ -1,0 +1,33 @@
+/* A quieter, solution-led masthead. Technology directories remain within the page. */
+.site-header--solutions .nav-wrap { gap: clamp(20px, 3vw, 42px); }
+.site-header--solutions .brand { flex-shrink: 0; }
+.header-solution-line {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin: 0 0 0 auto;
+  color: rgba(255, 255, 255, .82);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: .025em;
+  line-height: 1.35;
+}
+.header-solution-line::before { content: ""; width: 28px; height: 1px; flex: 0 0 auto; background: var(--bright); }
+.site-header--solutions .nav-cta { display: inline-flex; flex: 0 0 auto; }
+
+@media (max-width: 1050px) {
+  .site-header--solutions .nav-wrap { gap: 22px; }
+  .header-solution-line { font-size: 12px; gap: 10px; }
+  .header-solution-line::before { width: 20px; }
+}
+@media (max-width: 760px) {
+  .site-header--solutions .nav-wrap { gap: 14px; }
+  .header-solution-line { display: none; }
+  .site-header--solutions .nav-cta { margin-left: auto; min-height: 44px; padding: 12px 14px; font-size: 12px; white-space: nowrap; }
+}
+@media (max-width: 420px) {
+  .site-header--solutions .nav-wrap { gap: 12px; }
+  .site-header--solutions .brand__descriptor strong { font-size: 12px; }
+  .site-header--solutions .brand__descriptor small { font-size: 6.6px; }
+  .site-header--solutions .nav-cta { padding: 12px 10px; font-size: 11px; }
+}
