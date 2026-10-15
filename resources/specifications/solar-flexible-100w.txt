@@ -1,0 +1,30 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+100 W Flexible Monocrystalline Module
+Technical reference: RNG-100DB-H (G3)
+Reviewed: 2026-10-15
+
+Maximum power at STC: 100 Wp
+Maximum power voltage (Vmp): 20.7 V
+Maximum power current (Imp): 4.84 A
+Open-circuit voltage (Voc): 24.4 V
+Short-circuit current (Isc): 5.16 A
+Module efficiency at STC: 15.7%
+Maximum system voltage: 600 V DC
+Max. series fuse: 15 A
+Dimensions: 1,093 × 582 × 3 mm
+Weight: 2.4 kg
+Cells: 36 (3 × 12)
+Junction box rating: IP67
+Pmax temperature coefficient: −0.38% / °C
+
+Technical source: https://www.renogy.com/cdn/shop/files/RNG-100DB-H-G3_20Datashhet.pdf?v=2121247365811578325
+
+Model-specific notes: Uses G3 electrical and mechanical data, not the older G2 datasheet. Curvature shown is illustrative; follow installation limits.
+Image reference: RNG-100DB-H G3 family view; actual flexible construction.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

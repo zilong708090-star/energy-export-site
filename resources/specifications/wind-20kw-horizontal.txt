@@ -1,0 +1,31 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+20 kW Commercial Wind Turbine
+Technical reference: UHWT series — 20000 W column
+Reviewed: 2026-10-15
+
+Rated power: 20,000 W
+Maximum power: 24,000 W
+Rotor diameter: 10 m
+Blade material: Fibre-reinforced plastic
+Blade count: 3
+Rated rotor speed: 160 rpm
+Rated wind speed: 11 m/s
+Start-up wind speed: 3 m/s
+Working wind range: 4–30 m/s
+Supplier safety wind limit: 50 m/s
+Listed voltage options: 240–420 V
+Generator: Three-phase AC
+Turbine-head weight: 680 kg
+Housing material: Precision cast steel
+
+Technical source: https://uintltrade.en.made-in-china.com/product/odKxQraPJEVX/China-20000W-20kw-Windmill-Generator-on-off-Grid-Generation-System.html
+
+Model-specific notes: 20000 W table column used; a supplier listing image is not a dimensional drawing. Photo is AI-cleaned. Verify foundation design, braking strategy and voltage-specific controller before ordering.
+Image reference: Supplier UHWT 20 kW listing installation photo with branding cleanup; confirm final rotor and tower drawings.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

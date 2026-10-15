@@ -23,7 +23,7 @@ Discharging temperature: −20 to +60 °C
 Technical source: https://pnsolar.en.made-in-china.com/product/bQVUNWJCbBrz/China-Wall-Mounted-Lithium-Battery-51-2V-100ah-5kwh-LiFePO4-Power-Wall-Energy-Storage-Battery.html
 
 Model-specific notes: Supplier-reference configuration; confirm inverter compatibility before ordering. The listing gives conflicting enclosure IP ratings and dimension ordering, so those fields are not reproduced. Photo is a supplier family image edited only to remove branding and overlays; enclosure appearance must be confirmed for the ordered variant. No warranty or certification claim is made.
-Image reference: Supplier model-family image.
+Image reference: PNG-E51100-LV wall-battery family render; display style varies by ordered variant.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

@@ -24,7 +24,7 @@ Pmax temperature coefficient: −0.29% / °C
 Technical source: https://vertexsplus.trinasolar.com/wp-content/uploads/2024/04/Datasheet_Vertex-S_NEG9R.25_EN_2024_PA_web-1.pdf
 
 Model-specific notes: Electrical values are STC. Manufacturer family rendering; installed output varies with site conditions.
-Image reference: Supplier model-family image.
+Image reference: NEG9R.25 full-black family view shared by 440 / 450 W variants.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

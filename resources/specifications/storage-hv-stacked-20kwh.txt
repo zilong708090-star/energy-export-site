@@ -1,0 +1,30 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+20.48 kWh High-Voltage Stacked Battery
+Technical reference: ES-20KHS
+Reviewed: 2026-10-15
+
+Nominal system energy: 20.48 kWh
+Supplier-stated usable energy: 16.38 kWh
+System nominal voltage: 204.8 V
+Battery chemistry: Lithium iron phosphate (LFP)
+Battery module quantity: 4 in series
+Module capacity: 100 Ah
+Recommended charge / discharge current: 50 A
+Dimensions (supplier dimension order): 590 × 420 × 849 mm
+System weight: 207 kg
+Communication: CAN
+Ingress protection: IP65
+Installation altitude: Below 2,000 m
+Storage temperature: 0 to +35 °C
+
+Technical source: https://enjoysolar.en.made-in-china.com/product/qZMtfzDGbcaw/China-20-48kwh-High-Voltage-Home-Use-Stacked-LiFePO4-Solar-Storage-Battery-Lithium-Ion-Battery.html
+
+Model-specific notes: Values follow only the ES-20KHS column of the supplier's configuration table. Header attributes on this marketplace listing mix capacities, so the model-specific table is the reference. Shared family render shows nominally 20/30/40 kWh stacks; actual tabulated energy is 20.48/30.72/40.96 kWh. The control unit is a battery HV controller, not an AC inverter. Confirm exact connector arrangement and inverter compatibility; no AC output power is inferred.
+Image reference: ES-KHS supplier family render: this model is the right-hand four-module stack; the other two configurations are shown for comparison.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

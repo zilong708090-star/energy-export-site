@@ -1,0 +1,30 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+200 W Compact N-Type Bifacial Module
+Technical reference: RSP200DCT (G1)
+Reviewed: 2026-10-15
+
+Front-side maximum power at STC: 200 Wp
+Maximum power voltage (Vmp): 25.0 V
+Maximum power current (Imp): 8.0 A
+Open-circuit voltage (Voc): 29.6 V
+Short-circuit current (Isc): 8.7 A
+Front-side module efficiency at STC: 19.9%
+Maximum system voltage: 600 V DC
+Max. series fuse: 25 A
+Dimensions: 1,312 × 765 × 30 mm
+Weight: 10.3 kg
+Cells: 80 (10 × 4 × 2)
+Front glass: 3.2 mm tempered glass
+Pmax temperature coefficient: −0.32% / °C
+
+Technical source: https://cdn.shopify.com/s/files/1/0758/6519/4753/files/100-200DCT-G1-Datasheet.pdf?v=1782282353
+
+Model-specific notes: 200 W is front-side STC power. Rear-side gain and controller compatibility require site-specific confirmation.
+Image reference: RSP200DCT 200 W configuration; the larger panel from the supplier comparison image.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

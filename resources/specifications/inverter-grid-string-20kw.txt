@@ -1,0 +1,30 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+20 kW Three-Phase String Inverter
+Technical reference: SUN-20K-G05
+Reviewed: 2026-10-15
+
+Rated AC output: 20 kW
+Max. AC apparent power: 22 kVA
+Nominal AC voltage: 220 / 380 V or 230 / 400 V
+Grid frequency: 50 / 60 Hz
+Max. PV input power: 26 kW
+Max. PV input voltage: 1,100 V
+MPPT voltage range: 200–1,000 V
+MPPT / strings per tracker: 2 / 2+2
+Max. conversion efficiency: 98.5%
+Ingress protection: IP65
+Dimensions (W × H × D): 362 × 527 × 220 mm
+Weight: 20 kg
+Communication: RS485 / RS232
+
+Technical source: https://www.deyeinverter.com/product/three-phase-string-inverter/sun18-20-25kg04-1825kw-three-phase-2-mppt-237.html
+
+Model-specific notes: Uses the technical table's 98.5% value rather than the page's broader marketing maximum. Dimensions exclude connectors and brackets.
+Image reference: SUN-18–25K-G05 family view; 20 kW configuration.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

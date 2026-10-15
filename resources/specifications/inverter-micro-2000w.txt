@@ -1,0 +1,31 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+2 kW Four-MPPT Microinverter
+Technical reference: SUN-M200G4-EU-Q0-I
+Reviewed: 2026-10-15
+
+Rated AC output: 2,000 W
+Nominal AC voltage: 220 / 230 V
+Grid frequency: 50 / 60 Hz
+Recommended module power: 210–700 W × 4
+Max. PV input voltage: 60 V
+Start-up voltage: 20 V
+MPPT voltage range: 25–55 V
+MPPT / inputs per tracker: 4 / 1
+Max. input current: 18 A per input
+Max. conversion efficiency: 96.5%
+Ingress protection: IP67
+Dimensions (W × H × D): 358 × 255.5 × 36.5 mm
+Weight: 4.95 kg
+Communication: Wi-Fi
+
+Technical source: https://www.deyeinverter.com/product/microinverter-1/sunm130-160-180-200-220g4euq0i.html
+
+Model-specific notes: Grid-connected only; local rules, branch limits and module matching must be confirmed. Dimensions exclude connectors and brackets.
+Image reference: SUN-M130–225G4-EU-Q0-I family view; 2 kW configuration.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

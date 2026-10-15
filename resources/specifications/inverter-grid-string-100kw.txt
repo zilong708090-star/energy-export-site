@@ -1,0 +1,30 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+100 kW Industrial String Inverter
+Technical reference: SUN-100K-G03
+Reviewed: 2026-10-15
+
+Rated AC output: 100 kW
+Max. AC apparent power: 110 kVA
+Nominal AC voltage: 220 / 380 V or 230 / 400 V
+Grid frequency: 50 / 60 Hz
+Max. PV input power: 150 kW
+Max. PV input voltage: 1,000 V
+MPPT voltage range: 200–850 V
+MPPT / strings per tracker: 6 / 4+4+4+4+4+4
+Max. input current per MPPT: 40 A
+Ingress protection: IP65
+Dimensions (W × H × D): 824 × 516 × 312.7 mm
+Weight: 81 kg
+Communication: RS485 / RS232
+
+Technical source: https://es.deyeinverter.com/product/three-phase-string-inverter/sun70-75-80-90-100-110kg03-70110kw-three-phase-6-mppt.html
+
+Model-specific notes: Uses the official regional page's cabinet dimensions; datasheet revisions may differ. Grid-tied only, not a standalone backup supply.
+Image reference: SUN-70–110K-G03 manufacturer family view; 100 kW configuration.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

@@ -24,7 +24,7 @@ Cooling: Intelligent air cooling
 Technical source: https://www.deyeinverter.com/product/three-phase-string-inverter/sun40-45-50kg04-4050kw-three-phase-4-mppt.html
 
 Model-specific notes: Grid-connected inverter; it does not independently supply outage backup. Optional functions must be ordered.
-Image reference: Supplier model-family image.
+Image reference: G04 family view shared by the 40 / 50 kW configurations.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

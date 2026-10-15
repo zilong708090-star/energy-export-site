@@ -21,7 +21,7 @@ Weight: 2,500 kg
 Technical source: https://www.run-strategy.com/High-Power-Air-Cooled-Energy-Storage-Cabinet-pd562369348.html
 
 Model-specific notes: No separate manufacturer SKU is published on the source page. Photo is the actual unbranded image from that product page, without generative changes. Backup operation requires confirmation of the PCS, transfer equipment and supported loads; this catalog does not claim seamless backup or a guaranteed runtime.
-Image reference: Supplier model-family image.
+Image reference: Supplier's 100 kW / 215 kWh air-cooled cabinet image.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

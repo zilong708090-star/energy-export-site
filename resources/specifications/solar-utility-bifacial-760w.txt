@@ -1,0 +1,33 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+760 W G3 Utility Bifacial Module (Preliminary)
+Technical reference: TSM-760NEG21C.20Q
+Reviewed: 2026-10-15
+
+Front-side maximum power at STC: 760 Wp
+Maximum power voltage (Vmp): 42.90 V
+Maximum power current (Imp): 17.72 A
+Open-circuit voltage (Voc): 50.90 V
+Short-circuit current (Isc): 18.70 A
+Front-side module efficiency at STC: 24.5%
+Power tolerance: 0 / +3%
+Maximum system voltage: 1,500 V DC
+Max. series fuse: 35 A
+Dimensions: 2,384 × 1,303 × 33 mm
+Weight: 37.0 kg
+Cells: 264
+Front / rear glass: 2.0 / 2.0 mm
+Power bifaciality: 85 ± 5%
+Junction box rating: IP68
+Pmax temperature coefficient: −0.26% / °C
+
+Technical source: https://www-cdn.trinasolar.com/wwwstorage/sites/7/DT-M-0133_Datasheet_210_NEG21C.20Q_EN_2026PA5_web_20260413.pdf
+
+Model-specific notes: Manufacturer's 2026 PA5 sheet is marked preliminary. Final production revision, commercial availability and rear-side yield must be confirmed.
+Image reference: NEG21C.20Q G3 manufacturer family view; 760 W configuration.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

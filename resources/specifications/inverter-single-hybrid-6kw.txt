@@ -24,7 +24,7 @@ Operating temperature: −40 to +60 °C; derating above +45 °C
 Technical source: https://www.deyeinverter.com/product/single-phase-low-voltage-hybrid-inverter/sun3-3-6-5-6ksg04lp1-3-6kw-single-phase.html
 
 Model-specific notes: Dimensions exclude connectors and brackets. Regional configuration must be confirmed.
-Image reference: Supplier model-family image.
+Image reference: SG04LP1-EU family view shared by the 3.6 / 6 kW configurations.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

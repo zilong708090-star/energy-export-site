@@ -23,7 +23,7 @@ Weight: 95 kg
 Technical source: https://enjoysolar.en.made-in-china.com/product/rFEaYPHgJstX/China-All-in-One-5kwh-10kwh-LiFePO4-Lithium-Ion-Cell-Lithium-Battery-Pack-with-5kw-Hybrid-Solar-Inverter-for-Residential-Solar-Battery-Storage-System.html
 
 Model-specific notes: Specifications follow the BP51200 column, not the smaller BP51100. The listing disagrees on output voltage, enclosure thickness and cooling wording; those values are omitted pending the selected variant's final datasheet. Photo is the supplier product-family image with branding removed. No transfer-time, grid-compliance or warranty guarantee is inferred.
-Image reference: Supplier model-family image.
+Image reference: ES-ESS-BP51100/BP51200 all-in-one family render; enclosure size varies with battery capacity.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

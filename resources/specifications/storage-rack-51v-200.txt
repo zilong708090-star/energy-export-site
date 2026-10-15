@@ -1,0 +1,32 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+51.2 V / 10.24 kWh Rack-Mounted LFP Battery
+Technical reference: LR51.2-200; LFELI-48200H-D-EN-V1.6-202512
+Reviewed: 2026-10-15
+
+Rated battery energy: 10.24 kWh
+Rated capacity (5HR): 200 Ah
+Nominal battery voltage: 51.2 V
+Discharge cut-off voltage: 43.2 V
+Maximum charge voltage: 57.6 V
+Maximum charge / discharge current: 150 A
+Dimensions (W × D × H): 442 × 550 × 244 mm
+Weight: Approximately 82 kg
+Communication: RS485 / RS232 / CAN
+Parallel connection: Up to 15 units
+Ingress protection: IP31
+Case material: SPCC steel
+Charging temperature: 0 to +45 °C
+Discharging temperature: −10 to +55 °C
+Storage temperature: −20 to +60 °C
+
+Technical source: https://www.leochlithium.com/pdf/lithium/HomeStorage/Rack-mounted/LR51.2-200%2882Kg%29.pdf
+
+Model-specific notes: Use this model's individual datasheet edition (LFELI-48200H-D-EN-V1.6-202512), not another LR rack variant. This is a battery module without an AC inverter; inverter voltage, charging current and communication compatibility require confirmation. The supplier render carries the correct model label, but display readings are illustrative. Brand mark removed without adding battery hardware. No runtime, warranty or certification guarantee is inferred.
+Image reference: LR51.2-200 supplier product render; screen values are illustrative, not the system operating voltage.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

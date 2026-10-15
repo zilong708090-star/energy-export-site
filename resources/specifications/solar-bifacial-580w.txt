@@ -25,7 +25,7 @@ Power bifaciality: 80 ± 5%
 Technical source: https://www.jinkosolar.com/uploads/JKM560-580N-72HL4-BDV-F5-EN.pdf
 
 Model-specific notes: Uses F5 revision values; later revisions differ. Family image is from the matching supplier listing; rear-side gain is not guaranteed.
-Image reference: Supplier model-family image.
+Image reference: JKM72HL4-BDV bifacial manufacturer family view; 580 W F5 configuration.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

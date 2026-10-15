@@ -1,0 +1,30 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+400 W Carbon-Blade Compact Turbine
+Technical reference: WKH-400
+Reviewed: 2026-10-15
+
+Rated power: 400 W
+Maximum power: 500 W
+Rotor diameter: 1.3 m
+Start-up wind speed: 2 m/s
+Rated wind speed: 12 m/s
+Working wind range: 2–25 m/s
+Survival wind speed: 45 m/s
+Listed DC output: 12 / 24 V
+Blade material: Carbon-fibre composite
+Blade options: 3 or 5
+Generator: Three-phase AC
+Controller braking: Three-phase short circuit, NFB brake
+Working temperature: −40 to +60 °C
+
+Technical source: https://windwing.en.made-in-china.com/product/SoeQBXYCEKTG/China-Horizontal-Axis-Wind-Power-Generator-with-Ce-Certificate.html
+
+Model-specific notes: Use the WKH-400 technical table, not the unrelated category power tag. Photo is AI-cleaned supplier imagery, not a dimension drawing. Confirm blade option and controller scope.
+Image reference: WKH-400 listing demonstration photo with branding cleanup; base panels are not included by default.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

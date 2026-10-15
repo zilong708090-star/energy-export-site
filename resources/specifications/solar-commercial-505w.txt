@@ -24,7 +24,7 @@ Pmax temperature coefficient: −0.29% / °C
 Technical source: https://vertexsplus.trinasolar.com/wp-content/uploads/2024/03/DS-NEG18R.28-EN-1.pdf
 
 Model-specific notes: Electrical values are STC. Do not mix this 505 W datasheet bin with newer 510 W variants.
-Image reference: Supplier model-family image.
+Image reference: NEG18R.28 commercial family view shared by 500 / 505 W variants.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

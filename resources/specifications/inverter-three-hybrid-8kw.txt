@@ -1,0 +1,32 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+8 kW Three-Phase Hybrid Inverter
+Technical reference: SUN-8K-SG05LP3-EU-SM2
+Reviewed: 2026-10-15
+
+Rated AC input / output: 8,000 W
+Nominal AC voltage: 220 / 380 V or 230 / 400 V
+Grid frequency: 50 / 60 Hz
+Battery voltage range: 40–60 V
+Max. charge / discharge current: 190 A
+Max. PV input power: 12,800 W
+Max. PV input voltage: 800 V
+MPPT voltage range: 200–650 V
+MPPT / strings per tracker: 2 / 2+2
+Max. conversion efficiency: 97.6%
+Ingress protection: IP65
+Communication: Wi-Fi, RS485, CAN
+Dimensions (W × H × D): 386 × 660 × 250 mm
+Weight: 35.2 kg
+Cooling: Intelligent air cooling
+
+Technical source: https://www.deyeinverter.com/product/three-phase-hybrid-inverter-1/sun3-4-5-6-8-10-12ksg05lp3eusm2-312kw-three-phase-2-mppt-hybrid-inverter-lv-battery-supported.html
+
+Model-specific notes: Dimensions exclude connectors and brackets; output distribution limits require project review.
+Image reference: SG05LP3-EU-SM2 family view shared by the 8 / 12 kW configurations.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

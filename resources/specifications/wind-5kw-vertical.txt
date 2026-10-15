@@ -1,0 +1,29 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+5 kW Commercial Vertical-Axis Turbine
+Technical reference: Aeolos-V 5kW — 4.8 m rotor-height revision
+Reviewed: 2026-10-15
+
+Rated power: 5,000 W
+Maximum power: 6,000 W
+Listed output voltage: 220 V
+Rotor height: 4.8 m
+Rotor diameter: 4.5 m
+Start-up wind speed: 1.5 m/s
+Rated wind speed: 11 m/s
+Survival wind speed: 52.5 m/s
+Generator: Permanent magnet
+Blade material: Aluminium alloy
+Turbine weight: 500 kg
+Working temperature: −20 to +50 °C
+
+Technical source: https://www.windturbinestar.com/5kwv-v-aeolos-wind-turbine.html
+
+Model-specific notes: Current English-page 4.8 m / 4.5 m revision used; older brochures differ. Start-up is not generation cut-in. AI-cleaned manufacturer photo is illustrative, not a dimensional drawing.
+Image reference: Aeolos-V 5 kW manufacturer photograph with branding cleanup; confirm the selected revision's dimensions.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

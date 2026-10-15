@@ -8,6 +8,7 @@ const categories=['storage','inverters','solar','wind'];
 const products=categories.flatMap(category=>{
   const data=JSON.parse(fs.readFileSync(path.join(root,'catalog-data',category+'.json'),'utf8'));
   assert.ok(data.items.length>=4,'Each category must contain a useful reviewed selection');
+  for(const item of data.items) assert.equal(item.category,category,'Record belongs to its source category: '+item.id);
   return data.items;
 });
 const escape=value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('>','&gt;').replaceAll('"','&quot;').replaceAll("'",'&#39;');
@@ -15,6 +16,10 @@ assert.equal(new Set(products.map(item=>item.id)).size,products.length,'Unique p
 for(const product of products){
   assert.ok(product.specs.length>=8,'A complete technical selection table: '+product.id);
   assert.ok(product.source.url.startsWith('https://'),'Primary reference URL: '+product.id);
+  assert.ok(product.source.model,'An explicit technical model: '+product.id);
+  const prefix=product.category==='inverters'?'inverter':product.category;
+  assert.ok(product.image.src.startsWith('assets/catalog-'+prefix+'-'),'Category-specific product photograph: '+product.id);
+  assert.equal(new Set(product.specs.map(spec=>spec.label.toLowerCase().trim())).size,product.specs.length,'Unambiguous specification labels: '+product.id);
   const detail=fs.readFileSync(path.join(root,'products/details',product.id+'.html'),'utf8');
   const txt=fs.readFileSync(path.join(root,'resources/specifications',product.id+'.txt'),'utf8');
   assert.ok(detail.includes('data-current-photo-caption'),'Current image caption has its own selector');
@@ -36,6 +41,20 @@ for(const product of products){
   assert.equal(data.additionalProperty.length,product.specs.length);
   assert.ok(!data.offers,'No invented price or availability');
 }
+const homepage=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const identity=JSON.parse(fs.readFileSync(path.join(root,'catalog-data/categories.json'),'utf8'));
+const pageFor={storage:'energy-storage',inverters:'inverters',solar:'solar-modules',wind:'small-wind'};
+assert.equal(identity.length,4,'Four reviewed category identities');
+for(const category of identity){
+  const cover=products.find(item=>item.id===category.coverProduct);
+  assert.equal(cover?.category,category.id,'Homepage cover is a product of its own category');
+  const card=homepage.match(new RegExp('<a class="product-card[^>]+data-product-category="'+category.id+'"[\\s\\S]*?<\\/a>'))?.[0];
+  assert.ok(card,'Homepage category card: '+category.id);
+  assert.ok(card.includes('src="'+cover.image.src+'"'),'Homepage cover matches catalogue: '+category.id);
+  assert.ok(card.includes('href="products/'+pageFor[category.id]+'.html"'),'Homepage category target: '+category.id);
+  assert.ok(card.includes('data-cover-product="'+cover.id+'"'),'Homepage cover provenance: '+category.id);
+}
+assert.ok(!homepage.includes('src="assets/supplier-storage-cabinet.jpg"')&&!homepage.includes('src="assets/supplier-inverter-cabinet.jpg"'),'Ambiguous old category covers are no longer used');
 
 function htmlFiles(directory){
  return fs.readdirSync(directory,{withFileTypes:true}).flatMap(entry=>entry.name==='.git'?[]:entry.isDirectory()?htmlFiles(path.join(directory,entry.name)):entry.name.endsWith('.html')?[path.join(directory,entry.name)]:[]);

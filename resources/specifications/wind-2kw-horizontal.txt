@@ -1,0 +1,31 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+2 kW Guyed-Tower Wind Turbine
+Technical reference: UHWT series — 2000 W column
+Reviewed: 2026-10-15
+
+Rated power: 2,000 W
+Maximum power: 3,000 W
+Rotor diameter: 3.8 m
+Blade material: Fibre-reinforced plastic
+Blade count: 3
+Rated rotor speed: 320 rpm
+Rated wind speed: 8 m/s
+Start-up wind speed: 2 m/s
+Working wind range: 3–25 m/s
+Supplier safety wind limit: 50 m/s
+Listed voltage options: 24–300 V
+Generator: Three-phase AC
+Turbine-head weight: 90 kg
+Housing material: Precision cast steel
+
+Technical source: https://uintltrade.en.made-in-china.com/product/qZKQcYxDOJWa/China-2000W-2kw-Low-Wind-Speed-High-Efficiency-Horizonal-Wind-Turbine.html
+
+Model-specific notes: Parameters follow only the 2000 W table column. Maximum power is not continuous rated output. Photo is AI-cleaned supplier imagery. Request the exact voltage-specific drawing and power curve.
+Image reference: Supplier UHWT 2 kW listing installation photo with branding cleanup; tower and PV scope are project-specific.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

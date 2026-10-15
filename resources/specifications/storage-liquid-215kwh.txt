@@ -26,7 +26,7 @@ Weight: Approximately 2,500 kg
 Technical source: https://hcdf-electric.en.made-in-china.com/product/ftgUsqGuOMhP/China-Efficient-215kwh-Controlled-Energy-Storage-Cabinet-for-Resale.html
 
 Model-specific notes: Supplier-reference model, not a claim of Lantian manufacture. The source states grid-connected operation as basic; off-grid and parallel operation require extra accessories and software. Photo is the original supplier cabinet image edited to remove branding, watermark lettering and certification overlays. Market-specific compliance, delivery scope and the ordered enclosure must be confirmed.
-Image reference: Supplier model-family image.
+Image reference: HCESS1-100-215 supplier cabinet render; branding removed.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

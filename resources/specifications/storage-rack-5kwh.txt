@@ -24,7 +24,7 @@ Cycle-life test condition: >6,000 cycles at 80% DOD, as stated in the supplier d
 Technical source: https://www.leochlithium.com/pdf/lithium/HomeStorage/Rack-mounted/LR51.2-100%284U%29.pdf
 
 Model-specific notes: This entry uses the 4U variant only; a separate 3U product has different dimensions. Parallel quantity follows the February 2026 datasheet rather than older 40-unit literature. Supplier photo obtained from https://www.leoch.com/products/lithium/residential-rack-mounted-battery and edited only to remove the brand mark. Cycle life is a stated test condition, not a site-life guarantee.
-Image reference: Supplier model-family image.
+Image reference: LR51.2-100 4U supplier product render; branding removed.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

@@ -25,7 +25,7 @@ Cooling: Intelligent air cooling
 Technical source: https://www.deyeinverter.com/product/three-phase-high-voltage-hybrid-inverter/sun29-9-30-35-40-50ksg01hp3eubm3-4-29-950kw-three-phase-2-3-4-mppt-hybrid-inverter-hv-battery-supported-339.html
 
 Model-specific notes: Battery compatibility, transfer architecture and local grid acceptance require project-specific confirmation.
-Image reference: Supplier model-family image.
+Image reference: SG01HP3-EU family view shared by the 30 / 50 kW configurations.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

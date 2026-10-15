@@ -24,7 +24,7 @@ Pmax temperature coefficient: −0.29% / °C
 Technical source: https://vertexsplus.trinasolar.com/wp-content/uploads/2024/09/240910_Datasheet_VertexS_NEG9RC.27_EN_2024_A_web.pdf
 
 Model-specific notes: 450 W is front-side STC power. Rear-side gain depends on installation; it is not guaranteed.
-Image reference: Supplier model-family image.
+Image reference: NEG9RC.27 bifacial family view shared by 430 / 450 W variants.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

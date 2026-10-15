@@ -24,7 +24,7 @@ Cooling: Intelligent air cooling
 Technical source: https://www.deyeinverter.com/product/three-phase-hybrid-inverter-1/sun3-4-5-6-8-10-12ksg05lp3eusm2-312kw-three-phase-2-mppt-hybrid-inverter-lv-battery-supported.html
 
 Model-specific notes: Dimensions exclude connectors and brackets; output distribution limits require project review.
-Image reference: Supplier model-family image.
+Image reference: SG05LP3-EU-SM2 family view shared by the 8 / 12 kW configurations.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

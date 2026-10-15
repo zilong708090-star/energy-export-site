@@ -1,5 +1,9 @@
 # External image sources
 
+## Product catalogue / Release 24
+
+The catalogue now contains 52 configurations. All four homepage covers use reviewed catalogue records; the former ambiguous supplier-pack storage/inverter covers are superseded. See `assets/CATALOG_R24_AUDIT.md` for the category-cover mapping and linked storage, inverter/PV and wind registers, exact image URLs, built-in image-edit prompt sets and final paths. Original/rejected supplier downloads remain recoverable outside this publishable checkout.
+
 ## Product catalogue / Release 23
 
 The 22 catalogue records in `catalog-data/storage.json`, `inverters.json`, `solar.json` and `wind.json` provide the technical source URL, model/revision, check date and product-photo reference for each configuration. The public register is `resources/catalog-reference.html`. The catalogue does not copy marketplace stock, pricing or seller-specific commercial guarantees into Lantian claims.

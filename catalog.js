@@ -14,7 +14,8 @@
     const searchClear = document.querySelector('[data-search-clear]');
     const selected = new Set();
     const limit = 3;
-    let group = 'all';
+    const initialGroup = new URL(window.location.href).searchParams.get('type');
+    let group = filters.some(button=>button.dataset.catalogFilter===initialGroup) ? initialGroup : 'all';
     const lookup = new Map(items.map(item => [item.id,item]));
     const normalizeSearch = text => String(text).toLowerCase().replace(/[\s,\-–]/g,'');
     const textLookup = new Map(items.map(item => [item.id,normalizeSearch(JSON.stringify([item.name,item.subcategoryLabel,item.source?.model,item.headlineSpecs,item.specs]))]));
@@ -33,10 +34,15 @@
       if (searchClear) searchClear.hidden = !query;
       filters.forEach(button => button.setAttribute('aria-pressed',String(button.dataset.catalogFilter === group)));
     };
-    filters.forEach(button => button.addEventListener('click',() => { group = button.dataset.catalogFilter; updateFilters(); }));
+    const rememberGroup = () => {
+      const url = new URL(window.location.href);
+      if (group==='all') url.searchParams.delete('type'); else url.searchParams.set('type',group);
+      window.history.replaceState(null,'',url);
+    };
+    filters.forEach(button => button.addEventListener('click',() => { group = button.dataset.catalogFilter; updateFilters(); rememberGroup(); }));
     search?.addEventListener('input',updateFilters);
     searchClear?.addEventListener('click',() => { search.value = ''; updateFilters(); search.focus(); });
-    document.querySelector('[data-reset-filters]')?.addEventListener('click',() => { group = 'all'; if (search) search.value = ''; updateFilters(); });
+    document.querySelector('[data-reset-filters]')?.addEventListener('click',() => { group = 'all'; if (search) search.value = ''; updateFilters(); rememberGroup(); });
 
     const tray = document.querySelector('[data-compare-tray]');
     const count = document.querySelector('[data-compare-count]');
@@ -82,11 +88,15 @@
       ['battery cooling',['cooling','Thermal management']],
       ['thermal management',['cooling','Thermal management']]
     ]);
-    const specKey = label => {
+    const specKey = (label,category) => {
       const normalized = label.toLowerCase().replace(/\s+/g,' ').trim();
+      if (category==='wind' && aliases.get(normalized)?.[0]==='ac-power') return 'wind-'+normalized;
       return aliases.get(normalized)?.[0] || normalized;
     };
-    const comparisonLabel = label => aliases.get(label.toLowerCase().replace(/\s+/g,' ').trim())?.[1] || label;
+    const comparisonLabel = (label,category) => {
+      const alias=aliases.get(label.toLowerCase().replace(/\s+/g,' ').trim());
+      return category==='wind' && alias?.[0]==='ac-power' ? 'Wind turbine '+label.toLowerCase() : alias?.[1] || label;
+    };
     const buildComparison = () => {
       const products = [...selected].map(id => lookup.get(id));
       const target = document.querySelector('[data-compare-table]');
@@ -104,16 +114,21 @@
         const cell = document.createElement('th'); cell.scope = 'col';
         const image = document.createElement('img'); image.src = config.base + product.image.src; image.alt = product.image.alt || product.name;
         cell.append(image,textCell('div',product.name));
+        if (product.image.caption) {
+          const imageNote=textCell('p',product.image.caption);
+          imageNote.className='catalog-dialog__image-caption';
+          cell.append(imageNote);
+        }
         const link = textCell('a','Open specifications ↗'); link.href = config.base + 'products/details/' + product.id + '.html';
         cell.append(link); header.append(cell);
       }
       thead.append(header); table.append(thead);
       const rows = new Map();
-      products.forEach(product => product.specs.forEach(spec => { if (!rows.has(specKey(spec.label))) rows.set(specKey(spec.label),comparisonLabel(spec.label)); }));
+      products.forEach(product => product.specs.forEach(spec => { if (!rows.has(specKey(spec.label,product.category))) rows.set(specKey(spec.label,product.category),comparisonLabel(spec.label,product.category)); }));
       const tbody = document.createElement('tbody');
       for (const [key,label] of rows) {
         const row = document.createElement('tr'); const rowLabel = textCell('th',label); rowLabel.scope = 'row'; row.append(rowLabel);
-        products.forEach(product => row.append(textCell('td',product.specs.find(spec => specKey(spec.label) === key)?.value || '—')));
+        products.forEach(product => row.append(textCell('td',product.specs.find(spec => specKey(spec.label,product.category) === key)?.value || '—')));
         tbody.append(row);
       }
       table.append(tbody); target.append(table);
@@ -141,6 +156,8 @@
   document.querySelector('[data-image-enlarge]')?.addEventListener('click',() => {
     if (!mainImage || !imageDialog || typeof imageDialog.showModal !== 'function') return;
     const enlarged = imageDialog.querySelector('img'); enlarged.src = mainImage.currentSrc || mainImage.src; enlarged.alt = mainImage.alt;
+    const imageNote=imageDialog.querySelector('[data-enlarged-caption]');
+    if(imageNote) imageNote.textContent=document.querySelector('[data-current-photo-caption]')?.textContent || 'Supplier model-family reference image.';
     imageDialog.showModal(); document.body.classList.add('catalog-dialog-open');
   });
   document.querySelector('[data-image-close]')?.addEventListener('click',() => imageDialog?.close());

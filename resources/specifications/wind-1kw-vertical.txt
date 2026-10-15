@@ -1,0 +1,28 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+1 kW Straight-Blade Vertical Turbine
+Technical reference: Aeolos-V 1kW
+Reviewed: 2026-10-15
+
+Rated power: 1,000 W
+Maximum power: 1,500 W
+Listed output voltage: 48 / 110 V
+Rotor height: 2.8 m
+Rotor diameter: 2 m
+Start-up wind speed: 1.5 m/s
+Rated wind speed: 10 m/s
+Survival wind speed: 50 m/s
+Generator: Permanent magnet
+Blade material: Aluminium alloy
+Working temperature: −20 to +50 °C
+
+Technical source: https://www.windturbinestar.com/1kwv-v-aeolos-wind-turbine.html
+
+Model-specific notes: Current English-page ratings used. Weight omitted because language versions conflict. Start-up rotation is not rated output. AI-cleaned manufacturer photo is not a technical drawing.
+Image reference: Aeolos-V 1 kW manufacturer photograph with branding cleanup; confirm current rotor drawings.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

@@ -244,6 +244,13 @@ if ("IntersectionObserver" in window) {
 
 const whatsappContact = q(".whatsapp-contact");
 const whatsappFloat = q(".whatsapp-float");
+const homepageProductGrid = q(".product-grid");
+if (homepageProductGrid && whatsappFloat && "IntersectionObserver" in window) {
+  const productGridObserver = new IntersectionObserver(([entry]) => {
+    whatsappFloat.classList.toggle("is-over-product-grid", entry.isIntersecting);
+  });
+  productGridObserver.observe(homepageProductGrid);
+}
 if (whatsappContact && whatsappFloat && "IntersectionObserver" in window) {
   const contactObserver = new IntersectionObserver(([entry]) => {
     whatsappFloat.classList.toggle("is-at-contact", entry.isIntersecting && entry.intersectionRatio >= .15);

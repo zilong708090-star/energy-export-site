@@ -1,0 +1,33 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+30 kW Variable-Pitch Wind Turbine
+Technical reference: AH-30KW
+Reviewed: 2026-10-15
+
+Rated power: 30,000 W
+Maximum power: 33,000 W
+Rotor diameter: 13.1 m
+Blades: Reinforced fibreglass / 3
+Rated wind speed: 12 m/s
+Rated rotation: 105 rpm
+Working wind range: 3.5–30 m/s
+Start-up wind speed: 3 m/s
+Cut-in wind speed: 3.5 m/s
+Survival wind speed: 60 m/s
+Working DC voltage: 240 / 500 V
+Speed regulation: Pitch control
+Stop method: Automatic brake
+Generator: Three-phase AC permanent magnet
+Turbine weight: 2,800 kg
+Listed tower height: At least 20 m
+
+Technical source: https://chinawindenergy.en.made-in-china.com/product/BwmGYJvxgyRK/China-30kw-Wind-Turbine.html
+
+Model-specific notes: Detailed AH-30KW table used, not generic prose or an unrelated 10 kW name field. Starting rotation and cut-in are different thresholds. Supplier survival speed is not operating wind.
+Image reference: Installation reference supplied in the AH-30KW listing; final tower and access arrangement vary.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

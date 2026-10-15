@@ -22,7 +22,7 @@ Maximum operating altitude: 2,000 m
 Technical source: https://szcorey.en.made-in-china.com/product/AUirMSchbtks/China-3-7MW-European-Stock-Corey-Solar-Compact-System-Lithium-Battery-Efficient-Energy-Storage-Container.html
 
 Model-specific notes: This is a DC battery-container reference, not a guaranteed complete AC system. The marketplace title incorrectly uses MW and a table labels a kWh value as power; only the separately stated nominal energy is reproduced, and no AC output power is inferred. The listing disagrees on fire-suppression detail, so that field is omitted. Exact supplier photo edited only to remove brand logos; final configuration and enclosure details require confirmation.
-Image reference: Supplier model-family image.
+Image reference: Corey-L3.7-1500 DC battery-container supplier render; external AC equipment is not shown.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

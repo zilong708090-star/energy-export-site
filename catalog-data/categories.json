@@ -1,0 +1,30 @@
+[
+  {
+    "id": "storage",
+    "coverProduct": "storage-liquid-215kwh",
+    "homeLabel": "Battery energy<br>storage cabinets",
+    "function": "Stores electricity for later use.",
+    "selectionBasis": "Choose the battery format and energy capacity first, then confirm the compatible PCS or inverter. A battery-only enclosure is not a complete AC backup system."
+  },
+  {
+    "id": "inverters",
+    "coverProduct": "inverter-three-hybrid-12kw",
+    "homeLabel": "Hybrid &amp; grid-tied<br>inverters",
+    "function": "Converts and manages electrical power.",
+    "selectionBasis": "Choose off-grid, hybrid or grid-tied operation, then match the phase, battery voltage and PV inputs. An inverter does not store energy; grid-tied models alone do not provide outage backup."
+  },
+  {
+    "id": "solar",
+    "coverProduct": "solar-black-frame-460w",
+    "homeLabel": "Solar PV<br>modules",
+    "function": "Generates DC electricity from sunlight.",
+    "selectionBasis": "Match the module format to the mounting area, then check current, voltage, weight and rated output. Bifacial rear-side gain depends on the actual installation, not just the nameplate rating."
+  },
+  {
+    "id": "wind",
+    "coverProduct": "wind-3kw-horizontal",
+    "homeLabel": "Small wind<br>turbine systems",
+    "function": "Generates electricity from the wind resource.",
+    "selectionBasis": "Choose the turbine around measured wind conditions, rotor size and tower requirements. Controllers, brakes, foundations and compatible inverters must be confirmed as part of the system."
+  }
+]

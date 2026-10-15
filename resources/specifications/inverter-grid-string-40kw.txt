@@ -1,0 +1,32 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+40 kW Commercial String Inverter
+Technical reference: SUN-40K-G04
+Reviewed: 2026-10-15
+
+Rated AC output: 40 kW
+Max. AC apparent power: 44 kVA
+Nominal AC voltage: 220 / 380 V or 230 / 400 V
+Grid frequency: 50 / 60 Hz
+Max. PV input power: 52 kW
+Max. PV input voltage: 1,100 V
+MPPT voltage range: 200–1,000 V
+MPPT / strings per tracker: 3 / 3+3+3
+Max. conversion efficiency: 98.7%
+Euro efficiency: 98.1%
+Ingress protection: IP65
+Communication: RS485 / RS232
+Dimensions (W × H × D): 434 × 570 × 243 mm
+Weight: 39 kg
+Cooling: Intelligent air cooling
+
+Technical source: https://www.deyeinverter.com/product/three-phase-string-inverter/sun40-45-50kg04-4050kw-three-phase-4-mppt.html
+
+Model-specific notes: Grid-connected inverter; it does not independently supply outage backup. Optional functions must be ordered.
+Image reference: G04 family view shared by the 40 / 50 kW configurations.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207

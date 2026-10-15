@@ -17,6 +17,24 @@
 .catalog-hero__visual figcaption { position: absolute; bottom: 27px; left: 28px; right: 28px; z-index: 1; }
 .catalog-hero__visual figcaption span { display: block; margin-bottom: 12px; color: var(--bright); font: 700 9px/1.3 "SFMono-Regular",Consolas,monospace; letter-spacing: .1em; }
 .catalog-hero__visual figcaption strong { font-size: 29px; font-weight: 600; line-height: 1.07; letter-spacing: -.03em; }
+.catalog-hero__visual--equipment { background: #fff; }
+.catalog-hero__visual--equipment > img { height: 80%; object-fit: contain; padding: 22px 35px 8px; }
+.catalog-hero__visual--equipment::after { background: linear-gradient(0deg,#0a1727 0%,rgba(10,23,39,.94) 12%,transparent 43%); }
+.catalog-hero__visual--equipment figcaption { bottom: 22px; }
+.catalog-hero__visual--equipment figcaption strong { font-size: 25px; }
+.catalog-families { padding: 45px 0; background: #e7edde; border-bottom: 1px solid #cfdac5; }
+.catalog-families__heading { display: grid; grid-template-columns: 1fr 1fr; gap: 50px; align-items: end; margin-bottom: 26px; }
+.catalog-families__heading .story-label { color: #587725; }
+.catalog-families__heading h2 { margin: 10px 0 0; max-width: 490px; font-size: clamp(25px,2.3vw,34px); line-height: 1.08; font-weight: 600; letter-spacing: -.035em; }
+.catalog-families__heading p { margin: 0; max-width: 560px; color: #5c6a57; font-size: 12px; line-height: 1.8; }
+.catalog-families__grid { display: grid; grid-template-columns: repeat(auto-fit,minmax(240px,1fr)); gap: 12px; }
+.catalog-family { display: flex; align-items: center; gap: 13px; min-width: 0; padding: 12px; background: rgba(255,255,255,.8); border: 1px solid #ccd8bf; transition: background .2s,border-color .2s; }
+.catalog-family:hover { background: #fff; border-color: #718c50; }
+.catalog-family__image { flex: 0 0 68px; height: 78px; padding: 4px; background: #fff; }
+.catalog-family__image img { width: 100%; height: 100%; object-fit: contain; }
+.catalog-family strong { display: block; font-size: 13px; line-height: 1.3; font-weight: 650; }
+.catalog-family span { display: block; margin-top: 8px; color: #6a795e; font: 600 9px/1.5 "SFMono-Regular",Consolas,monospace; }
+.catalog-family i { margin-left: auto; font-size: 24px; font-style: normal; color: #587725; }
 .catalog-hub { padding-bottom: 0; }
 .catalog-hub h1 { max-width: 900px; font-size: clamp(54px,6.3vw,90px); }
 .catalog-hub__summary { display: flex; justify-content: space-between; align-items: end; gap: 40px; margin-top: 28px; }
@@ -61,6 +79,9 @@
 .catalog-card__reference { color: #849084; font: 650 8px/1.3 "SFMono-Regular",Consolas,monospace; letter-spacing: .07em; text-transform: uppercase; }
 .catalog-card h3 { margin: 10px 0 21px; font-size: 23px; line-height: 1.12; font-weight: 650; letter-spacing: -.03em; }
 .catalog-card h3 a:hover { color: #587725; }
+.catalog-card__model { display: grid; gap: 5px; margin: -7px 0 18px; color: #475842; font: 600 10px/1.55 "SFMono-Regular",Consolas,monospace; overflow-wrap: anywhere; }
+.catalog-card__model > span { color: #849084; font-size: 7px; letter-spacing: .09em; }
+.catalog-card__caption { padding-top: 11px; margin: -8px 0 17px; border-top: 1px solid #e7ece6; color: #788177; font-size: 9px; line-height: 1.6; }
 .catalog-card__specs { padding: 0; margin: auto 0 22px; font-size: 11px; }
 .catalog-card__specs div { display: flex; align-items: baseline; justify-content: space-between; gap: 14px; padding: 9px 0; border-bottom: 1px solid #e7ece6; }
 .catalog-card__specs dt { color: #788177; }
@@ -104,6 +125,7 @@
 .catalog-dialog thead th:first-child { width: 180px; min-width: 140px; font-size: 12px; }
 .catalog-dialog thead img { width: 100%; height: 135px; object-fit: contain; margin-bottom: 15px; }
 .catalog-dialog th a { display: inline-block; margin-top: 10px; color: #587725; font-size: 11px; letter-spacing: 0; }
+.catalog-dialog__image-caption { font-size: 10px; font-weight: 400; letter-spacing: 0; line-height: 1.55; color: #788177; }
 .catalog-dialog > p { margin-bottom: 0; color: #788177; font-size: 11px; line-height: 1.65; }
 .catalog-product { padding: 155px 0 65px; background: var(--ink-2); color: #fff; }
 .catalog-product > .shell > .breadcrumb { margin-bottom: 32px; }
@@ -170,6 +192,7 @@
 .catalog-footer__links a:hover { color: #fff; }
 .catalog-image-dialog { position: relative; width: min(800px,calc(100vw - 40px)); max-height: calc(100svh - 40px); padding: 38px; border: 0; background: #fff; }
 .catalog-image-dialog > img { max-height: calc(100svh - 125px); width: 100%; object-fit: contain; }
+.catalog-image-dialog > p { margin: 13px 0 0; color: #5d6a57; font-size: 11px; line-height: 1.65; }
 .catalog-image-dialog > button { position: absolute; top: 9px; right: 11px; padding: 0; width: 30px; height: 30px; border: 0; background: #fff; font-size: 27px; cursor: pointer; }
 .catalog-register-hero { padding-bottom: 60px; }
 .catalog-register-hero > .shell > p:last-child { max-width: 700px; color: #b3bfc8; line-height: 1.75; }
@@ -190,6 +213,13 @@ body.catalog-dialog-open { overflow: hidden; }
   .catalog-quotation > .shell { align-items: flex-start; flex-direction: column; gap: 25px; }
 }
 @media (max-width:760px) {
+  .catalog-families { padding: 32px 0; }
+  .catalog-families__heading { grid-template-columns: 1fr; gap: 15px; }
+  .catalog-families__grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
+  .catalog-family { gap: 10px; padding: 10px; }
+  .catalog-family__image { flex-basis: 50px; height: 66px; }
+  .catalog-family strong { font-size: 12px; }
+  .catalog-family i { display: none; }
   .catalog-hero, .catalog-hub { padding-top: 133px; }
   .catalog-hero { padding-bottom: 38px; }
   .catalog-hero__grid { grid-template-columns: 1fr; gap: 32px; }
@@ -253,4 +283,10 @@ body.catalog-dialog-open { overflow: hidden; }
   .catalog-dialog table { min-width: 620px; }
   .catalog-image-dialog { padding: 35px 20px 22px; }
   .catalog-image-dialog > img { max-height: calc(100svh - 110px); }
+}
+@media (max-width:480px) {
+  .catalog-families__grid { grid-template-columns: 1fr; gap: 9px; }
+  .catalog-family__image { flex-basis: 66px; height: 70px; }
+  .catalog-family strong { font-size: 14px; }
+  .catalog-family i { display: block; margin-right: 7px; }
 }

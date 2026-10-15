@@ -24,7 +24,7 @@ Operating temperature: −40 to +60 °C; derating above +45 °C
 Technical source: https://www.deyeinverter.com/product/offgrid-inverter/SUN3-3-6-5-6KOG02LP1EUAM1.html
 
 Model-specific notes: Specifications refer to the exact listed model; photograph shows its manufacturer product family.
-Image reference: Supplier model-family image.
+Image reference: OG03LP1-EU family view shared by the 5 / 8.8 kW configurations.
 
 These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
 

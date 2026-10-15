@@ -1,0 +1,33 @@
+SHANDONG LANTIAN ENERGY TECHNOLOGY CO., LTD.
+PRODUCT SELECTION REFERENCE
+
+125 kW / 261 kWh Fully Liquid-Cooled Storage Cabinet
+Technical reference: HESS-261-2h; global datasheet V202504
+Reviewed: 2026-10-15
+
+Nominal battery energy: 261 kWh
+Cell rating / chemistry: 3.2 V / 314 Ah LFP
+Battery pack configuration: 1P52S / 52.25 kWh
+System battery configuration: 1P260S
+Battery voltage range: 728–936 V DC
+Rated on-grid output: 125 kW at 50 °C
+Maximum output power: 137.5 kW
+Rated grid voltage range: 340–440 V AC
+Grid frequency: 50 / 60 Hz
+Grid connection: 3P3W / 3P4W
+Thermal management: Fully liquid-cooled battery and PCS
+Dimensions (W × H × D): 1,030 × 2,450 × 1,400 mm
+Weight: Less than 2,700 kg
+Ingress protection: IP55
+Operating temperature: −30 to +55 °C; derating above 50 °C
+Communication interfaces: RS485 / Ethernet / DIO
+
+Technical source: https://www.hoymiles.com/downloads/datasheet-hoyultra2-hess-261-2h-global-en.html
+
+Model-specific notes: Values follow the official V202504 datasheet linked by the manufacturer. Newer regional revisions may differ, particularly fire protection and compliance; these fields are not promised here. Rated output is 125 kW at 50 °C, not a blanket output guarantee at every temperature. Backup requires the engineered transfer and protection arrangement. Official product render edited to remove branding only.
+Image reference: HESS-261-2h official supplier product render; final site equipment follows the selected regional configuration.
+
+These are published supplier-reference values. Confirm the selected-model datasheet, rated conditions, compatibility, availability, certification, warranty and delivery scope in the final quotation.
+
+WhatsApp: +86 152 2422 0207
+https://wa.me/8615224220207
