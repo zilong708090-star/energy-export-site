@@ -1,6 +1,12 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 31
+# Shandong Lantian Energy Technology Co., Ltd. — Release 32
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
+
+## Release 32 — partnership message on the first screen
+
+The first homepage slide retains the white “One-stop power solutions.” heading and its existing background. The marked regional eyebrow, “Power everywhere.” tagline and two in-slide calls to action are removed. The exact closing message, “Let our long-term partnership begin with getting to know each other.”, now appears below the white heading in a smaller lime-green typographic block. It is removed from the homepage footer rather than duplicated. The footer's unmarked integrated-energy label and company identity remain; inner-page footers are unchanged.
+
+All four carousel slides, automatic/manual navigation, the masthead project button, floating WhatsApp contact and the R31 reference-media sections are retained. New copy styling is scoped to `hero__partnership`, with narrow/short-screen adjustments. Shared cache tags are `32.1`.
 
 ## Release 31 — industry dialogue, construction and document references
 

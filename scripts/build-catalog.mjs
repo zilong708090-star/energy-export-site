@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 // The JSON records are the reviewed source of truth. Generated pages are static,
 // searchable without JavaScript and reproducible with this one command.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const version = '31.1';
+const version = '32.1';
 const reviewed = '2026-10-15';
 const updated = '2026-10-16';
 const origin = 'https://zilong708090-star.github.io/energy-export-site/';

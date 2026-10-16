@@ -43,6 +43,12 @@ for(const product of products){
   assert.ok(!data.offers,'No invented price or availability');
 }
 const homepage=fs.readFileSync(path.join(root,'index.html'),'utf8');
+const integratedSlide=homepage.match(/<article class="hero__slide hero__slide--integrated[\s\S]*?<\/article>/)?.[0];
+assert.ok(integratedSlide,'Primary homepage slide retained');
+assert.ok(integratedSlide.includes('One-stop power')&&integratedSlide.includes('solutions.'),'White solution headline retained');
+assert.ok(integratedSlide.includes('Let our long-term partnership</span> <span>begin with getting to know each other.'),'Partnership closing text moved into the first slide');
+assert.ok(!/For Africa|Power everywhere|hero__actions|Discuss your project|Explore the portfolio/.test(integratedSlide),'Marked primary-slide eyebrow, old tagline and calls to action removed');
+assert.equal((homepage.match(/data-hero-slide\s/g)||[]).length,4,'Four original carousel slides remain');
 const companyProfile=homepage.match(/<section class="company section"[\s\S]*?<\/section>/)?.[0];
 assert.ok(companyProfile,'Company profile stays in the requested homepage position');
 for(const heading of ['Integrated Energy Solutions.','Global Project Experience.','Capabilities Across','Products and Projects','Experience Across Markets','An International Presence,','Closer to Our Customers','Our Commitment']) assert.ok(companyProfile.includes(heading),'Owner-supplied profile heading: '+heading);
@@ -79,7 +85,8 @@ for(const file of files){
   const footer=html.match(/<footer\b[\s\S]*?<\/footer>/)?.[0];
   if(footer){
     assert.ok(footer.includes('footer--minimal')&&footer.includes('id="footer"'),'Minimal anchored footer: '+file);
-    assert.ok(footer.includes('Let our long-term partnership<br>begin with getting to know each other.'),'Approved partnership closing line: '+file);
+    if(file===path.join(root,'index.html')) assert.ok(!footer.includes('Let our long-term partnership')&&!footer.includes('<h2>'),'Homepage closing line moved rather than duplicated');
+    else assert.ok(footer.includes('Let our long-term partnership<br>begin with getting to know each other.'),'Unchanged inner-page partnership closing line: '+file);
     assert.ok(!/<a\b|<nav\b|footer__links|footer__media-note/.test(footer),'Removed footer calls to action, navigation and notes: '+file);
     assert.ok(footer.includes('Shandong Lantian')&&!footer.includes('Specifications confirmed'),'Company identity retained without deleted small print: '+file);
   }
