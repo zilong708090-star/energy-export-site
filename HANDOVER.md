@@ -1,6 +1,12 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 33
+# Shandong Lantian Energy Technology Co., Ltd. — Release 34
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
+
+## Release 34 — remove exhibition, construction and certificate sections
+
+The owner requested removal of all three R31 homepage additions: `#industry-connections`, `#project-execution` and `#document-library`. Each complete section is removed, including its heading, copy, photographs/cards and supporting rows. The document-library FAQ is removed, and the remaining image FAQ no longer refers to the retired exhibition/meeting collection. The now-unused homepage link to `reference-media.css` is removed without changing shared CSS or JavaScript; existing shared asset cache tags therefore remain `33.1`.
+
+Company introduction now leads directly into the product section, engineering depth into operations, and verification into export delivery. All other section markup, the four-slide hero, the twelve original field/verification/dispatch images, contact controls and the horizontal R33 footer remain. The removed photographs, certificate originals/previews and source registers are retained as archived assets, not displayed or opened by the homepage. No catalogue/product data or inner-page source was changed.
 
 ## Release 33 — screenshot-scoped cleanup and horizontal footer identity
 
@@ -88,7 +94,7 @@ R25 classification and clean complete-turbine photo provenance are indexed in `a
 
 ## Visitor experience
 
-The homepage includes the existing automatic/manual carousel, a full company profile before the technology categories, company facts, manufacturing/engineering capabilities, regional experience and international operations, exhibition/group/dialogue references, four technology categories, system architecture selector, six industry-specific outage use cases, six photo-led application scenarios, a grouped 21-item image/document viewer, construction references, engineering, production, inventory, three-image verification and export-packing collections, a supplier-document library, quotation process, project support, buyer resources, a prominent direct WhatsApp contact panel and FAQ.
+The homepage includes the automatic/manual carousel, a full company profile before the technology categories, company facts, manufacturing/engineering capabilities, regional experience and international operations, four technology categories, system architecture selector, six industry-specific outage use cases, six photo-led application scenarios, a grouped 12-item image viewer, engineering, production, inventory, three-image verification and export-packing collections, quotation process, project support, buyer resources, a prominent direct WhatsApp contact panel and FAQ. The separate exhibition, construction and certificate sections are no longer displayed.
 
 The former abstract operating-problem cards are now concrete application cards: large hospitals, supermarkets/cold chain, factories, hotels, farm irrigation and remote communities. Each pairs an outage risk with the selected-load power priority and a context-specific WhatsApp link. Hospital copy explicitly coordinates with the site's electrical team, UPS, generators and transfer design; refrigeration copy accounts for starting loads and backup duration. These are representative planning scenarios, not claimed company installations or guarantees of uninterrupted operation or food safety.
 

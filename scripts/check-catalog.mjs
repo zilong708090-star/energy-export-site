@@ -55,12 +55,9 @@ assert.ok(!homeSection('company').includes('Discover our capabilities')&&!homeSe
 for(const label of ['ABOUT US','REGIONAL EXPERIENCE','INTERNATIONAL OPERATIONS','LONG-TERM VALUE','Discuss your energy solution']) assert.ok(!homeSection('company').includes(label),'Marked company label removed: '+label);
 assert.ok(!homeSection('use-cases').includes('challenge-card__link'),'Application discussion links removed');
 assert.ok(!homeSection('applications').includes('application-link'),'Field application actions removed');
-for(const id of ['industry-connections','project-execution','document-library']){
-  const section=homeSection(id);
-  assert.ok(!section.includes('reference-disclosure')&&!section.includes('reference-source'),'Marked reference caption extras removed: '+id);
-  for(const caption of section.matchAll(/<figcaption>([\s\S]*?)<\/figcaption>/g)) assert.ok(!/<small|<a\b/.test(caption[1]),'Only unmarked caption label and heading remain: '+id);
-}
-assert.ok(!homeSection('document-library').includes('document-review-points'),'Marked document review strip removed');
+for(const id of ['industry-connections','project-execution','document-library']) assert.ok(!homepage.includes('id="'+id+'"'),'Entire retired homepage section absent: '+id);
+for(const group of ['engagements','construction','documents']) assert.ok(!homepage.includes('data-photo-group="'+group+'"'),'Retired gallery absent from the image viewer: '+group);
+assert.ok(!homepage.includes('How should I read the document examples?')&&!homepage.includes('reference-media.css'),'Obsolete document FAQ and section-only stylesheet removed');
 assert.ok(!homeSection('dispatch').includes('document-ribbon')&&!homeSection('dispatch').includes('evidence-note'),'Marked dispatch note and ribbon removed');
 assert.ok(!homeSection('resources').includes('brief-download')&&!homeSection('resources').includes('<a '),'Removed resource action rows leave no invisible card links');
 const companyProfile=homepage.match(/<section class="company section"[\s\S]*?<\/section>/)?.[0];
@@ -162,14 +159,6 @@ for(const group of ['quality','dispatch']){
   const images=figures.map(figure=>figure.match(/<img[^>]+src="([^"]+)"/)[1]);
   assert.equal(new Set(images).size,3,'Distinct photographs in '+group+' collection');
   assert.ok(figures.every(figure=>figure.includes('<figcaption>')&&figure.includes('loading="lazy"')),'Captioned lazy-loaded evidence photographs');
-}
-for(const group of ['engagements','construction','documents']){
-  const figures=[...homepage.matchAll(new RegExp('<figure[^>]+data-photo-group="'+group+'"[\\s\\S]*?<\\/figure>','g'))].map(match=>match[0]);
-  assert.equal(figures.length,3,'Three distinct new reference items: '+group);
-  assert.equal(new Set(figures.map(figure=>figure.match(/<img[^>]+src="([^"]+)"/)[1])).size,3,'No duplicated reference image: '+group);
-  for(const figure of figures){
-    assert.ok(figure.includes('data-photo-note=')&&figure.includes('loading="lazy"'),'Carry-through provenance note and lazy image: '+group);
-  }
 }
 assert.ok(homepage.includes('data-photo-note-output'),'Image viewer retains reference attribution');
 const documentHashes={solar:'b3f801c1ffb5071d8cca98d91ef365126f7f6148ada0aeb158c82acd62a6f033',storage:'bff840c05e94c283191e9d01d181aab64be8b30b9e98b7116534689f5df6818b',inverter:'0c130799a6e1bc947aca658607df130f710aacee36992a2638507aa7767e5a1c'};
