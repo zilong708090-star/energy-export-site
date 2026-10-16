@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 // The JSON records are the reviewed source of truth. Generated pages are static,
 // searchable without JavaScript and reproducible with this one command.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const version = '29.2';
+const version = '30.1';
 const reviewed = '2026-10-15';
 const updated = '2026-10-16';
 const origin = 'https://zilong708090-star.github.io/energy-export-site/';
@@ -72,7 +72,7 @@ function header(base) {
   </div></header>`;
 }
 function footer(base) {
-  return `<footer class="footer catalog-footer"><div class="shell"><div class="footer__top"><div><span class="footer__label">A connected product portfolio</span><h2>Find the equipment.<br>Build the solution.</h2></div><a class="button button--bright" href="${wa('Hello Shandong Lantian, I would like to request a product quotation.')}" target="_blank" rel="noopener">Message on WhatsApp</a></div><div class="catalog-footer__links">${directories.map(category=>`<a href="${base}products/${category.file}">${esc(category.label)} ↗</a>`).join('')}<a href="${base}resources/catalog-reference.html">Technical reference register ↗</a></div><div class="footer__bottom"><div class="brand brand--footer"><span class="brand__descriptor"><strong>Shandong Lantian</strong><small>Energy Technology Co., Ltd.</small></span></div><p>WhatsApp +86 152 2422 0207</p><p>Final configuration and supply scope confirmed by quotation.</p></div></div></footer>
+  return `<footer class="footer footer--minimal catalog-footer" id="footer"><div class="shell"><div class="footer__top"><div><span class="footer__label">Integrated clean energy</span><h2>Let our long-term partnership<br>begin with getting to know each other.</h2></div></div><div class="footer__bottom"><div class="brand brand--footer"><span class="brand__descriptor"><strong>Shandong Lantian</strong><small>Energy Technology Co., Ltd.</small></span></div></div></div></footer>
   <a class="whatsapp-float whatsapp-float--labelled" href="${wa('Hello Shandong Lantian, I would like to discuss a product from your catalogue.')}" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">${whatsappIcon}<span class="whatsapp-float__label">Chat on WhatsApp</span></a>`;
 }
 function page(file, title, description, body, base, structured) {

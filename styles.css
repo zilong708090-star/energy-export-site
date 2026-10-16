@@ -439,6 +439,10 @@ button { color: inherit; }
 .footer__links a:hover, .footer__links a:focus-visible { color: #fff; }
 .footer__bottom { min-height: 105px; display: grid; grid-template-columns: 1fr auto auto; align-items: end; gap: 35px; color: rgba(255,255,255,.48); font-size: 11px; }
 .brand--footer { color: #fff; }
+.footer.footer--minimal { padding: clamp(56px, 5.5vw, 80px) 0 32px; }
+.footer--minimal .footer__top { display: block; padding-bottom: 42px; }
+.footer--minimal h2 { max-width: 1000px; margin-top: 22px; font-size: clamp(36px, 3.9vw, 60px); line-height: 1.07; }
+.footer--minimal .footer__bottom { display: block; min-height: 0; padding-top: 29px; }
 .whatsapp-float { position: fixed; z-index: 35; right: 22px; bottom: 22px; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: var(--bright); color: var(--ink); box-shadow: 0 16px 34px rgba(7,17,31,.28); transition: opacity .25s ease, visibility .25s ease, transform .25s var(--ease); }
 .whatsapp-float:hover { transform: translateY(-4px) scale(1.03); }
 .whatsapp-float svg { width: 25px; fill: currentColor; }
@@ -446,7 +450,7 @@ button { color: inherit; }
 .whatsapp-float__label { font-size: 13px; font-weight: 750; }
 .whatsapp-float.is-over-product-grid { justify-content: center; width: 56px; height: 56px; min-height: 56px; padding: 0; }
 .whatsapp-float.is-over-product-grid .whatsapp-float__label { display: none; }
-.whatsapp-float.is-at-contact, .whatsapp-float.is-at-company { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(10px); }
+.whatsapp-float.is-at-contact, .whatsapp-float.is-at-company, .whatsapp-float.is-at-footer { opacity: 0; visibility: hidden; pointer-events: none; transform: translateY(10px); }
 
 /* Product platform pages */
 .product-page {

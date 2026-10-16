@@ -75,6 +75,13 @@ for(const file of files){
     assert.equal((header.match(/<a\b/g)||[]).length,2,'Only brand home link and project contact remain in masthead: '+file);
     assert.ok(header.includes('Start a project')&&header.includes('wa.me/8615224220207'),'Prominent project contact: '+file);
   }
+  const footer=html.match(/<footer\b[\s\S]*?<\/footer>/)?.[0];
+  if(footer){
+    assert.ok(footer.includes('footer--minimal')&&footer.includes('id="footer"'),'Minimal anchored footer: '+file);
+    assert.ok(footer.includes('Let our long-term partnership<br>begin with getting to know each other.'),'Approved partnership closing line: '+file);
+    assert.ok(!/<a\b|<nav\b|footer__links|footer__media-note/.test(footer),'Removed footer calls to action, navigation and notes: '+file);
+    assert.ok(footer.includes('Shandong Lantian')&&!footer.includes('Specifications confirmed'),'Company identity retained without deleted small print: '+file);
+  }
   const ids=[...html.matchAll(/(?:^|\s)id="([^"]+)"/g)].map(match=>match[1]);
   assert.equal(new Set(ids).size,ids.length,'Duplicate ID: '+file);
   for(const match of html.matchAll(/\b(?:href|src)="([^"]+)"/g)){

@@ -246,6 +246,13 @@ const whatsappContact = q(".whatsapp-contact");
 const whatsappFloat = q(".whatsapp-float");
 const homepageProductGrid = q(".product-grid");
 const companySection = q(".home-page #company");
+const pageFooter = q("footer.footer");
+if (pageFooter && whatsappFloat && "IntersectionObserver" in window) {
+  const footerObserver = new IntersectionObserver(([entry]) => {
+    whatsappFloat.classList.toggle("is-at-footer", entry.isIntersecting);
+  });
+  footerObserver.observe(pageFooter);
+}
 if (companySection && whatsappFloat && "IntersectionObserver" in window) {
   const companyObserver = new IntersectionObserver(([entry]) => {
     whatsappFloat.classList.toggle("is-at-company", entry.isIntersecting);
