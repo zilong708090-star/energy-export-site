@@ -124,7 +124,7 @@ button { color: inherit; }
 .section-copy { margin: 0; color: var(--muted); font-size: 17px; line-height: 1.7; }
 .section-copy--light { color: rgba(255,255,255,.62); }
 
-/* Owner-supplied company profile; brand visualization is labelled separately. */
+/* Owner-supplied company profile; image provenance remains in its alt text. */
 .company { background: #eef2ef; border-bottom: 1px solid var(--line); }
 .company__heading { margin-bottom: 38px; }
 .company__overview { display: grid; grid-template-columns: minmax(0, 1.12fr) minmax(0, 1fr); gap: clamp(34px, 4vw, 62px); align-items: center; }
@@ -445,6 +445,11 @@ button { color: inherit; }
 .footer--minimal .footer__top { display: block; padding-bottom: 42px; }
 .footer--minimal h2 { max-width: 1000px; margin-top: 22px; font-size: clamp(36px, 3.9vw, 60px); line-height: 1.07; }
 .footer--minimal .footer__bottom { display: block; min-height: 0; padding-top: 29px; }
+.footer--wordmark .footer__bottom { border-top: 1px solid var(--line-light); padding-top: 30px; }
+.footer__company-name { margin: 0; color: #fff; font-size: clamp(23px, 2.6vw, 37px); line-height: 1.2; font-weight: 650; letter-spacing: -.025em; text-transform: uppercase; white-space: nowrap; }
+@media (max-width: 760px) {
+  .footer__company-name { font-size: clamp(10px, 3.35vw, 23px); letter-spacing: -.035em; }
+}
 .whatsapp-float { position: fixed; z-index: 35; right: 22px; bottom: 22px; width: 56px; height: 56px; display: grid; place-items: center; border-radius: 50%; background: var(--bright); color: var(--ink); box-shadow: 0 16px 34px rgba(7,17,31,.28); transition: opacity .25s ease, visibility .25s ease, transform .25s var(--ease); }
 .whatsapp-float:hover { transform: translateY(-4px) scale(1.03); }
 .whatsapp-float svg { width: 25px; fill: currentColor; }

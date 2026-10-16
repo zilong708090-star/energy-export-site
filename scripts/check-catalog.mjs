@@ -49,11 +49,25 @@ assert.ok(integratedSlide.includes('One-stop power')&&integratedSlide.includes('
 assert.ok(integratedSlide.includes('Let our long-term partnership</span> <span>begin with getting to know each other.'),'Partnership closing text moved into the first slide');
 assert.ok(!/For Africa|Power everywhere|hero__actions|Discuss your project|Explore the portfolio/.test(integratedSlide),'Marked primary-slide eyebrow, old tagline and calls to action removed');
 assert.equal((homepage.match(/data-hero-slide\s/g)||[]).length,4,'Four original carousel slides remain');
+const homeSection=id=>homepage.match(new RegExp('<section[^>]+id="'+id+'"[\\s\\S]*?<\\/section>'))?.[0]||'';
+assert.ok(!homepage.includes('hero__actions')&&!homepage.includes('hero__scroll'),'All marked carousel actions and scroll prompt removed');
+assert.ok(!homeSection('company').includes('Discover our capabilities')&&!homeSection('company').includes('<figcaption>')&&!homeSection('company').includes('company__image-note'),'Marked company actions and image overlays removed');
+for(const label of ['ABOUT US','REGIONAL EXPERIENCE','INTERNATIONAL OPERATIONS','LONG-TERM VALUE','Discuss your energy solution']) assert.ok(!homeSection('company').includes(label),'Marked company label removed: '+label);
+assert.ok(!homeSection('use-cases').includes('challenge-card__link'),'Application discussion links removed');
+assert.ok(!homeSection('applications').includes('application-link'),'Field application actions removed');
+for(const id of ['industry-connections','project-execution','document-library']){
+  const section=homeSection(id);
+  assert.ok(!section.includes('reference-disclosure')&&!section.includes('reference-source'),'Marked reference caption extras removed: '+id);
+  for(const caption of section.matchAll(/<figcaption>([\s\S]*?)<\/figcaption>/g)) assert.ok(!/<small|<a\b/.test(caption[1]),'Only unmarked caption label and heading remain: '+id);
+}
+assert.ok(!homeSection('document-library').includes('document-review-points'),'Marked document review strip removed');
+assert.ok(!homeSection('dispatch').includes('document-ribbon')&&!homeSection('dispatch').includes('evidence-note'),'Marked dispatch note and ribbon removed');
+assert.ok(!homeSection('resources').includes('brief-download')&&!homeSection('resources').includes('<a '),'Removed resource action rows leave no invisible card links');
 const companyProfile=homepage.match(/<section class="company section"[\s\S]*?<\/section>/)?.[0];
 assert.ok(companyProfile,'Company profile stays in the requested homepage position');
 for(const heading of ['Integrated Energy Solutions.','Global Project Experience.','Capabilities Across','Products and Projects','Experience Across Markets','An International Presence,','Closer to Our Customers','Our Commitment']) assert.ok(companyProfile.includes(heading),'Owner-supplied profile heading: '+heading);
 assert.ok(companyProfile.includes('Founded in 2017')&&companyProfile.includes('more than 3,000 employees'),'Owner-provided founding year and employee scale');
-assert.ok(companyProfile.includes('company-factory-entrance-r29.jpg')&&companyProfile.includes('brand visualization'),'Company entrance is a labelled branding visualization');
+assert.ok(companyProfile.includes('company-factory-entrance-r29.jpg')&&companyProfile.includes('branding visualization'),'Company entrance provenance remains in the image alt text');
 for(const market of ['China','Southeast Asia','Middle East','Central Asia','Africa']) assert.ok(companyProfile.includes(market),'Owner-provided market: '+market);
 const identity=JSON.parse(fs.readFileSync(path.join(root,'catalog-data/categories.json'),'utf8'));
 const pageFor={storage:'energy-storage',inverters:'inverters',solar:'solar-modules',wind:'wind-turbines'};
@@ -85,7 +99,10 @@ for(const file of files){
   const footer=html.match(/<footer\b[\s\S]*?<\/footer>/)?.[0];
   if(footer){
     assert.ok(footer.includes('footer--minimal')&&footer.includes('id="footer"'),'Minimal anchored footer: '+file);
-    if(file===path.join(root,'index.html')) assert.ok(!footer.includes('Let our long-term partnership')&&!footer.includes('<h2>'),'Homepage closing line moved rather than duplicated');
+    if(file===path.join(root,'index.html')) {
+      assert.ok(!footer.includes('Let our long-term partnership')&&!footer.includes('<h2>')&&!footer.includes('Integrated clean energy'),'Removed homepage closing and small label stay absent');
+      assert.ok(footer.includes('<p class="footer__company-name">Shandong Lantian Energy Technology Co., Ltd.</p>')&&!footer.includes('<small>'),'Homepage company identity is one continuous horizontal line');
+    }
     else assert.ok(footer.includes('Let our long-term partnership<br>begin with getting to know each other.'),'Unchanged inner-page partnership closing line: '+file);
     assert.ok(!/<a\b|<nav\b|footer__links|footer__media-note/.test(footer),'Removed footer calls to action, navigation and notes: '+file);
     assert.ok(footer.includes('Shandong Lantian')&&!footer.includes('Specifications confirmed'),'Company identity retained without deleted small print: '+file);
@@ -151,8 +168,7 @@ for(const group of ['engagements','construction','documents']){
   assert.equal(figures.length,3,'Three distinct new reference items: '+group);
   assert.equal(new Set(figures.map(figure=>figure.match(/<img[^>]+src="([^"]+)"/)[1])).size,3,'No duplicated reference image: '+group);
   for(const figure of figures){
-    assert.ok(figure.includes('data-photo-note=')&&figure.includes('loading="lazy"'),'Visible/carry-through provenance note and lazy image: '+group);
-    assert.ok(figure.includes('class="reference-source"'),'Reference source or original-file access: '+group);
+    assert.ok(figure.includes('data-photo-note=')&&figure.includes('loading="lazy"'),'Carry-through provenance note and lazy image: '+group);
   }
 }
 assert.ok(homepage.includes('data-photo-note-output'),'Image viewer retains reference attribution');

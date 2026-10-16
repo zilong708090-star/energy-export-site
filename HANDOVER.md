@@ -1,6 +1,14 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 32
+# Shandong Lantian Energy Technology Co., Ltd. — Release 33
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
+
+## Release 33 — screenshot-scoped cleanup and horizontal footer identity
+
+The fifteen owner annotations are applied to the homepage only. Removed: the remaining three hero-slide action groups and shared scroll prompt; selected company micro-labels, two company links and factory-image text overlay/note; six essential-place discussion links and six field-application links; visible extra notes/source links beneath the exhibition, construction and certificate cards; document-review and dispatch-document strips; the dispatch image disclaimer; buyer-guide action rows and the download banner; and the homepage footer's integrated-energy micro-label. Resource cards are now non-linked articles, so deleted calls to action do not leave invisible navigation targets.
+
+Unmarked headings, body copy, imagery, category navigation, visual grids, reading frame, carousel arrows/dots and prominent WhatsApp contacts remain. Original supplier PDFs/PNGs and the R31 source registers are unchanged; photo enlargement retains its source/context notes and unmarked supplier-copy labels remain on certificate cards. Removing visible caption clutter does not change the documented ownership or scope of the referenced material. The factory image's visualization provenance remains in its alt text and asset register.
+
+The homepage footer displays “Shandong Lantian Energy Technology Co., Ltd.” as one larger continuous horizontal wordmark, with responsive font scaling rather than the previous stacked brand descriptor. Inner-page footers are not restyled. Shared cache tags are `33.1`.
 
 ## Release 32 — partnership message on the first screen
 
