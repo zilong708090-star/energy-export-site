@@ -1,5 +1,9 @@
 # External image sources
 
+## Industry, construction and supplier documents / Release 31
+
+Six new photo references and three complete-page document previews are integrated into dedicated homepage sections. The photographs are from Sunpal's official exhibition reports and 19Energy's project gallery; they are labelled edited supplier references, not Lantian staff, customers, event records or completed projects. Three unchanged original PDFs accompany the previews under the actual named holders/applicant. Sources, exact built-in photo-edit prompts, final paths, PDF hashes and scope limitations are indexed in `assets/HOMEPAGE_REFERENCES_R31.md`. Certificate information has not been altered or transferred to Lantian.
+
 ## Company introduction / Release 29
 
 The company profile uses an edited factory-entrance brand visualization with the owner's requested Chinese name, 山东蓝天能源科技有限公司. It is labelled as a brand visualization on the page, rather than presented as an unaltered photograph of a company-owned facility. Source, retained original, built-in image-edit prompt and final file are recorded in `assets/COMPANY_R29_MEDIA.md`. The company facts and English narrative were supplied directly by the owner on 2026-10-16; the photograph does not establish workforce, project history or facility ownership.

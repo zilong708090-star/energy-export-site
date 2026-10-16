@@ -1,6 +1,7 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import path from 'node:path';
+import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
@@ -137,5 +138,21 @@ for(const group of ['quality','dispatch']){
   const images=figures.map(figure=>figure.match(/<img[^>]+src="([^"]+)"/)[1]);
   assert.equal(new Set(images).size,3,'Distinct photographs in '+group+' collection');
   assert.ok(figures.every(figure=>figure.includes('<figcaption>')&&figure.includes('loading="lazy"')),'Captioned lazy-loaded evidence photographs');
+}
+for(const group of ['engagements','construction','documents']){
+  const figures=[...homepage.matchAll(new RegExp('<figure[^>]+data-photo-group="'+group+'"[\\s\\S]*?<\\/figure>','g'))].map(match=>match[0]);
+  assert.equal(figures.length,3,'Three distinct new reference items: '+group);
+  assert.equal(new Set(figures.map(figure=>figure.match(/<img[^>]+src="([^"]+)"/)[1])).size,3,'No duplicated reference image: '+group);
+  for(const figure of figures){
+    assert.ok(figure.includes('data-photo-note=')&&figure.includes('loading="lazy"'),'Visible/carry-through provenance note and lazy image: '+group);
+    assert.ok(figure.includes('class="reference-source"'),'Reference source or original-file access: '+group);
+  }
+}
+assert.ok(homepage.includes('data-photo-note-output'),'Image viewer retains reference attribution');
+const documentHashes={solar:'b3f801c1ffb5071d8cca98d91ef365126f7f6148ada0aeb158c82acd62a6f033',storage:'bff840c05e94c283191e9d01d181aab64be8b30b9e98b7116534689f5df6818b',inverter:'0c130799a6e1bc947aca658607df130f710aacee36992a2638507aa7767e5a1c'};
+for(const [type,expected] of Object.entries(documentHashes)){
+  const pdf=fs.readFileSync(path.join(root,'assets/r31-document-'+type+'.pdf'));
+  assert.equal(createHash('sha256').update(pdf).digest('hex'),expected,'Original supplier PDF remains byte-identical: '+type);
+  assert.ok(fs.existsSync(path.join(root,'assets/r31-document-'+type+'.png')),'Whole-page document preview: '+type);
 }
 console.log(JSON.stringify({passed:true,categories:categories.length,products:products.length,htmlPages:files.length,specificationDownloads:products.length}));

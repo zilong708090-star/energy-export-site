@@ -1,6 +1,14 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 30
+# Shandong Lantian Energy Technology Co., Ltd. — Release 31
 
 Public website: https://zilong708090-star.github.io/energy-export-site/
+
+## Release 31 — industry dialogue, construction and document references
+
+Three photo-led homepage sections add the requested presentation depth without attributing other companies' activities to Lantian. `#industry-connections` uses a full-width exhibition photograph with two supporting public group/discussion images. `#project-execution` shows three separate supplier construction references: module installation, electrical-panel work and on-site module coordination. These six photographs are drawn from Sunpal and 19Energy official publications, with limited built-in image editing of prominent brand/watermark areas. People, settings and equipment are not recast as Lantian staff, customers, event participation or completed projects. Source links, edited-reference labels and explicit ownership limitations appear in the sections and remain visible as notes in the enlargement viewer. The three site photos are not claimed to be consecutive stages of the same project or evidence of passed inspection.
+
+`#document-library` contains three complete-page previews and unchanged original PDFs from Sunpal's official download library. The actual named entities are Sunpal Power Co., Ltd. (PV module certificate), Shanghai Elecnova Energy Storage Co., Ltd. (battery-system certificate) and SRNE Solar Co., Ltd. (inverter conformity document). They are labelled supplier document examples, not Lantian corporate certifications or blanket evidence for the website catalogue. Original holders, models, marks, identifiers, seals and dates are retained. The solar preview is page 1 of its two-page PDF; the other PDFs are one page each. No AI creation, editing, cropping or rebranding was performed on these documents. Printed dates do not establish current issuer status; selected-model applicability and market acceptance remain unverified. Regression checks pin the unchanged original PDF hashes.
+
+The image viewer now has 21 items in six separate collections: field 6, verification 3, dispatch 3, engagements 3, construction 3 and documents 3. The last three groups carry persistent source/context notes in the modal; original PDF/source links remain separate from photo-open controls. Every new image is lazy-loaded with intrinsic dimensions. New-section styling is isolated in `reference-media.css`. Shared cache tags are `31.1`. The approved hero, company profile, product covers and data, header, R27 reading frame and R30 minimal footer are preserved. Sources, exact photo-edit prompts and final asset paths are indexed in `assets/HOMEPAGE_REFERENCES_R31.md`.
 
 ## Release 30 — simplified partnership closing
 
@@ -66,7 +74,7 @@ R25 classification and clean complete-turbine photo provenance are indexed in `a
 
 ## Visitor experience
 
-The homepage includes the existing automatic/manual carousel, a full company profile before the technology categories, company facts, manufacturing/engineering capabilities, regional experience and international operations, four technology categories, system architecture selector, six industry-specific outage use cases, six photo-led application scenarios, a grouped twelve-photo image viewer, engineering, production, inventory, three-image verification and export-packing collections, quotation process, project support, buyer resources, a prominent direct WhatsApp contact panel and FAQ.
+The homepage includes the existing automatic/manual carousel, a full company profile before the technology categories, company facts, manufacturing/engineering capabilities, regional experience and international operations, exhibition/group/dialogue references, four technology categories, system architecture selector, six industry-specific outage use cases, six photo-led application scenarios, a grouped 21-item image/document viewer, construction references, engineering, production, inventory, three-image verification and export-packing collections, a supplier-document library, quotation process, project support, buyer resources, a prominent direct WhatsApp contact panel and FAQ.
 
 The former abstract operating-problem cards are now concrete application cards: large hospitals, supermarkets/cold chain, factories, hotels, farm irrigation and remote communities. Each pairs an outage risk with the selected-load power priority and a context-specific WhatsApp link. Hospital copy explicitly coordinates with the site's electrical team, UPS, generators and transfer design; refrigeration copy accounts for starting loads and backup duration. These are representative planning scenarios, not claimed company installations or guarantees of uninterrupted operation or food safety.
 
@@ -79,7 +87,7 @@ The company name is displayed in English as Shandong Lantian Energy Technology C
 ## Maintaining the website
 
 - Edit homepage content in `index.html`.
-- Edit page layouts and responsive appearance in `styles.css`; solution-led masthead styling is in `header-solutions.css`.
+- Edit page layouts and responsive appearance in `styles.css`; solution-led masthead styling is in `header-solutions.css`, and R31 industry/project/document sections are in `reference-media.css`.
 - Edit carousel, image viewer and navigation behaviour in `app.js`.
 - Images are local in `assets/`; image provenance is recorded in `assets/ASSET_SOURCES.md`.
 - When adding or renaming a page, update `sitemap.xml` and relevant navigation links.

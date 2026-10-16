@@ -5,7 +5,7 @@ import { fileURLToPath } from 'node:url';
 // The JSON records are the reviewed source of truth. Generated pages are static,
 // searchable without JavaScript and reproducible with this one command.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
-const version = '30.1';
+const version = '31.1';
 const reviewed = '2026-10-15';
 const updated = '2026-10-16';
 const origin = 'https://zilong708090-star.github.io/energy-export-site/';
@@ -142,7 +142,7 @@ const homeFile=path.join(root,'index.html');
 const homeSource=fs.readFileSync(homeFile,'utf8');
 const homeGrid=`<!-- product-family-grid:start -->\n        <nav class="product-grid" aria-label="Product families">${records.map(category=>`\n          <a class="product-card product-card--cutout${category.id==='wind'?' product-card--full-turbine':''} reveal" href="products/${category.file}" data-product-category="${category.id}" data-cover-product="${category.cover.id}" aria-label="${esc(category.label)}"><img src="${category.image}" alt="${esc(category.imageAlt)}" width="1000" height="1000" loading="lazy" decoding="async"><span class="product-card__name"><strong>${category.homeLabel}</strong><i aria-hidden="true">↗</i></span></a>`).join('')}\n        </nav>\n        <!-- product-family-grid:end -->`;
 if (!homeSource.includes('<!-- product-family-grid:start -->') || !homeSource.includes('<!-- product-family-grid:end -->')) throw new Error('Homepage category grid markers are required');
-outputs.set('index.html',homeSource.replace(/<!-- product-family-grid:start -->[\s\S]*?<!-- product-family-grid:end -->/,homeGrid).replace(/((?:styles\.css|header-solutions\.css|app\.js)\?v=)[\d.]+/g,'$1'+version));
+outputs.set('index.html',homeSource.replace(/<!-- product-family-grid:start -->[\s\S]*?<!-- product-family-grid:end -->/,homeGrid).replace(/((?:styles\.css|header-solutions\.css|reference-media\.css|app\.js)\?v=)[\d.]+/g,'$1'+version));
 outputs.set('products/index.html',catalogue(null));
 for (const category of directories) outputs.set('products/'+category.file,catalogue(category));
 for (const item of all) {

@@ -297,14 +297,19 @@ if (photoDialog && typeof photoDialog.showModal === "function") {
     const enlarged = q(".photo-dialog__stage img", photoDialog);
     enlarged.src = original.currentSrc || original.src;
     enlarged.alt = original.alt;
-    q("#photo-dialog-title", photoDialog).textContent = q("figcaption strong", figure)?.textContent || original.alt;
+    q("#photo-dialog-title", photoDialog).textContent = figure.dataset.photoTitle || q("figcaption strong", figure)?.textContent || original.alt;
     q("[data-photo-count]", photoDialog).textContent = `${photoIndex + 1} / ${collection.length}`;
+    const sourceNote = q("[data-photo-note-output]", photoDialog);
+    if (sourceNote) {
+      sourceNote.textContent = figure.dataset.photoNote || "";
+      sourceNote.hidden = !sourceNote.textContent;
+    }
   };
   galleryFigures.forEach(figure => {
     const button = document.createElement("button");
     button.className = "photo-open";
     button.type = "button";
-    button.textContent = "View image ↗";
+    button.textContent = figure.dataset.photoAction || "View image ↗";
     button.setAttribute("aria-label", `View larger image: ${q("img", figure).alt}`);
     const openPhoto = () => {
       const group = figure.dataset.photoGroup || "field";
