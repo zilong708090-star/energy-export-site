@@ -5,6 +5,8 @@ import {createHash} from 'node:crypto';
 import {fileURLToPath} from 'node:url';
 
 const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
+const siteOrigin='https://www.photovoltaicpanels.com.cn/';
+assert.equal(fs.readFileSync(path.join(root,'CNAME'),'utf8').trim(),new URL(siteOrigin).hostname,'Custom domain remains bound to the owner-purchased hostname');
 const categories=['storage','inverters','solar','wind'];
 const products=categories.flatMap(category=>{
   const data=JSON.parse(fs.readFileSync(path.join(root,'catalog-data',category+'.json'),'utf8'));
@@ -86,6 +88,15 @@ function htmlFiles(directory){
 const files=htmlFiles(root);
 for(const file of files){
   const html=fs.readFileSync(file,'utf8');
+  assert.ok(!html.includes('https://zilong708090-star.github.io/energy-export-site/'),'No former project origin remains in active HTML: '+file);
+  const canonical=html.match(/<link rel="canonical" href="([^"]+)"/);
+  assert.ok(canonical?.[1].startsWith(siteOrigin),'Canonical uses the formal HTTPS origin: '+file);
+  for(const block of html.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)){
+    const schema=JSON.parse(block[1]);
+    if(schema.url) assert.ok(schema.url.startsWith(siteOrigin),'Structured URL uses formal origin: '+file);
+    for(const value of schema.image||[]) assert.ok(value.startsWith(siteOrigin),'Structured image uses formal origin: '+file);
+    for(const item of schema.itemListElement||[]) assert.ok(item.url.startsWith(siteOrigin),'Structured catalogue item uses formal origin: '+file);
+  }
   const header=html.match(/<header\b[\s\S]*?<\/header>/)?.[0];
   if(header){
     assert.ok(!header.includes('<nav')&&!header.includes('nav-toggle'),'No masthead navigation buttons: '+file);
@@ -119,6 +130,8 @@ for(const file of files){
   }
 }
 const sitemap=fs.readFileSync(path.join(root,'sitemap.xml'),'utf8');
+for(const match of sitemap.matchAll(/<loc>([^<]+)<\/loc>/g)) assert.ok(match[1].startsWith(siteOrigin),'Every sitemap URL uses the formal HTTPS origin');
+assert.ok(fs.readFileSync(path.join(root,'robots.txt'),'utf8').includes('Sitemap: '+siteOrigin+'sitemap.xml'),'Robots advertises the new sitemap');
 for(const product of products) assert.ok(sitemap.includes('/products/details/'+product.id+'.html'),'Product URL in sitemap');
 for(const category of ['energy-storage','battery-modules','containerized-storage','inverters','solar-modules','wind-turbines']){
  const html=fs.readFileSync(path.join(root,'products',category+'.html'),'utf8');

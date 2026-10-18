@@ -1,6 +1,12 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 34
+# Shandong Lantian Energy Technology Co., Ltd. — Release 35
 
-Public website: https://zilong708090-star.github.io/energy-export-site/
+Public website: https://www.photovoltaicpanels.com.cn/
+
+## Release 35 — owner-purchased custom domain
+
+The owner purchased `photovoltaicpanels.com.cn` in Alibaba Cloud and requested binding it to this existing website. The formal hostname is `www.photovoltaicpanels.com.cn`; GitHub Pages custom-domain configuration and the tracked root `CNAME` preserve that binding. Alibaba Cloud DNS has four apex A records for GitHub Pages and a `www` CNAME to `zilong708090-star.github.io`. Both names should resolve to the same site, with the apex redirecting to `www` and HTTPS enforced after GitHub issues the certificate.
+
+Homepage and resource canonicals, Open Graph URLs, generated catalogue canonical/structured-data URLs, retired-product notices, robots sitemap discovery and all sitemap entries use the new HTTPS origin. Layout, content, product records and shared assets remain unchanged. Domain registration/DNS stay in the owner's Alibaba Cloud account; source/hosting stay in the existing GitHub repository. Continue editing and rebuilding normally without changing the domain.
 
 ## Release 34 — remove exhibition, construction and certificate sections
 
