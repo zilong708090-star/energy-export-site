@@ -1,6 +1,18 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 35
+# Shandong Lantian Energy Technology Co., Ltd. — Release 36
 
 Public website: https://www.photovoltaicpanels.com.cn/
+
+## Release 36 — optional visitor and WhatsApp-click analytics
+
+The owner approved GA4 visitor statistics and WhatsApp button-click measurement, not a paid advertising launch. The existing Google account owns Analytics account `412401425`, property `559471009`, website stream `16153697889` and public measurement ID `G-P2KJHXDBS2`. The stream URL is `https://www.photovoltaicpanels.com.cn/`. Analytics report entry: https://analytics.google.com/analytics/web/#/a412401425p559471009/reports/intelligenthome . Never add API secrets, passwords or account credentials to this public repository.
+
+The isolated `analytics.js` module is loaded once by shared `app.js`; only the app-script cache version changes to `36.1`. Existing styles, catalogue scripts, design, content and domain/hosting are unchanged. The English consent controls and persistent “Analytics preferences” entry use scoped `analytics.css`. The new `resources/privacy.html` describes this integration and is included in the sitemap. All content pages load the module; the three immediate compatibility redirects do not.
+
+No Google script or analytics request is initiated by the module before explicit acceptance, after rejection, or when local-storage access fails. DNT/GPC override saved acceptance. Acceptance enables analytics storage only; advertising storage, ad user data, ad personalization and Google signals remain disabled. Configure the GA4 website stream with **Enhanced measurement OFF** before publishing; otherwise Google can automatically collect full outbound WhatsApp URLs outside this module's deliberately limited events. Do not enable cross-domain linking, Google signals or advertising integrations without a new owner request and a matching privacy review.
+
+Intentional events are a query/fragment-stripped `page_view` and `whatsapp_click`. WhatsApp parameters contain only contact method, general button location and page path, never the telephone number, full destination link, prefilled message or form data. A click is not a sent message, confirmed enquiry or sale. GA4 may also create its normal session/first-visit records. Identifier cookies are configured for 90 days without expiry refresh and `SameSite=Lax;Secure`. Withdrawal sets the GA opt-out flag immediately, stops subsequent module events and deletes only `_ga` and `_ga_P2KJHXDBS2` for this site's host/domain candidates; it cannot recall in-flight requests or erase historical Google data. Consent is stored separately under `lantian_analytics_consent_v1` in local storage.
+
+Run `node scripts/check-analytics.mjs` for opt-in, rejection, withdrawal, delayed tag loads, URL minimization, idempotence, storage failures, cookie scope, DNT/GPC and click-link behavior. Run the existing catalogue regression suite as well. A clean isolated snapshot is needed for the catalogue suite while the owner's unrelated working-tree deletion of `assets/supplier-solar-farm.jpg` remains pending; do not restore or publish that deletion as part of analytics work. Live collection must be checked in Analytics Realtime after a consented browser test. Statistics start after installation and consent; they cannot reconstruct prior visitor history.
 
 ## Release 35 — owner-purchased custom domain
 

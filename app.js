@@ -1,3 +1,19 @@
+// Analytics is optional and isolated from the site's existing interactions.
+// Resolve from this shared script so nested resource and product pages work too.
+(() => {
+  try {
+    const appScript = document.currentScript;
+    if (!appScript?.src || window.LantianAnalytics || document.querySelector('script[data-lantian-analytics]')) return;
+    const analyticsScript = document.createElement('script');
+    analyticsScript.src = new URL('analytics.js?v=36.1', appScript.src).href;
+    analyticsScript.async = true;
+    analyticsScript.setAttribute('data-lantian-analytics', '');
+    (document.head || document.documentElement).appendChild(analyticsScript);
+  } catch {
+    // A blocked or unavailable analytics module must not interrupt the website.
+  }
+})();
+
 const solutions = {
   commercial: {
     title: "Commercial & industrial",
