@@ -1,9 +1,10 @@
-/* Optional GA4 analytics. No Google tag or analytics request is made before opt-in. */
+/* Analytics is paused: no controls, Google tag, or analytics requests are created. */
 (() => {
   "use strict";
 
   if (window.LantianAnalytics) return;
   const MEASUREMENT_ID = "G-P2KJHXDBS2";
+  const ANALYTICS_ENABLED = false;
   const CONSENT_KEY = "lantian_analytics_consent_v1";
   const script = document.currentScript;
   if (!script || !script.src) return;
@@ -51,7 +52,7 @@
       return false;
     }
   };
-  const allowed = () => configured && choice === "accepted" && storageAvailable && !privacySignal() && !tagFailed;
+  const allowed = () => ANALYTICS_ENABLED && configured && choice === "accepted" && storageAvailable && !privacySignal() && !tagFailed;
   const gtag = function () { window.dataLayer.push(arguments); };
 
   const clearOwnCookies = () => {
@@ -73,6 +74,22 @@
       });
     } catch { /* Disabled cookie access must not enable analytics. */ }
   };
+
+  // A site-wide pause overrides every saved choice without reading or changing it.
+  // Return before installing listeners, creating controls, or loading any assets.
+  if (!ANALYTICS_ENABLED) {
+    if (configured) window[disableKey] = true;
+    clearOwnCookies();
+    window.LantianAnalytics = Object.freeze({
+      openPreferences: () => {},
+      getState: () => ({
+        configured, choice: "ignored", enabled: false, paused: true, tagLoaded: false,
+        blockedByPrivacySignal: privacySignal(), storageAvailable: null
+      }),
+      revoke: clearOwnCookies
+    });
+    return;
+  }
 
   const stop = () => {
     active = false;
@@ -142,7 +159,7 @@
   };
 
   const getState = () => ({
-    configured, choice, enabled: active && allowed(), tagLoaded,
+    configured, choice, enabled: active && allowed(), paused: false, tagLoaded,
     blockedByPrivacySignal: privacySignal(), storageAvailable
   });
   const render = () => {

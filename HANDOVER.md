@@ -1,6 +1,14 @@
-# Shandong Lantian Energy Technology Co., Ltd. — Release 36
+# Shandong Lantian Energy Technology Co., Ltd. — Release 37
 
 Public website: https://www.photovoltaicpanels.com.cn/
+
+## Release 37 — remove analytics popup and floating preferences control
+
+The owner requested removal of the entire screenshot-marked analytics region, including the optional-analytics popup and the bottom-left “Analytics preferences” button. The production analytics module is paused before any UI, stylesheet, Google tag, analytics event or measurement listener is created. This applies to unknown, rejected and previously accepted consent choices: removing the control must not turn optional tracking into automatic tracking. The paused module sets the GA opt-out flag and attempts to clear only this site's prior `_ga` and `_ga_P2KJHXDBS2` cookies. Earlier saved preference values are retained but ignored while paused; no remote historical Analytics data or account is deleted.
+
+Shared app and analytics-script cache tags are `37.1`; existing styles and catalogue-script tags remain `33.1`. All current pages load the paused module, and the three immediate compatibility redirects remain unchanged. The retained English privacy notice now describes the paused state. Header, hero/carousel, copy, imagery, product data, WhatsApp contacts, footer, domain and HTTPS configuration are unchanged. The previous opt-in implementation remains in source history; future measurement changes need an explicit owner decision and updated visitor-facing controls/notice before re-enabling.
+
+The catalogue suite must still run in a clean isolated snapshot because of the owner's unrelated pending deletion of `assets/supplier-solar-farm.jpg`; preserve that working-tree deletion and untracked `assets/.DS_Store`. No Google Ads campaign, payment or account setting is changed by this release.
 
 ## Release 36 — optional visitor and WhatsApp-click analytics
 

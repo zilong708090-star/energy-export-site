@@ -6,7 +6,9 @@ const source = await readFile(new URL("../analytics.js", import.meta.url), "utf8
 const css = await readFile(new URL("../analytics.css", import.meta.url), "utf8");
 const TEST_ID = "G-TEST123456";
 const KEY = "lantian_analytics_consent_v1";
-const testSource = source.replace(/const MEASUREMENT_ID = "[^"]*";/, `const MEASUREMENT_ID = "${TEST_ID}";`);
+assert.match(source, /const ANALYTICS_ENABLED = false;/, "Production analytics must stay paused");
+const enabledSource = source.replace("const ANALYTICS_ENABLED = false;", "const ANALYTICS_ENABLED = true;");
+const testSource = enabledSource.replace(/const MEASUREMENT_ID = "[^"]*";/, `const MEASUREMENT_ID = "${TEST_ID}";`);
 assert.notEqual(source, testSource, "Production source must not contain the test measurement ID");
 assert.match(source, /const MEASUREMENT_ID = "(?:|G-[A-Z0-9]{6,20})";/);
 
@@ -29,7 +31,7 @@ class Element {
 }
 const descendants = node => [node, ...node.children.flatMap(descendants)];
 function environment(options = {}) {
-  const listeners = {}, cookieWrites = [], values = new Map();
+  const listeners = {}, cookieWrites = [], storageCalls = [], values = new Map();
   if (options.choice) values.set(KEY, options.choice);
   const head = new Element("head"), body = new Element("body");
   const script = new Element("script");
@@ -40,19 +42,19 @@ function environment(options = {}) {
     createElement: tag => new Element(tag),
     addEventListener(name, handler) { (listeners[name] ||= []).push(handler); }
   };
-  let cookies = "_ga=own; _ga_TEST123456=own-stream; _ga_OTHER999=unrelated; session=keep";
+  let cookies = "_ga=own; _ga_TEST123456=test-stream; _ga_P2KJHXDBS2=production-stream; _ga_OTHER999=unrelated; session=keep";
   Object.defineProperty(document, "cookie", { get: () => cookies, set: value => { cookieWrites.push(value); const name = value.split("=")[0]; cookies = cookies.split(";").filter(part => part.trim().split("=")[0] !== name).join(";"); } });
   const navigator = { doNotTrack: options.dnt, globalPrivacyControl: options.gpc };
   const window = {
     location: { href: "https://www.photovoltaicpanels.com.cn/products/details/sample.html?email=private@example.com#message", pathname: "/products/details/sample.html", hostname: "www.photovoltaicpanels.com.cn" },
     localStorage: {
-      getItem(key) { if (options.readFailure) throw new Error("storage blocked"); return values.get(key) ?? null; },
-      setItem(key, value) { if (options.writeFailure) throw new Error("storage full"); values.set(key, value); }
+      getItem(key) { storageCalls.push(["read", key]); if (options.readFailure) throw new Error("storage blocked"); return values.get(key) ?? null; },
+      setItem(key, value) { storageCalls.push(["write", key, value]); if (options.writeFailure) throw new Error("storage full"); values.set(key, value); }
     },
     addEventListener(name, handler) { (listeners[name] ||= []).push(handler); }
   };
   const context = vm.createContext({ window, document, navigator, URL, Date, Set, Object });
-  const code = options.noID ? source.replace(/const MEASUREMENT_ID = "[^"]*";/, 'const MEASUREMENT_ID = "";') : testSource;
+  const code = options.production ? source : options.noID ? enabledSource.replace(/const MEASUREMENT_ID = "[^"]*";/, 'const MEASUREMENT_ID = "";') : testSource;
   vm.runInContext(code, context);
   const emit = (name, event = {}) => (listeners[name] || []).forEach(handler => handler(event));
   const buttons = () => descendants(body).filter(node => node.tagName === "BUTTON");
@@ -71,9 +73,49 @@ function environment(options = {}) {
     emit("click", event);
     return event;
   };
-  return { window, navigator, document, values, cookieWrites, button, googleScripts, commands, events, accept, reject, load, clickLink, emit, rerun: () => vm.runInContext(code, context), listeners, body, head };
+  return { window, navigator, document, values, cookieWrites, storageCalls, button, googleScripts, commands, events, accept, reject, load, clickLink, emit, rerun: () => vm.runInContext(code, context), listeners, body, head };
 }
 
+// Execute the unmodified production source: all saved choices are ignored while paused.
+for (const choice of [undefined, "accepted", "rejected"]) {
+  for (const loading of [false, true]) {
+    const paused = environment({ production: true, choice, loading });
+    assert.equal(paused.window["ga-disable-G-P2KJHXDBS2"], true);
+    assert.equal(paused.window.LantianAnalytics.getState().paused, true);
+    assert.equal(paused.window.LantianAnalytics.getState().enabled, false);
+    assert.equal(paused.window.LantianAnalytics.getState().choice, "ignored");
+    assert.equal(paused.window.LantianAnalytics.getState().tagLoaded, false);
+    assert.equal(paused.head.children.length, 0, "Paused source must not load CSS or Google scripts");
+    assert.equal(paused.body.children.length, 0, "Paused source must not create controls or a banner");
+    assert.equal(paused.window.dataLayer, undefined);
+    assert.equal(paused.window.gtag, undefined);
+    assert.equal(Object.keys(paused.listeners).length, 0, "Paused source must not register click, storage, or lifecycle listeners");
+    assert.equal(paused.storageCalls.length, 0, "Paused source must not read or overwrite saved consent");
+    assert.equal(paused.values.get(KEY), choice);
+    assert(paused.cookieWrites.some(value => value.startsWith("_ga=")));
+    assert(paused.cookieWrites.some(value => value.startsWith("_ga_P2KJHXDBS2=")));
+    assert(paused.cookieWrites.every(value => !value.startsWith("_ga_TEST123456=") && !value.startsWith("_ga_OTHER999=") && !value.startsWith("session=")));
+    paused.window.LantianAnalytics.openPreferences();
+    paused.window.LantianAnalytics.revoke();
+    paused.emit("DOMContentLoaded");
+    paused.emit("pageshow");
+    paused.emit("storage", { key: KEY });
+    paused.rerun();
+    assert.equal(paused.head.children.length, 0);
+    assert.equal(paused.body.children.length, 0);
+    paused.clickLink("https://wa.me/861234?text=private");
+    assert.equal(paused.events().length, 0);
+    assert.equal(paused.storageCalls.length, 0);
+    assert.equal(paused.values.get(KEY), choice);
+  }
+}
+const pausedBlockedStorage = environment({ production: true, readFailure: true, writeFailure: true, choice: "accepted", gpc: true });
+assert.equal(pausedBlockedStorage.window.LantianAnalytics.getState().enabled, false);
+assert.equal(pausedBlockedStorage.head.children.length, 0);
+assert.equal(pausedBlockedStorage.body.children.length, 0);
+assert.equal(pausedBlockedStorage.storageCalls.length, 0);
+
+// Retain opt-in regression coverage with the feature explicitly enabled in this VM only.
 // Unknown/refused visitors never load Google, initialize dataLayer, or send pings.
 const unknown = environment();
 assert.equal(unknown.googleScripts().length, 0);
@@ -188,4 +230,4 @@ assert.equal(descendants(early.body).find(node => node.tagName === "A").href, "h
 assert.match(css, /prefers-reduced-motion/);
 assert.match(css, /:focus-visible/);
 assert.match(css, /bottom: calc\(140px/);
-console.log(JSON.stringify({ passed: true, checks: ["opt-in only", "idempotent tag", "ads always denied", "sanitized URLs", "WhatsApp-only click events", "no navigation interference", "withdrawal", "cookie scope", "storage fail-closed", "DNT/GPC", "cross-tab changes", "missing ID", "script-relative assets", "accessible scoped controls"] }, null, 2));
+console.log(JSON.stringify({ passed: true, production: "paused", checks: ["production pause ignores all saved choices", "production has no controls or asset requests", "production registers no tracking listeners", "production preserves saved consent", "production exact-cookie cleanup", "opt-in only (VM-enabled regression)", "idempotent tag", "ads always denied", "sanitized URLs", "WhatsApp-only click events", "no navigation interference", "withdrawal", "cookie scope", "storage fail-closed", "DNT/GPC", "cross-tab changes", "missing ID", "script-relative assets", "accessible scoped controls"] }, null, 2));

@@ -6,9 +6,9 @@ import { fileURLToPath } from 'node:url';
 // searchable without JavaScript and reproducible with this one command.
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const version = '33.1';
-const appVersion = '36.1';
+const appVersion = '37.1';
 const reviewed = '2026-10-15';
-const updated = '2026-10-18';
+const updated = '2026-10-19';
 const origin = 'https://www.photovoltaicpanels.com.cn/';
 const categories = [
   {id:'storage',file:'energy-storage.html',label:'Energy storage',title:'Energy storage.<br><em>Choose your scale.</em>',description:'From compact battery storage to integrated commercial cabinets. Explore energy capacity, electrical interfaces and equipment format before choosing a configuration.',image:'assets/supplier-storage-internals.webp',imageAlt:'Open battery cabinets showing the internal storage equipment',guide:'resources/storage-planning.html',questions:['Nominal versus usable energy','Charge and discharge power','Battery voltage and inverter compatibility','Indoor or outdoor installation']},
