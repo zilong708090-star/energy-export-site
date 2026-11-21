@@ -1,10 +1,12 @@
-/* Consent-based analytics: no Google tag is loaded until the visitor accepts. */
+/* Analytics: on by default, no banner. Visitors can opt out from the privacy notice. */
 (() => {
   "use strict";
 
   if (window.LantianAnalytics) return;
   const MEASUREMENT_ID = "G-P2KJHXDBS2";
   const ANALYTICS_ENABLED = true;
+  // Set to true to bring the consent banner back and require an explicit opt-in.
+  const REQUIRE_CONSENT = false;
   const CONSENT_KEY = "lantian_analytics_consent_v1";
   const script = document.currentScript;
   if (!script || !script.src) return;
@@ -52,7 +54,8 @@
       return false;
     }
   };
-  const allowed = () => ANALYTICS_ENABLED && configured && choice === "accepted" && storageAvailable && !privacySignal() && !tagFailed;
+  const allowed = () => ANALYTICS_ENABLED && configured && !privacySignal() && !tagFailed &&
+    (REQUIRE_CONSENT ? choice === "accepted" && storageAvailable : choice !== "rejected");
   const gtag = function () { window.dataLayer.push(arguments); };
 
   const clearOwnCookies = () => {
@@ -112,7 +115,8 @@
   };
 
   const start = () => {
-    if (!allowed() || !persist("accepted")) { stop(); return; }
+    if (!allowed()) { stop(); return; }
+    if (REQUIRE_CONSENT && !persist("accepted")) { stop(); return; }
     window[disableKey] = false;
     active = true;
     if (initialized) {
@@ -206,6 +210,8 @@
     return node;
   };
   const mount = () => {
+    // No banner, no floating preferences button: opt-out lives on the privacy notice.
+    if (!REQUIRE_CONSENT) return;
     const stylesheet = document.createElement("link");
     stylesheet.rel = "stylesheet";
     stylesheet.href = new URL("analytics.css", assetURL).href;
