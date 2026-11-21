@@ -461,25 +461,25 @@ button { color: inherit; }
 
 /* Product platform pages */
 .product-page {
-  --detail-intro-image: url("assets/section-bess-site.jpg");
-  --applications-image: url("assets/section-power-room.jpg");
-  --selection-image: url("assets/section-field-engineering.jpg");
+  --detail-intro-image: url("assets/section-bess-site.webp");
+  --applications-image: url("assets/section-power-room.webp");
+  --selection-image: url("assets/section-field-engineering.webp");
   background: #fff;
 }
 .product-page--inverter {
-  --detail-intro-image: url("assets/section-power-room.jpg");
-  --applications-image: url("assets/section-bess-site.jpg");
-  --selection-image: url("assets/section-field-engineering.jpg");
+  --detail-intro-image: url("assets/section-power-room.webp");
+  --applications-image: url("assets/section-bess-site.webp");
+  --selection-image: url("assets/section-field-engineering.webp");
 }
 .product-page--solar {
-  --detail-intro-image: url("assets/section-bess-site.jpg");
-  --applications-image: url("assets/section-field-engineering.jpg");
-  --selection-image: url("assets/section-power-room.jpg");
+  --detail-intro-image: url("assets/section-bess-site.webp");
+  --applications-image: url("assets/section-field-engineering.webp");
+  --selection-image: url("assets/section-power-room.webp");
 }
 .product-page--wind {
-  --detail-intro-image: url("assets/section-field-engineering.jpg");
-  --applications-image: url("assets/section-bess-site.jpg");
-  --selection-image: url("assets/section-power-room.jpg");
+  --detail-intro-image: url("assets/section-field-engineering.webp");
+  --applications-image: url("assets/section-bess-site.webp");
+  --selection-image: url("assets/section-power-room.webp");
 }
 .product-page .site-header:not(.is-scrolled) { background: rgba(7, 17, 31, .78); backdrop-filter: blur(10px); }
 .product-page .site-header.is-scrolled { background: rgba(7, 17, 31, .97); backdrop-filter: blur(16px); }
@@ -660,9 +660,9 @@ button { color: inherit; }
 .product-page .detail-hero__visual { height: 510px; min-height: 0; }
 .product-page .detail-hero__visual img { height: 100%; min-height: 0; }
 .product-page--wind .detail-hero__visual img { object-position: center 18%; }
-.product-page { --detail-intro-image: url("assets/supplier-storage-internals.webp"); --applications-image: url("assets/authorized-backup-power-room.jpg"); --selection-image: url("assets/supplier-battery-stock.webp"); }
-.product-page--inverter { --detail-intro-image: url("assets/authorized-backup-power-room.jpg"); --applications-image: url("assets/supplier-rooftop-solar.jpg"); --selection-image: url("assets/authorized-electrical-engineer.jpg"); }
-.product-page--solar { --detail-intro-image: url("assets/supplier-solar-production.jpg"); --applications-image: url("assets/supplier-solar-farm.jpg"); --selection-image: url("assets/supplier-solar-warehouse.jpg"); }
+.product-page { --detail-intro-image: url("assets/supplier-storage-internals.webp"); --applications-image: url("assets/authorized-backup-power-room.webp"); --selection-image: url("assets/supplier-battery-stock.webp"); }
+.product-page--inverter { --detail-intro-image: url("assets/authorized-backup-power-room.webp"); --applications-image: url("assets/supplier-rooftop-solar.webp"); --selection-image: url("assets/authorized-electrical-engineer.webp"); }
+.product-page--solar { --detail-intro-image: url("assets/supplier-solar-production.webp"); --applications-image: url("assets/supplier-solar-farm.webp"); --selection-image: url("assets/supplier-solar-warehouse.webp"); }
 .product-page--wind { --detail-intro-image: url("assets/supplier-wind-site.webp"); --applications-image: url("assets/supplier-wind-field.webp"); --selection-image: url("assets/supplier-wind-assembly.webp"); }
 .resource-page .site-header { background: var(--ink); }
 .resource-hero { padding: 170px 0 70px; color: #fff; background: var(--ink); }
