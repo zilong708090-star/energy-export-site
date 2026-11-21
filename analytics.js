@@ -1,10 +1,10 @@
-/* Analytics is paused: no controls, Google tag, or analytics requests are created. */
+/* Consent-based analytics: no Google tag is loaded until the visitor accepts. */
 (() => {
   "use strict";
 
   if (window.LantianAnalytics) return;
   const MEASUREMENT_ID = "G-P2KJHXDBS2";
-  const ANALYTICS_ENABLED = false;
+  const ANALYTICS_ENABLED = true;
   const CONSENT_KEY = "lantian_analytics_consent_v1";
   const script = document.currentScript;
   if (!script || !script.src) return;

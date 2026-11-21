@@ -5,7 +5,7 @@
     const appScript = document.currentScript;
     if (!appScript?.src || window.LantianAnalytics || document.querySelector('script[data-lantian-analytics]')) return;
     const analyticsScript = document.createElement('script');
-    analyticsScript.src = new URL('analytics.js?v=37.1', appScript.src).href;
+    analyticsScript.src = new URL('analytics.js?v=38.1', appScript.src).href;
     analyticsScript.async = true;
     analyticsScript.setAttribute('data-lantian-analytics', '');
     (document.head || document.documentElement).appendChild(analyticsScript);
