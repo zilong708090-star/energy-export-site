@@ -87,7 +87,7 @@
           "value": "−0.29% / °C"
         }
       ],
-      "summary": "A full-black dual-glass module for rooftops where appearance matters alongside power output. Its compact format suits residential and smaller commercial layouts, with final string design checked against the selected inverter.",
+      "summary": "440 Wp full-black dual-glass module at 22.0% efficiency and 21.0 kg. Suits residential and smaller commercial roofs where appearance matters alongside output.",
       "features": [
         "Full-black frame and cell appearance",
         "N-type i-TOPCon cell technology",
@@ -198,7 +198,7 @@
           "value": "−0.29% / °C"
         }
       ],
-      "summary": "A full-black dual-glass module for rooftops where appearance matters alongside power output. Its compact format suits residential and smaller commercial layouts, with final string design checked against the selected inverter.",
+      "summary": "450 Wp full-black dual-glass module at 22.5% efficiency and 21.0 kg. Same 1,762 × 1,134 mm body as the 440 W variant, with 10 Wp more per module.",
       "features": [
         "Full-black frame and cell appearance",
         "N-type i-TOPCon cell technology",
@@ -309,7 +309,7 @@
           "value": "−0.29% / °C"
         }
       ],
-      "summary": "A compact high-output rooftop module combining n-type cells with a black frame. Consider it for projects balancing usable roof area, handling requirements and system layout rather than selecting by wattage alone.",
+      "summary": "440 Wp black-frame n-type module at 22.0% efficiency and 21.0 kg. A 144-cell 1,762 × 1,134 mm format for roofs where handling and layout drive the choice.",
       "features": [
         "Compact rooftop module format",
         "N-type i-TOPCon cell technology",
@@ -420,7 +420,7 @@
           "value": "−0.29% / °C"
         }
       ],
-      "summary": "A compact high-output rooftop module combining n-type cells with a black frame. Consider it for projects balancing usable roof area, handling requirements and system layout rather than selecting by wattage alone.",
+      "summary": "460 Wp black-frame n-type module at 23.0% efficiency and 21.0 kg. Same 1,762 × 1,134 mm body as the 440 W variant, 20 Wp more per module.",
       "features": [
         "Compact rooftop module format",
         "N-type i-TOPCon cell technology",
@@ -531,7 +531,7 @@
           "value": "−0.29% / °C"
         }
       ],
-      "summary": "A compact bifacial rooftop module with a clear-black dual-glass design. Rear-side generation can contribute where the mounting arrangement and reflected light allow it, making site layout an important part of selection.",
+      "summary": "430 Wp clear-black bifacial module with 21.5% front-side efficiency and 80 ± 5% bifaciality. Rear-side gain depends on mounting height, albedo and row spacing.",
       "features": [
         "Bifacial n-type i-TOPCon cells",
         "Clear-black dual-glass design",
@@ -642,7 +642,7 @@
           "value": "−0.29% / °C"
         }
       ],
-      "summary": "A compact bifacial rooftop module with a clear-black dual-glass design. Rear-side generation can contribute where the mounting arrangement and reflected light allow it, making site layout an important part of selection.",
+      "summary": "450 Wp clear-black bifacial module with 22.5% front-side efficiency and 80 ± 5% bifaciality. Same 144-cell body as the 430 W variant, 20 Wp more front power.",
       "features": [
         "Bifacial n-type i-TOPCon cells",
         "Clear-black dual-glass design",
@@ -753,7 +753,7 @@
           "value": "−0.29% / °C"
         }
       ],
-      "summary": "A higher-current dual-glass module sized for commercial rooftops and larger distributed solar arrays. Check inverter input-current limits, roof structure and module handling together when developing the installation layout and procurement scope.",
+      "summary": "500 Wp 108-cell commercial module at 22.5% efficiency, 15.03 A Imp and 23.5 kg over 1,961 mm. Check inverter input-current limits and roof structure together.",
       "features": [
         "N-type i-TOPCon cell technology",
         "108-cell dual-glass format",
@@ -864,7 +864,7 @@
           "value": "−0.29% / °C"
         }
       ],
-      "summary": "A higher-current dual-glass module sized for commercial rooftops and larger distributed solar arrays. Check inverter input-current limits, roof structure and module handling together when developing the installation layout and procurement scope.",
+      "summary": "505 Wp 108-cell commercial module at 22.7% efficiency, 15.09 A Imp and 23.5 kg. Same 1,961 × 1,134 mm body as the 500 W variant with slightly higher current.",
       "features": [
         "N-type i-TOPCon cell technology",
         "108-cell dual-glass format",
