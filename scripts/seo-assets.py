@@ -375,12 +375,25 @@ def process_css() -> None:
             stats["css"] = stats.get("css", 0) + 1
 
 
+def sync_sitemap_mirror() -> None:
+    """sitemap-main.xml is the copy Search Console reads; keep it identical."""
+    generated = ROOT / "sitemap.xml"
+    mirror = ROOT / "sitemap-main.xml"
+    if not generated.is_file():
+        return
+    content = generated.read_text(encoding="utf-8")
+    if not mirror.is_file() or mirror.read_text(encoding="utf-8") != content:
+        mirror.write_text(content, encoding="utf-8")
+        stats["sitemap_mirror"] = 1
+
+
 def main() -> int:
     write_favicons()
     pages = sorted(p for p in ROOT.rglob("*.html") if "node_modules" not in p.parts)
     for page in pages:
         process_page(page)
     process_css()
+    sync_sitemap_mirror()
     print(json.dumps(stats, indent=2))
     return 0
 

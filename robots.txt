@@ -2,4 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://www.photovoltaicpanels.com.cn/sitemap_index.xml
-Sitemap: https://www.photovoltaicpanels.com.cn/sitemap.xml
+Sitemap: https://www.photovoltaicpanels.com.cn/sitemap-main.xml
